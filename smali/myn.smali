@@ -1243,6 +1243,19 @@
 
     move-result v0
 
+    const-string v1, "pref_maxmag_key"		# Maximum zoom
+
+    invoke-static {v1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    int-to-float v1, v1
+
+    mul-float/2addr v0, v1
+
+    :cond_0
     return v0
 .end method
 
