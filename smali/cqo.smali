@@ -27,32 +27,13 @@
 .method public final a()Z
     .locals 2
 
-    iget-object v0, p0, Lcqo;->a:Lcin;
+	const-string v0, "pref_use_gphotos"		# Use Google Photos
 
-    sget-object v1, Lcit;->af:Lcio;
+	invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
-    invoke-interface {v0, v1}, Lcin;->c(Lcio;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcqo;->b:Ldkg;
-
-    invoke-virtual {v0}, Ldkg;->a()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    return v0
+	move-result v0
+	
+	return v0
 .end method
 
 .method public final b()Z
