@@ -28,6 +28,8 @@
 
 .field public static isPixel3a:I
 
+.field public static isPixel4:I
+
 .field public static sGallery:Ljava/lang/String;
 
 .field public static MAX_EXPOSURE:I
