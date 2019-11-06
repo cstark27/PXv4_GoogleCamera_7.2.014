@@ -340,6 +340,19 @@
 .method private final a(Z)Z
     .locals 2
 
+	const-string v0, "pref_enable_sff"		# For synthetic fill flash
+
+	invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v0
+	
+	if-nez v0, :cond_on
+
+	const v1, 0x1
+	
+	goto :cond_2
+
+	:cond_on
     iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lcin;
 
     sget-object v1, Lcjh;->e:Lcio;
@@ -824,12 +837,17 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/google/googlex/gcam/StaticMetadata;->getLens_facing()I
+	const-string v6, "pref_disable_facewarping"		# Face warping
 
-    move-result v1
+	invoke-static {v6}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
-    if-ne v1, v11, :cond_5
+	move-result v6
+	
+	if-nez v6, :cond_off
 
+	goto :cond_5
+
+	:cond_off
     const/4 v1, 0x1
 
     goto :goto_3
@@ -859,6 +877,8 @@
     invoke-interface {v1, v6}, Lcin;->c(Lcio;)Z
 
     move-result v1
+
+	const v1, 0x1		# Force face detection, front and rear
 
     if-eqz v1, :cond_7
 
@@ -1346,12 +1366,17 @@
 
     move-result-object v15
 
-    invoke-virtual {v15}, Lcom/google/googlex/gcam/StaticMetadata;->getLens_facing()I
+	const-string v8, "pref_disable_facewarping"		# Face warping
 
-    move-result v15
+	invoke-static {v8}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
-    if-ne v15, v8, :cond_2
+	move-result v8
+	
+	if-nez v8, :cond_off2
 
+	goto :cond_2
+
+	:cond_off2
     const/4 v15, 0x1
 
     goto :goto_1
@@ -1381,6 +1406,8 @@
     invoke-interface {v8, v15}, Lcin;->c(Lcio;)Z
 
     move-result v8
+
+	const v8, 0x1		# Force face detection front/rear
 
     if-eqz v8, :cond_4
 
