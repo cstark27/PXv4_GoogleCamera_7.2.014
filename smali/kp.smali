@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static synthetic a:I
+.field public final static a:I
 
 
 # direct methods
