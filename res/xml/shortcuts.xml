@@ -9,4 +9,11 @@
     <shortcut android:icon="@drawable/ic_video" android:enabled="true" android:shortcutId="video" android:shortcutShortLabel="@string/shortcut_video_short_label" android:shortcutLongLabel="@string/shortcut_video_long_label">
         <intent android:targetPackage="com.google.android.GoogleCameraPX4" android:action="android.media.action.VIDEO_CAMERA" android:targetClass="com.android.camera.CameraVideoShortcutActivity" />
     </shortcut>
+    <shortcut android:icon="@drawable/ic_portrait" android:enabled="true" android:shortcutId="portrait" android:shortcutShortLabel="@string/accessibility_take_portrait_button" android:shortcutLongLabel="@string/accessibility_take_portrait_button">
+        <intent android:targetPackage="com.google.android.GoogleCameraPX4" android:action="android.media.action.PORTRAIT" android:targetClass="com.google.android.apps.camera.legacy.app.activity.CameraImageActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_nightsight" android:enabled="true" android:shortcutId="nightsight" android:shortcutShortLabel="@string/cuttlefish_name" android:shortcutLongLabel="@string/cuttlefish_name">
+        <intent android:targetPackage="com.google.android.GoogleCameraPX4" android:action="android.media.action.NIGHTSIGHT" android:targetClass="com.google.android.apps.camera.legacy.app.activity.CameraImageActivity" />
+    </shortcut>
+
 </shortcuts>

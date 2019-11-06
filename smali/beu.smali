@@ -675,7 +675,23 @@
     goto :goto_2
 
     :cond_1
-    const-string v1, "android.media.action.IMAGE_CAPTURE"
+	const-string v1, "android.media.action.PORTRAIT"
+
+	invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+	move-result v1
+
+	if-nez v1, :cond_portrait
+
+	const-string v1, "android.media.action.NIGHTSIGHT"
+
+	invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+	move-result v1
+
+	if-nez v1, :cond_nightsight
+	
+	const-string v1, "android.media.action.IMAGE_CAPTURE"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -723,6 +739,16 @@
 
     :goto_2
     return-object v0
+
+	:cond_portrait
+	sget-object v0, Lklx;->h:Lklx;
+
+	goto :goto_2
+
+	:cond_nightsight
+	sget-object v0, Lklx;->o:Lklx;
+
+	goto :goto_2
 .end method
 
 .method public static h(Landroid/content/Intent;)Z
