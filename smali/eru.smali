@@ -2157,6 +2157,10 @@
 
     invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
 
+    const-string v1, "pref_category_advanced2"		# smooth PX settings transition
+
+    invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
+
     const-string v1, "pref_category_gestures"
 
     invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
@@ -2552,252 +2556,184 @@
 .end method
 
 .method public final onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
-    .locals 8
+    .locals 3
 
-    iget-object p1, p0, Leru;->a:Lerw;
+	# isrestart
+    const/4 v0, 0x1
 
-    invoke-virtual {p1}, Lerw;->a()Ljava/util/List;
+    sput-boolean v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->changed:Z
 
-    move-result-object p1
+    sget v0, Lcom/custom/extras;->sHdr_process:I
 
-    const-string v0, "pref_category_custom_hotkeys"
+    if-nez v0, :cond_3
 
-    invoke-interface {p1, v0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    const-string v0, "pref_custlib_key"
 
-    move-result p1
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    if-nez p1, :cond_6
+    move-result v0
 
-    iget-object p1, p0, Leru;->i:Ljava/util/HashMap;
+    if-nez v0, :cond_1
 
-    invoke-virtual {p1, p2}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+    const-string v0, "pref_use_gphotos"
 
-    move-result p1
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    const/16 v0, 0x19
+    move-result v0
 
-    const v1, 0x7f13031b
+    if-nez v0, :cond_1
 
-    const/16 v2, 0x18
+    const-string v0, "pref_maxmag_key"
 
-    const-string v3, "pref_volume_key_action"
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    const-string v4, "-1"
+    move-result v0
 
-    if-eqz p1, :cond_3
+    if-nez v0, :cond_1
 
-    invoke-virtual {p0, p2}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    const-string v0, "pref_p4awb_key"
 
-    move-result-object p1
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {p1}, Landroid/preference/Preference;->getSharedPreferences()Landroid/content/SharedPreferences;
+    move-result v0
 
-    move-result-object p1
+    if-nez v0, :cond_1
 
-    invoke-interface {p1, p2, v4}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v0, "pref_align_key"
 
-    move-result-object p1
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    iget-object v5, p0, Leru;->i:Ljava/util/HashMap;
+    move-result v0
 
-    invoke-virtual {v5, p2, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    if-nez v0, :cond_1
 
-    invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    const-string v0, "pref_countdownfix_key"
 
-    move-result v5
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    if-ne v5, v2, :cond_0
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "pref_forcesabre_key"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "pref_enable_sff"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "pref_startrail"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "pref_shutter_key"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    const-string v0, "pref_shuttermax_key"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "pref_iso_key"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "pref_disable_facewarping"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    :cond_1
+	:goto_0
+    const/4 v0, 0x1
+
+    sput-boolean v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->isrestart:Z
+
+    :cond_2
+    return-void
+
+    :cond_3
+    const-string v0, "HDR+ Processing. Force close app to update settings."
+
+    invoke-static {v0}, Lcom/custom/extras;->ShowToast(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_4
+    const-string v0, "pref_focus_key"
+
+    invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const-string v0, "Focus Tracking will be internally disabled."
+
+    invoke-static {v0}, Lcom/custom/extras;->ShowToast(Ljava/lang/String;)V
 
     goto :goto_0
 
-    :cond_0
-    if-ne v5, v0, :cond_1
-
-    :goto_0
-    nop
-
-    invoke-virtual {p0, v3}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v5
-
-    check-cast v5, Landroid/preference/ListPreference;
-
-    invoke-virtual {p0}, Leru;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v6
-
-    invoke-virtual {v6, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v5, v6}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
-
-    :cond_1
-    nop
-
-    invoke-virtual {p1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-nez v5, :cond_3
-
-    iget-object v5, p0, Leru;->i:Ljava/util/HashMap;
-
-    invoke-virtual {v5, p1}, Ljava/util/HashMap;->containsValue(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_3
-
-    iget-object v5, p0, Leru;->i:Ljava/util/HashMap;
-
-    invoke-virtual {v5}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
-
-    move-result-object v5
-
-    invoke-interface {v5}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v5
-
-    :cond_2
-    :goto_1
-    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_3
-
-    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Ljava/lang/String;
-
-    invoke-virtual {v6, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-nez v7, :cond_2
-
-    iget-object v7, p0, Leru;->i:Ljava/util/HashMap;
-
-    invoke-virtual {v7, v6}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Ljava/lang/String;
-
-    invoke-virtual {v7, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_2
-
-    iget-object v7, p0, Leru;->i:Ljava/util/HashMap;
-
-    invoke-virtual {v7, v6, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    invoke-virtual {p0, v6}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v6
-
-    check-cast v6, Lcom/google/android/apps/camera/ui/preference/KeyListenerPreference;
-
-    invoke-virtual {v6, v4}, Lcom/google/android/apps/camera/ui/preference/KeyListenerPreference;->a(Ljava/lang/String;)V
-
-    goto :goto_1
-
-    :cond_3
-    nop
-
-    invoke-virtual {p2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_6
-
-    invoke-virtual {p0, p2}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/preference/ListPreference;
-
-    invoke-virtual {p1}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p0}, Leru;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p2
-
-    invoke-virtual {p2, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_6
-
-    iget-object p1, p0, Leru;->i:Ljava/util/HashMap;
-
-    invoke-virtual {p1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
-
-    move-result-object p1
-
-    invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :cond_4
-    :goto_2
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result p2
-
-    if-eqz p2, :cond_6
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Ljava/lang/String;
-
-    iget-object v1, p0, Leru;->i:Ljava/util/HashMap;
-
-    invoke-virtual {v1, p2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/String;
-
-    invoke-static {v1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v1
-
-    if-ne v1, v0, :cond_5
-
-    goto :goto_3
-
     :cond_5
-    if-ne v1, v2, :cond_4
+    const-string v0, "pref_shutter_key"
 
-    :goto_3
-    iget-object v1, p0, Leru;->i:Ljava/util/HashMap;
+    invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
-    invoke-virtual {v1, p2, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result v0
 
-    invoke-virtual {p0, p2}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    const-string v2, "pref_shuttermax_key"
 
-    move-result-object p2
+    if-eqz v0, :cond_7
 
-    check-cast p2, Lcom/google/android/apps/camera/ui/preference/KeyListenerPreference;
-
-    invoke-virtual {p2, v4}, Lcom/google/android/apps/camera/ui/preference/KeyListenerPreference;->a(Ljava/lang/String;)V
-
-    goto :goto_2
+    if-nez v0, :cond_6
 
     :cond_6
-    return-void
+    invoke-virtual {p0, v2}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v2
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v2, v1}, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->setEnabled(Z)V
+
+    goto :goto_0
+
+    :cond_7
+    invoke-virtual {p0, v2}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v2
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v2, v1}, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->setEnabled(Z)V
+
+    goto :goto_0
 .end method

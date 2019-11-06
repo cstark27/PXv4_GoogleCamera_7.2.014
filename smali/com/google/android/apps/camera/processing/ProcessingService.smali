@@ -236,6 +236,10 @@
 
     if-nez v1, :cond_0
 
+	const v1, 0x1		# HDR is processing
+	
+	sput v1, Lcom/custom/extras;->sHdr_process:I
+
     sget-object v1, Lcom/google/android/apps/camera/processing/ProcessingService;->a:Ljava/lang/String;
 
     invoke-static {v1}, Lliv;->b(Ljava/lang/String;)V
@@ -597,6 +601,10 @@
 
     :goto_2
     monitor-exit v1
+
+	const/4 v0, 0x0		# HDR not processing
+
+	sput v0, Lcom/custom/extras;->sHdr_process:I
 
     return-void
 
