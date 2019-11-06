@@ -466,13 +466,16 @@
     :cond_0
     const/4 v0, 0x0
 
+	:goto_1
+	sput v0, Lcom/custom/extras;->isPixel1:I
+
     return v0
 
     :cond_1
     :goto_0
     const/4 v0, 0x1
 
-    return v0
+    goto :goto_1
 .end method
 
 .method public final c()Z
@@ -491,13 +494,16 @@
     :cond_0
     const/4 v0, 0x0
 
+	:goto_1
+	sput v0, Lcom/custom/extras;->isPixel2:I
+
     return v0
 
     :cond_1
     :goto_0
     const/4 v0, 0x1
 
-    return v0
+    goto :goto_1
 .end method
 
 .method public final d()Z
@@ -516,13 +522,16 @@
     :cond_0
     const/4 v0, 0x0
 
+	:goto_1
+	sput v0, Lcom/custom/extras;->isPixel3:I
+
     return v0
 
     :cond_1
     :goto_0
     const/4 v0, 0x1
 
-    return v0
+    goto :goto_1
 .end method
 
 .method public final e()Z
@@ -541,13 +550,16 @@
     :cond_0
     const/4 v0, 0x0
 
+	:goto_1
+	sput v0, Lcom/custom/extras;->isPixel3a:I
+
     return v0
 
     :cond_1
     :goto_0
     const/4 v0, 0x1
 
-    return v0
+    goto :goto_1
 .end method
 
 .method public final f()Z
@@ -570,11 +582,14 @@
     :cond_0
     const/4 v0, 0x0
 
+	:goto_1
+	sput v0, Lcom/custom/extras;->isPixel4:I
+
     return v0
 
     :cond_1
     :goto_0
     const/4 v0, 0x1
 
-    return v0
+    goto :goto_1
 .end method
