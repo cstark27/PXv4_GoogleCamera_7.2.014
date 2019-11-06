@@ -7,7 +7,6 @@ doNotCompress:
 - bloomfilter
 - assets/tflite_vakunov_multi-subject_2018-06-09.fb.enc
 - jpg
-- so
 - png
 - res/0H.9.png
 - res/1n.9.png
