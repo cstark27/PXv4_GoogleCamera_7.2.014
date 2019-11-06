@@ -2,7 +2,7 @@
 <PreferenceScreen android:orderingFromXml="true" android:key="prefscreen_top"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:layout="@layout/preference_category_first_layout" android:title="@string/setting_general" android:key="pref_category_general">
-		<PreferenceScreen android:icon="@drawable/hamburger" android:layout="@layout/preference_with_margin_blue" android:title="Mod settings" android:key="pref_category_advanced2" android:order="0">
+		<PreferenceScreen android:icon="@drawable/hamburger" android:layout="@layout/preference_with_margin_blue" android:title="PX Mod settings" android:key="pref_category_advanced2" android:order="0">
 			<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/google_photos" android:layout="@layout/preference_with_margin" android:title="Use Google Photos" android:key="pref_use_gphotos" android:defaultValue="false" />
 			<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/account_multiple_outline" android:layout="@layout/preference_with_margin" android:title="Enable synthetic fill flash" android:key="pref_enable_sff" android:defaultValue="false" />
 			<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/ics_warp" android:layout="@layout/preference_with_margin" android:title="Disable face shape correction" android:key="pref_disable_facewarping" android:defaultValue="false" />
