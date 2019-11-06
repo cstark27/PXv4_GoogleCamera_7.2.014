@@ -130,4 +130,62 @@
     <item type="array" name="APKTOOL_DUMMY_20">false</item>
     <item type="array" name="APKTOOL_DUMMY_21">false</item>
     <item type="array" name="APKTOOL_DUMMY_22">false</item>
+    <string-array name="pref_nonzsl_entries">
+        <item>Auto</item>
+		<item>1</item>
+		<item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>10</item>
+        <item>15</item>
+		<item>20</item>
+		<item>Up to 30</item>
+    </string-array>
+    <string-array name="pref_nonzsl_entryvalues">
+        <item>0</item>
+        <item>1</item>
+		<item>3</item>
+		<item>5</item>
+        <item>7</item>
+        <item>10</item>
+        <item>15</item>
+		<item>20</item>
+		<item>30</item>
+    </string-array>
+    <string-array name="pref_maxexpo_entries">
+        <item>2s</item>
+        <item>4s</item>
+        <item>8s</item>
+        <item>10s</item>
+		<item>15s</item>
+        <item>20s</item>
+		<item>30s</item>
+		<item>40s</item>
+		<item>60s</item>
+    </string-array>
+    <string-array name="pref_maxexpo_entryvalues">
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+        <item>10</item>
+		<item>15</item>
+        <item>20</item>
+		<item>30</item>
+		<item>40</item>
+		<item>60</item>
+    </string-array>
+    <string-array name="pref_maxmag_entries">
+        <item>Default</item>
+        <item>2x higher</item>
+        <item>3x higher</item>
+        <item>4x higher</item>
+        <item>5x higher</item>
+    </string-array>
+    <string-array name="pref_maxmag_entryvalues">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 </resources>
