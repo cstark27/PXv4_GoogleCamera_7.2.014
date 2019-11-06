@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Burst (%1$d зураг)</item>
+        <item quantity="one">Burst (%1$d зураг)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d нүүр.</item>
+        <item quantity="one">%1$d нүүр.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Зургийг камераас шууд нийгмийн аппдаа шуурхай хуваалцаарай. %1$d хүртэлх апп сонгоно уу. Нийгмийн аппууд нь таныг түгжигдсэн дэлгэцээс камер нээхэд боломжтой болно.</item>
+        <item quantity="one">Зургийг камераас шууд нийгмийн аппдаа шуурхай хуваалцаарай. %1$d апп сонгоно уу. Нийгмийн аппууд нь таныг түгжигдсэн дэлгэцээс камер нээхэд боломжтой болно.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">%1$d хүртэлх апп сонгоно уу</item>
+        <item quantity="one">%1$d апп сонгоно уу</item>
+    </plurals>
+</resources>

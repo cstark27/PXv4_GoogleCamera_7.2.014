@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Burst (%1$d na Larawan)</item>
+        <item quantity="one">Burst (%1$d Larawan)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d na mukha.</item>
+        <item quantity="one">%1$d mukha.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Mabilis na magbahagi ng mga larawan sa mga social app mula mismo sa Camera. Pumili ng hanggang %1$d na app. Magiging available ang mga social app kapag binuksan mo ang Camera mula sa lock screen.</item>
+        <item quantity="one">Mabilis na magbahagi ng mga larawan sa mga social app mula mismo sa Camera. Pumili ng hanggang %1$d app. Magiging available ang mga social app kapag binuksan mo ang Camera mula sa lock screen.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Pumili ng hanggang %1$d na app</item>
+        <item quantity="one">Pumili ng hanggang %1$d app</item>
+    </plurals>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">ಬರ್ಸ್ಟ್‌ (%1$d ಫೋಟೋಗಳು)</item>
+        <item quantity="one">ಬರ್ಸ್ಟ್‌ (%1$d ಫೋಟೋಗಳು)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d ಮುಖಗಳು.</item>
+        <item quantity="one">%1$d ಮುಖಗಳು.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">ಕ್ಯಾಮರಾದಿಂದಲೇ ನೇರವಾಗಿ ಸಾಮಾಜಿಕ ಆ್ಯಪ್‌ಗಳಲ್ಲಿ ತ್ವರಿತವಾಗಿ ಫೋಟೋಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ. %1$d ಆ್ಯಪ್‌ಗಳವರೆಗೆ ಆಯ್ಕೆಮಾಡಿ. ಲಾಕ್ ಸ್ಕ್ರೀನ್‌ನಿಂದ ನೀವು ಕ್ಯಾಮರಾವನ್ನು ತೆರೆದಾಗ ಸಾಮಾಜಿಕ ಆ್ಯಪ್‌ಗಳು ಲಭ್ಯವಿರುತ್ತವೆ.</item>
+        <item quantity="one">ಕ್ಯಾಮರಾದಿಂದಲೇ ನೇರವಾಗಿ ಸಾಮಾಜಿಕ ಆ್ಯಪ್‌ಗಳಲ್ಲಿ ತ್ವರಿತವಾಗಿ ಫೋಟೋಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ. %1$d ಆ್ಯಪ್‌ಗಳವರೆಗೆ ಆಯ್ಕೆಮಾಡಿ. ಲಾಕ್ ಸ್ಕ್ರೀನ್‌ನಿಂದ ನೀವು ಕ್ಯಾಮರಾವನ್ನು ತೆರೆದಾಗ ಸಾಮಾಜಿಕ ಆ್ಯಪ್‌ಗಳು ಲಭ್ಯವಿರುತ್ತವೆ.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">%1$d ಆ್ಯಪ್‌ಗಳವರೆಗೆ ಆಯ್ಕೆಮಾಡಿ</item>
+        <item quantity="one">%1$d ಆ್ಯಪ್‌ಗಳವರೆಗೆ ಆಯ್ಕೆಮಾಡಿ</item>
+    </plurals>
+</resources>

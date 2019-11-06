@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">رگباری (%1$d عکس)</item>
+        <item quantity="one">رگباری (%1$d عکس)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d چهره.</item>
+        <item quantity="one">%1$d چهره.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">عکس‌ها را سریع از برنامه «دوربین» در برنامه‌های اجتماعی هم‌رسانی کنید. حداکثر %1$d برنامه انتخاب کنید. وقتی «دوربین» را از صفحه قفل باز می‌کنید، برنامه‌های اجتماعی دردسترس خواهند بود.</item>
+        <item quantity="one">عکس‌ها را سریع از برنامه «دوربین» در برنامه‌های اجتماعی هم‌رسانی کنید. حداکثر %1$d برنامه انتخاب کنید. وقتی «دوربین» را از صفحه قفل باز می‌کنید، برنامه‌های اجتماعی دردسترس خواهند بود.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">حداکثر %1$d برنامه انتخاب کنید</item>
+        <item quantity="one">حداکثر %1$d برنامه انتخاب کنید</item>
+    </plurals>
+</resources>

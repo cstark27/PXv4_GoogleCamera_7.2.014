@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Sarivõte (%1$d fotot)</item>
+        <item quantity="one">Sarivõte (%1$d foto)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d nägu.</item>
+        <item quantity="one">%1$d nägu.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Jagage sotsiaalrakendustes fotosid kiiresti otse kaamerast. Valige kuni %1$d rakendust. Sotsiaalrakendused on saadaval, kui avate kaamera lukustuskuval.</item>
+        <item quantity="one">Jagage sotsiaalrakendustes fotosid kiiresti otse kaamerast. Valige %1$d rakendus. Sotsiaalrakendused on saadaval, kui avate kaamera lukustuskuval.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Valige kuni %1$d rakendust</item>
+        <item quantity="one">Valige %1$d rakendus</item>
+    </plurals>
+</resources>

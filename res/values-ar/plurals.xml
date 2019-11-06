@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">صور متسلسلة (%1$d صورة)</item>
+        <item quantity="zero">صور متسلسلة (%1$d صورة)</item>
+        <item quantity="one">صور متسلسلة (صورة واحدة (%1$d))</item>
+        <item quantity="two">صور متسلسلة (صورتان (%1$d))</item>
+        <item quantity="few">صور متسلسلة (%1$d صور)</item>
+        <item quantity="many">صور متسلسلة (%1$d صورة)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d وجه.</item>
+        <item quantity="zero">%1$d وجه.</item>
+        <item quantity="one">%1$d وجه.</item>
+        <item quantity="two">وجهان (%1$d).</item>
+        <item quantity="few">%1$d وجوه.</item>
+        <item quantity="many">%1$d وجهًا.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">يمكنك مشاركة الصور بسرعة على التطبيقات الاجتماعية من خلال \"الكاميرا\" مباشرة. اختَر %1$d تطبيق كحد أقصى. وستتوفر التطبيقات الاجتماعية عند فتح \"الكاميرا\" من خلال شاشة التأمين.</item>
+        <item quantity="zero">يمكنك مشاركة الصور بسرعة على التطبيقات الاجتماعية من خلال \"الكاميرا\" مباشرة. اختَر %1$d تطبيق كحد أقصى. وستتوفر التطبيقات الاجتماعية عند فتح \"الكاميرا\" من خلال شاشة التأمين.</item>
+        <item quantity="one">يمكنك مشاركة الصور بسرعة على التطبيقات الاجتماعية من خلال \"الكاميرا\" مباشرة. اختَر تطبيقًا واحدًا (%1$d). وستتوفر التطبيقات الاجتماعية عند فتح \"الكاميرا\" من خلال شاشة التأمين.</item>
+        <item quantity="two">يمكنك مشاركة الصور بسرعة على التطبيقات الاجتماعية من خلال \"الكاميرا\" مباشرة. اختَر تطبيقين (%1$d) كحد أقصى. وستتوفر التطبيقات الاجتماعية عند فتح \"الكاميرا\" من خلال شاشة التأمين.</item>
+        <item quantity="few">يمكنك مشاركة الصور بسرعة على التطبيقات الاجتماعية من خلال \"الكاميرا\" مباشرة. اختَر %1$d تطبيقات كحد أقصى. وستتوفر التطبيقات الاجتماعية عند فتح \"الكاميرا\" من خلال شاشة التأمين.</item>
+        <item quantity="many">يمكنك مشاركة الصور بسرعة على التطبيقات الاجتماعية من خلال \"الكاميرا\" مباشرة. اختَر %1$d تطبيقًا كحد أقصى. وستتوفر التطبيقات الاجتماعية عند فتح \"الكاميرا\" من خلال شاشة التأمين.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">اختَر %1$d تطبيق كحد أقصى.</item>
+        <item quantity="zero">اختَر %1$d تطبيق كحد أقصى.</item>
+        <item quantity="one">اختَر تطبيقًا واحدًا (%1$d).</item>
+        <item quantity="two">اختَر تطبيقَين (%1$d) كحد أقصى.</item>
+        <item quantity="few">اختَر %1$d تطبيقات كحد أقصى.</item>
+        <item quantity="many">اختَر %1$d تطبيقًا كحد أقصى.</item>
+    </plurals>
+</resources>

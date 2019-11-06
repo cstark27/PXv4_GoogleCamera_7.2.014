@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Rafal (%1$d fotografij)</item>
+        <item quantity="one">Rafal (%1$d fotografija)</item>
+        <item quantity="two">Rafal (%1$d fotografiji)</item>
+        <item quantity="few">Rafal (%1$d fotografije)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d obrazov.</item>
+        <item quantity="one">%1$d obraz.</item>
+        <item quantity="two">%1$d obraza.</item>
+        <item quantity="few">%1$d obrazi.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Hitro deljenje fotografij v družbenih aplikacijah neposredno iz Fotoaparata. Izberete lahko največ %1$d aplikacij. Družbene aplikacije bodo na voljo, ko odprete Fotoaparat na zaklenjenem zaslonu.</item>
+        <item quantity="one">Hitro deljenje fotografij v družbenih aplikacijah neposredno iz Fotoaparata. Izberete lahko največ %1$d aplikacijo. Družbene aplikacije bodo na voljo, ko odprete Fotoaparat na zaklenjenem zaslonu.</item>
+        <item quantity="two">Hitro deljenje fotografij v družbenih aplikacijah neposredno iz Fotoaparata. Izberete lahko največ %1$d aplikaciji. Družbene aplikacije bodo na voljo, ko odprete Fotoaparat na zaklenjenem zaslonu.</item>
+        <item quantity="few">Hitro deljenje fotografij v družbenih aplikacijah neposredno iz Fotoaparata. Izberete lahko največ %1$d aplikacije. Družbene aplikacije bodo na voljo, ko odprete Fotoaparat na zaklenjenem zaslonu.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Izberete lahko največ %1$d aplikacij</item>
+        <item quantity="one">Izberete lahko največ %1$d aplikacijo</item>
+        <item quantity="two">Izberete lahko največ %1$d aplikaciji</item>
+        <item quantity="few">Izberete lahko največ %1$d aplikacije</item>
+    </plurals>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Uzastopno (%1$d fotografija)</item>
+        <item quantity="one">Uzastopno (%1$d fotografija)</item>
+        <item quantity="few">Uzastopno (%1$d fotografije)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d lica.</item>
+        <item quantity="one">%1$d lice.</item>
+        <item quantity="few">%1$d lica.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Brzo dijelite fotografije u društvenim aplikacijama izravno iz Fotoaparata. Odaberite do %1$d aplikacija. Društvene aplikacije bit će dostupne kad otvorite Fotoaparat putem zaključanog zaslona.</item>
+        <item quantity="one">Brzo dijelite fotografije u društvenim aplikacijama izravno iz Fotoaparata. Odaberite do %1$d aplikaciju. Društvene aplikacije bit će dostupne kad otvorite Fotoaparat putem zaključanog zaslona.</item>
+        <item quantity="few">Brzo dijelite fotografije u društvenim aplikacijama izravno iz Fotoaparata. Odaberite do %1$d aplikacije. Društvene aplikacije bit će dostupne kad otvorite Fotoaparat putem zaključanog zaslona.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Odaberite do %1$d aplikacija</item>
+        <item quantity="one">Odaberite do %1$d aplikaciju</item>
+        <item quantity="few">Odaberite do %1$d aplikacije</item>
+    </plurals>
+</resources>

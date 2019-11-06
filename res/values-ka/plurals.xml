@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">ფოტოსერია (%1$d ფოტო)</item>
+        <item quantity="one">ფოტოსერია (%1$d ფოტო)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d სახე.</item>
+        <item quantity="one">%1$d სახე.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">სწრაფად გააზიარეთ ფოტოები სოციალურ აპებში პირდაპირ კამერიდან. აირჩიეთ %1$d-მდე აპი. სოციალური აპები ხელმისაწვდომი იქნება, როდესაც კამერას ჩაკეტილი ეკრანიდან გახსნით.</item>
+        <item quantity="one">სწრაფად გააზიარეთ ფოტოები სოციალურ აპებში პირდაპირ კამერიდან. აირჩიეთ მაქსიმუმ %1$d აპი. სოციალური აპები ხელმისაწვდომი იქნება, როდესაც კამერას ჩაკეტილი ეკრანიდან გახსნით.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">აირჩიეთ %1$d-მდე აპი</item>
+        <item quantity="one">აირჩიეთ მაქსიმუმ %1$d აპი</item>
+    </plurals>
+</resources>

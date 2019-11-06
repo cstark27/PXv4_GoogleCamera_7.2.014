@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Ràfega (%1$d fotos)</item>
+        <item quantity="one">Ràfega (%1$d foto)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d cares</item>
+        <item quantity="one">%1$d cara</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Comparteix fotos ràpidament en aplicacions socials des de la càmera. Tria fins a %1$d aplicacions. Les aplicacions socials estaran disponibles quan obris la càmera des de la pantalla de bloqueig.</item>
+        <item quantity="one">Comparteix fotos ràpidament en aplicacions socials des de la càmera. Tria %1$d aplicació. Les aplicacions socials estaran disponibles quan obris la càmera des de la pantalla de bloqueig.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Tria fins a %1$d aplicacions</item>
+        <item quantity="one">Tria %1$d aplicació</item>
+    </plurals>
+</resources>

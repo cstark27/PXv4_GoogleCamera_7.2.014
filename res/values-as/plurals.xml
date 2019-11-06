@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">"বাৰ্ষ্ট (%1$dখন ফট')"</item>
+        <item quantity="one">"বাৰ্ষ্ট (%1$dখন ফট')"</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$dখন মুখ।</item>
+        <item quantity="one">%1$dখন মুখ।</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">কেমেৰাৰ পৰা পোনপটীয়াকৈ ক্ষিপ্ৰভাৱে ছ’ছিয়েল এপ্‌সমূহত ফট’সমূহ শ্বেয়াৰ কৰক। %1$dটালৈকে এপ্‌ বাছনি কৰক। আপুনি লক স্ক্রীণৰ পৰা কেমেৰাটো খুলিলে ছ’ছিয়েল এপ্‌সমূহ উপলব্ধ হ’ব।</item>
+        <item quantity="one">কেমেৰাৰ পৰা পোনপটীয়াকৈ ক্ষিপ্ৰভাৱে ছ’ছিয়েল এপ্‌সমূহত ফট’সমূহ শ্বেয়াৰ কৰক। %1$dটালৈকে এপ্‌ বাছনি কৰক। আপুনি লক স্ক্রীণৰ পৰা কেমেৰাটো খুলিলে ছ’ছিয়েল এপ্‌সমূহ উপলব্ধ হ’ব।</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">%1$dটালৈকে এপ্‌ বাছনি কৰক</item>
+        <item quantity="one">%1$dটালৈকে এপ্‌ বাছনি কৰক</item>
+    </plurals>
+</resources>

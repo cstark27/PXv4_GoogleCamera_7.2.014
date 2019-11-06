@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Շարք (%1$d լուսանկար)</item>
+        <item quantity="one">Շարք (%1$d լուսանկար)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d դեմք:</item>
+        <item quantity="one">%1$d faces.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Արագ կիսվեք լուսանկարներով սոցիալական հավելվածներում անմիջապես տեսախցիկից: Ընտրեք մինչև %1$d հավելված: Սոցիալական հավելվածները հասանելի կլինեն, երբ բացեք տեսախցիկը կողպէկրանից:</item>
+        <item quantity="one">Արագ կիսվեք լուսանկարներով սոցիալական հավելվածներում անմիջապես տեսախցիկից: Ընտրեք մինչև %1$d հավելված: Սոցիալական հավելվածները հասանելի կլինեն, երբ բացեք տեսախցիկը կողպէկրանից:</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Ընտրեք մինչև %1$d հավելված</item>
+        <item quantity="one">Ընտրեք մինչև %1$d հավելված</item>
+    </plurals>
+</resources>

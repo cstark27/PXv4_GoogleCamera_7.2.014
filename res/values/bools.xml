@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="hats_lib_prompt_should_display">true</bool>
+    <bool name="hats_lib_survey_should_display_close_button">true</bool>
+    <bool name="APKTOOL_DUMMY_1">false</bool>
+    <bool name="APKTOOL_DUMMY_2">false</bool>
+    <bool name="APKTOOL_DUMMY_3">false</bool>
+    <bool name="APKTOOL_DUMMY_4">false</bool>
+    <bool name="APKTOOL_DUMMY_5">false</bool>
+    <bool name="APKTOOL_DUMMY_7">false</bool>
+</resources>

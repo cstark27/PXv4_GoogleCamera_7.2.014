@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Ριπή (%1$d φωτογραφίες)</item>
+        <item quantity="one">Ριπή (%1$d φωτογραφία)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d πρόσωπα.</item>
+        <item quantity="one">%1$d πρόσωπο.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Κοινοποιήστε γρήγορα φωτογραφίες σε κοινωνικές εφαρμογές από την Κάμερα. Επιλέξτε έως και %1$d εφαρμογές. Οι κοινωνικές εφαρμογές θα είναι διαθέσιμες όταν ανοίξετε την Κάμερα από την οθόνη κλειδώματος.</item>
+        <item quantity="one">Κοινοποιήστε γρήγορα φωτογραφίες σε κοινωνικές εφαρμογές από την Κάμερα. Επιλέξτε %1$d εφαρμογή. Οι κοινωνικές εφαρμογές θα είναι διαθέσιμες όταν ανοίξετε την Κάμερα από την οθόνη κλειδώματος.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Επιλέξτε έως και %1$d εφαρμογές</item>
+        <item quantity="one">Επιλέξτε %1$d εφαρμογή</item>
+    </plurals>
+</resources>

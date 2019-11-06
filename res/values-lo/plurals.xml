@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">ຮູບຕໍ່ເນື່ອງ (%1$d ຮູບ)</item>
+        <item quantity="one">ຮູບຕໍ່ເນື່ອງ (%1$d ຮູບ)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d ໃບໜ້າ.</item>
+        <item quantity="one">%1$d ໃບໜ້າ.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">ແບ່ງປັນຮູບພາບຢູ່ແອັບສັງຄົມໄດ້ທັນທີຈາກກ້ອງຖ່າຍຮູບ. ເລືອກໄດ້ສູງສຸດ %1$d ແອັບ. ແອັບສັງຄົມຈະສາມາດໃຊ້ໄດ້ເມື່ອທ່ານເປີດກ້ອງຖ່າຍຮູບຈາກໜ້າຈໍລັອກ.</item>
+        <item quantity="one">ແບ່ງປັນຮູບພາບຢູ່ແອັບສັງຄົມໄດ້ທັນທີຈາກກ້ອງຖ່າຍຮູບ. ເລືອກ %1$d ແອັບ. ແອັບສັງຄົມຈະສາມາດໃຊ້ໄດ້ເມື່ອທ່ານເປີດກ້ອງຖ່າຍຮູບຈາກໜ້າຈໍລັອກ.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">ເລືອກໄດ້ສູງສຸດ %1$d ແອັບ</item>
+        <item quantity="one">ເລືອກ %1$d ແອັບ</item>
+    </plurals>
+</resources>

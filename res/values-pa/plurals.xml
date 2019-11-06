@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">ਬਰਸਟ (%1$d ਫ਼ੋਟੋਆਂ)</item>
+        <item quantity="one">ਬਰਸਟ (%1$d ਫ਼ੋਟੋ)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d ਚਿਹਰੇ।</item>
+        <item quantity="one">%1$d ਚਿਹਰੇ।</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">"ਕੈਮਰੇ ਤੋਂ ਤੇਜ਼ੀ ਨਾਲ ਆਪਣੀਆਂ ਫ਼ੋਟੋਆਂ ਨੂੰ ਸਿੱਧਾ ਸੋਸ਼ਲ ਐਪਾਂ 'ਤੇ ਸਾਂਝਾ ਕਰੋ। %1$d ਤੱਕ ਐਪਾਂ ਚੁਣੋ। ਤੁਹਾਡੇ ਵੱਲੋਂ ਲਾਕ ਸਕ੍ਰੀਨ ਤੋਂ ਕੈਮਰਾ ਖੋਲ੍ਹਣ ਵੇਲੇ ਸੋਸ਼ਲ ਐਪਾਂ ਉੱਥੇ ਉਪਲਬਧ ਹੋਣਗੀਆਂ।"</item>
+        <item quantity="one">"ਕੈਮਰੇ ਤੋਂ ਤੇਜ਼ੀ ਨਾਲ ਆਪਣੀਆਂ ਫ਼ੋਟੋਆਂ ਨੂੰ ਸਿੱਧਾ ਸੋਸ਼ਲ ਐਪਾਂ 'ਤੇ ਸਾਂਝਾ ਕਰੋ। %1$d ਤੱਕ ਐਪ ਚੁਣੋ। ਤੁਹਾਡੇ ਵੱਲੋਂ ਲਾਕ ਸਕ੍ਰੀਨ ਤੋਂ ਕੈਮਰਾ ਖੋਲ੍ਹਣ ਵੇਲੇ ਸੋਸ਼ਲ ਐਪਾਂ ਉੱਥੇ ਉਪਲਬਧ ਹੋਣਗੀਆਂ।"</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">%1$d ਤੱਕ ਐਪਾਂ ਚੁਣੋ</item>
+        <item quantity="one">%1$d ਤੱਕ ਐਪ ਚੁਣੋ</item>
+    </plurals>
+</resources>

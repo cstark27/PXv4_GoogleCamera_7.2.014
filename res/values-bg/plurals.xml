@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Серийно заснем. (%1$d снимки)</item>
+        <item quantity="one">Серийно заснем. (%1$d снимка)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d лица.</item>
+        <item quantity="one">%1$d лице.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Бързо споделяйте снимки в социалните приложения направо от камерата. Изберете до %1$d приложения. Социалните приложения ще бъдат налице, когато отворите камерата от заключения екран.</item>
+        <item quantity="one">Бързо споделяйте снимки в социалните приложения направо от камерата. Изберете %1$d приложение. Социалните приложения ще бъдат налице, когато отворите камерата от заключения екран.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Изберете до %1$d приложения</item>
+        <item quantity="one">Изберете %1$d приложение</item>
+    </plurals>
+</resources>

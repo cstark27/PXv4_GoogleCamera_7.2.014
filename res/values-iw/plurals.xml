@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">רצף (%1$d תמונות)</item>
+        <item quantity="one">רצף (%1$d תמונה)</item>
+        <item quantity="two">רצף (%1$d תמונות)</item>
+        <item quantity="many">רצף (%1$d תמונות)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d פרצופים.</item>
+        <item quantity="one">%1$d פרצוף.</item>
+        <item quantity="two">%1$d פרצופים.</item>
+        <item quantity="many">%1$d פרצופים.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">אפשר לשתף במהירות תמונות באפליקציות חברתיות ישירות מהמצלמה. יש לבחור עד %1$d אפליקציות. האפליקציות החברתיות יהיו זמינות עם פתיחת המצלמה ממסך הנעילה.</item>
+        <item quantity="one">אפשר לשתף במהירות תמונות באפליקציות חברתיות ישירות מהמצלמה. יש לבחור אפליקציה אחת (%1$d). האפליקציות החברתיות יהיו זמינות עם פתיחת המצלמה ממסך הנעילה.</item>
+        <item quantity="two">אפשר לשתף במהירות תמונות באפליקציות חברתיות ישירות מהמצלמה. יש לבחור עד %1$d אפליקציות. האפליקציות החברתיות יהיו זמינות עם פתיחת המצלמה ממסך הנעילה.</item>
+        <item quantity="many">אפשר לשתף במהירות תמונות באפליקציות חברתיות ישירות מהמצלמה. יש לבחור עד %1$d אפליקציות. האפליקציות החברתיות יהיו זמינות עם פתיחת המצלמה ממסך הנעילה.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">יש לבחור עד %1$d אפליקציות</item>
+        <item quantity="one">יש לבחור אפליקציה אחת (%1$d)</item>
+        <item quantity="two">יש לבחור עד %1$d אפליקציות</item>
+        <item quantity="many">יש לבחור עד %1$d אפליקציות</item>
+    </plurals>
+</resources>

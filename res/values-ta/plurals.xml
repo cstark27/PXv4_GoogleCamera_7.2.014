@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">தொடர் படம் (%1$d படங்கள்)</item>
+        <item quantity="one">தொடர் படம் (%1$d படம்)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d முகங்கள்.</item>
+        <item quantity="one">%1$d முகம்.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">கேமராவில் இருந்தே சமூக வலைதள ஆப்ஸில் படங்களை விரைவாகப் பகிர முடியும். %1$d ஆப்ஸ் வரை தேர்வு செய்யுங்கள். பூட்டுத் திரையில் இருந்து கேமராவைத் திறக்கும்போது சமூக வலைதள ஆப்ஸைப் பயன்படுத்த முடியும்.</item>
+        <item quantity="one">கேமராவில் இருந்தே சமூக வலைதள ஆப்ஸில் படங்களை விரைவாகப் பகிர முடியும். %1$d ஆப்ஸைத் தேர்வு செய்யவும். பூட்டுத் திரையிலிருந்து கேமராவைத் திறக்கும்போது சமூக வலைதள ஆப்ஸைப் பயன்படுத்த முடியும்.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">%1$d ஆப்ஸ் வரை தேர்வுசெய்யவும்</item>
+        <item quantity="one">%1$d ஆப்ஸைத் தேர்வுசெய்யவும்</item>
+    </plurals>
+</resources>

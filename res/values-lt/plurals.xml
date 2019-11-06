@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Serija (%1$d nuotraukų)</item>
+        <item quantity="one">Serija (%1$d nuotrauka)</item>
+        <item quantity="few">Serija (%1$d nuotraukos)</item>
+        <item quantity="many">Serija (%1$d nuotraukos)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d veidų.</item>
+        <item quantity="one">%1$d veidas.</item>
+        <item quantity="few">%1$d veidai.</item>
+        <item quantity="many">%1$d veido.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Greitai bendrinkite nuotraukas socialinėse programose tiesiai iš Fotoaparato programos. Pasirinkite iki %1$d programų. Socialinės programos bus pasiekiamos, kai atidarysite Fotoaparato programą užrakinimo ekrane.</item>
+        <item quantity="one">Greitai bendrinkite nuotraukas socialinėse programose tiesiai iš Fotoaparato programos. Pasirinkite iki %1$d programos. Socialinės programos bus pasiekiamos, kai atidarysite Fotoaparato programą užrakinimo ekrane.</item>
+        <item quantity="few">Greitai bendrinkite nuotraukas socialinėse programose tiesiai iš Fotoaparato programos. Pasirinkite iki %1$d programų. Socialinės programos bus pasiekiamos, kai atidarysite Fotoaparato programą užrakinimo ekrane.</item>
+        <item quantity="many">Greitai bendrinkite nuotraukas socialinėse programose tiesiai iš Fotoaparato programos. Pasirinkite iki %1$d programos. Socialinės programos bus pasiekiamos, kai atidarysite Fotoaparato programą užrakinimo ekrane.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Pasirinkite iki %1$d programų</item>
+        <item quantity="one">Pasirinkite iki %1$d programos</item>
+        <item quantity="few">Pasirinkite iki %1$d programų</item>
+        <item quantity="many">Pasirinkite iki %1$d programos</item>
+    </plurals>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Smart Burst ရိုက်ကူးထားသောဓာတ်ပုံ (%1$d ပုံ)</item>
+        <item quantity="one">Smart Burst ရိုက်ကူးထားသောဓာတ်ပုံ (%1$d ပုံ)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">မျက်နှာ %1$d ခု။</item>
+        <item quantity="one">မျက်နှာ %1$d ခု။</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">"'ကင်မရာ' မှနေ၍ လူမှုအက်ပ်များသို့ ဓာတ်ပုံများအမြန် မျှဝေနိုင်သည်။ အက်ပ် %1$d ခုအထိ ရွေးပါ။ လော့ခ်ချထားချိန် မျက်နှာပြင်တွင် 'ကင်မရာ' ကိုဖွင့်သည့်အခါ လူမှုအက်ပ်များကို အသုံးပြုနိုင်ပါမည်။"</item>
+        <item quantity="one">"'ကင်မရာ' မှနေ၍ လူမှုအက်ပ်များသို့ ဓာတ်ပုံများအမြန် မျှဝေနိုင်သည်။ အက်ပ် %1$d ခု ရွေးပါ။ လော့ခ်ချထားချိန် မျက်နှာပြင်တွင် 'ကင်မရာ' ကိုဖွင့်သည့်အခါ လူမှုအက်ပ်များကို အသုံးပြုနိုင်ပါမည်။"</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">အက်ပ် %1$d ခုအထိ ရွေးပါ</item>
+        <item quantity="one">အက်ပ် %1$d ခု ရွေးပါ</item>
+    </plurals>
+</resources>

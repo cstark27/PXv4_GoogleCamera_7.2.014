@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="app_bar_elevation_anim_duration">150</integer>
+    <integer name="autotimer_indicator_foreground_alpha_max">0x000000FF</integer>
+    <integer name="autotimer_indicator_foreground_alpha_min">0x00000066</integer>
+    <integer name="autotimer_tutorial_background_anim_duration">200</integer>
+    <integer name="autotimer_tutorial_text_anim_duration">200</integer>
+    <integer name="autotimer_tutorial_text_body_delay">250</integer>
+    <integer name="autotimer_tutorial_text_title_delay">200</integer>
+    <integer name="bottom_bar_recording_fade_delay_ms">217</integer>
+    <integer name="bottom_bar_recording_fade_duration_ms">217</integer>
+    <integer name="complicationDrawable_borderStyle">1</integer>
+    <integer name="complicationDrawable_highlightDurationMs">300</integer>
+    <integer name="config_change_rotation_duration_ms">250</integer>
+    <integer name="design_snackbar_text_max_lines">2</integer>
+    <integer name="design_tab_indicator_anim_duration_ms">300</integer>
+    <integer name="evcomp_visibility_timeout_millis">4000</integer>
+    <integer name="google_btn_anim_delay_ms">100</integer>
+    <integer name="google_btn_anim_duration_ms">100</integer>
+    <integer name="google_play_services_version">19609000</integer>
+    <integer name="hide_more_modes_animation_duration">300</integer>
+    <integer name="hide_notification_dot_animation_delay">1000</integer>
+    <integer name="hide_notification_dot_animation_duration">500</integer>
+    <integer name="hide_password_duration">320</integer>
+    <integer name="move_accent_animation_duration">125</integer>
+    <integer name="mtrl_badge_max_character_count">4</integer>
+    <integer name="mtrl_btn_anim_delay_ms">100</integer>
+    <integer name="mtrl_btn_anim_duration_ms">100</integer>
+    <integer name="mtrl_calendar_selection_text_lines">1</integer>
+    <integer name="mtrl_calendar_year_selector_span">3</integer>
+    <integer name="mtrl_card_anim_delay_ms">75</integer>
+    <integer name="mtrl_card_anim_duration_ms">120</integer>
+    <integer name="mtrl_chip_anim_duration">100</integer>
+    <integer name="mtrl_tab_indicator_anim_duration_ms">250</integer>
+    <integer name="photobooth_shutter_dynamic_outer_fill_alpha">127</integer>
+    <integer name="photobooth_shutter_fill_alpha">255</integer>
+    <integer name="photobooth_tutorial_background_anim_duration">200</integer>
+    <integer name="photobooth_tutorial_text_anim_duration">200</integer>
+    <integer name="photobooth_tutorial_text_body_delay">250</integer>
+    <integer name="photobooth_tutorial_text_title_delay">200</integer>
+    <integer name="show_more_modes_animation_duration">300</integer>
+    <integer name="show_password_duration">200</integer>
+    <integer name="smarts_ui_animation_duration_ms">300</integer>
+    <integer name="social_anim_duration_default">300</integer>
+    <integer name="social_handle_dismiss_timeout">5000</integer>
+    <integer name="social_handle_reveal_delay">450</integer>
+    <integer name="zoom_seekbar_default_major_tics">5</integer>
+    <integer name="zoom_seekbar_ffc_major_tics">3</integer>
+    <integer name="zoom_seekbar_timeout_ms">4000</integer>
+    <item type="integer" name="APKTOOL_DUMMY_2">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_3">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_4">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_5">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_d">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_e">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_11">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_12">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_13">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_16">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_18">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_1c">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_28">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_35">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_36">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_37">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_38">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_3f">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_40">false</item>
+</resources>

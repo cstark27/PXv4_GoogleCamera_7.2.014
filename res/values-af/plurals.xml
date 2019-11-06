@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">"Sarsie (%1$d foto's)"</item>
+        <item quantity="one">Sarsie (%1$d foto)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d gesigte.</item>
+        <item quantity="one">%1$d gesig.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">"Deel foto's vinnig in sosiale programme direk van Kamera af. Kies tot %1$d programme. Sosiale programme sal beskikbaar wees wanneer jy Kamera van die sluitskerm af oopmaak."</item>
+        <item quantity="one">"Deel foto's vinnig in sosiale programme direk van Kamera af. Kies %1$d program. Sosiale programme sal beskikbaar wees wanneer jy Kamera van die sluitskerm af oopmaak."</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Kies tot %1$d programme</item>
+        <item quantity="one">Kies %1$d program</item>
+    </plurals>
+</resources>

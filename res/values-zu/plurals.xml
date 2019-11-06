@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Ukubhamuka (%1$d Izithombe)</item>
+        <item quantity="one">Ukubhamuka (%1$d Izithombe)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d ubuso.</item>
+        <item quantity="one">%1$d ubuso.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Yabelana ngokushesha izithombe kuzinhlelo zokusebenza zomphakathi ngokuqondile kusukela kukhamera. Khetha kufikela kuzinhlelo zokusebenza ezingu-%1$d. Izinhlelo zokusebenza zomphakathi zizotholakala uma uvula ikhamera kusukela kusikrini sokukhiya.</item>
+        <item quantity="one">Yabelana ngokushesha izithombe kuzinhlelo zokusebenza zomphakathi ngokuqondile kusukela kukhamera. Khetha kufikela kuzinhlelo zokusebenza ezingu-%1$d. Izinhlelo zokusebenza zomphakathi zizotholakala uma uvula ikhamera kusukela kusikrini sokukhiya.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Khetha izinhlelo zokusebenza kufika kwezingu-%1$d</item>
+        <item quantity="one">Khetha izinhlelo zokusebenza kufika kwezingu-%1$d</item>
+    </plurals>
+</resources>

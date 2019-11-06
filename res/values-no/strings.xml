@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_share_chooser_title">Del med</string>
+    <string name="barcode_chip_text">Skann strekkoden</string>
+    <string name="cancel_btn_text">Avbryt</string>
+    <string name="connect_btn_text">Koble til</string>
+    <string name="copy_text_chip_text">Kopiér teksten</string>
+    <string name="error_app_not_found">Fant ikke denne appen på enheten din.</string>
+    <string name="fail_to_add_network">Kan ikke koble til. Finner ikke Wi-Fi-nettverket.</string>
+    <string name="guidance_barcode">"Strekkode i visningen
+Trykk og hold for å gjøre mer"</string>
+    <string name="guidance_document">"Tekst i visningen
+Trykk og hold for å skanne"</string>
+    <string name="guidance_foreign_text">"Tekst i visningen
+Trykk og hold for å skanne"</string>
+    <string name="guidance_qr_nonwifi">"QR-kode i visningen
+Trykk og hold for å gjøre mer"</string>
+    <string name="hats_lib_close_button_description">Lukk</string>
+    <string name="hats_lib_default_prompt_title">Hjelp oss med å forbedre Google.</string>
+    <string name="hats_lib_default_star_rating_bar_description">Felt for stjernevurdering</string>
+    <string name="hats_lib_default_thank_you">Takk for tilbakemeldingen.</string>
+    <string name="hats_lib_next">Neste</string>
+    <string name="hats_lib_none_of_the_above">Ingen av de ovennevnte</string>
+    <string name="hats_lib_open_text_hint">Skriv inn kommentarene dine her</string>
+    <string name="hats_lib_open_text_no_pii">Ikke ta med personopplysninger</string>
+    <string name="hats_lib_prompt_no_thanks">Nei, takk</string>
+    <string name="hats_lib_prompt_take_our_survey">Vis spørsmålet</string>
+    <string name="hats_lib_submit">Send</string>
+    <string name="hats_lib_thank_you_followup_message">Hjelp oss med å forbedre produktet ved å besvare flere spørsmål</string>
+    <string name="iris_talkback_label_address">Adresse: %s</string>
+    <string name="iris_talkback_label_calendar">Legg til kalenderaktivitet</string>
+    <string name="iris_talkback_label_contact">Opprett kontakt for %s</string>
+    <string name="iris_talkback_label_email">E-postadresse: %s</string>
+    <string name="iris_talkback_label_phone">Telefonnummer: %s</string>
+    <string name="iris_talkback_label_qrcode">QR-kode: %s</string>
+    <string name="iris_talkback_label_qrcode_wifi">Koble til Wi-Fi: %s</string>
+    <string name="iris_talkback_label_sms">Send SMS: %s</string>
+    <string name="iris_talkback_label_url">Nettsted: %s</string>
+    <string name="qr_wifi_error_could_not_connect">Du må koble til %s manuelt</string>
+    <string name="qr_wifi_error_generic_error">Kan ikke koble til Wi-Fi</string>
+    <string name="qr_wifi_error_no_permissions">En app må be om Wi-Fi-tillatelse</string>
+    <string name="qr_wifi_error_no_wifi_available">Enheten kan ikke koble til Wi-Fi</string>
+    <string name="qr_wifi_error_password_invalid">QR-koden inneholder feil Wi-Fi-passord</string>
+    <string name="qr_wifi_error_ssid_invalid">QR-koden inneholder feil Wi-Fi-nettverksnavn</string>
+    <string name="qr_wifi_successfully_connecting">Kobler til %s …</string>
+    <string name="scan_document_chip_text">Skann dokumentet</string>
+    <string name="text_copied_to_clipboard">Teksten er kopiert til utklippstavlen</string>
+    <string name="text_view_connected_text">Tilkoblet %1$s</string>
+    <string name="text_view_connecting_text">Kobler til</string>
+    <string name="text_view_edit_ssid_form_title">SSID</string>
+    <string name="text_view_edit_text_password_title">Passord</string>
+    <string name="text_view_modify_dialog_title">Sjekk Wi-Fi-navnet og -passordet</string>
+    <string name="translate_chip_text">Oversett i Lens</string>
+    <string name="wifi_connection_fail">Kunne ikke koble til</string>
+    <string name="wifi_could_not_connect">Kan ikke koble til. Prøv å koble til Wi-Fi i innstillingene på telefonen din.</string>
+    <string name="wifi_error_no_wifi_available">Kan ikke koble til. Prøv å slå på telefonens Wi-Fi i innstillingene.</string>
+</resources>

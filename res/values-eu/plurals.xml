@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Segida (%1$d argazki)</item>
+        <item quantity="one">Segida (%1$d argazki)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d aurpegi.</item>
+        <item quantity="one">%1$d aurpegi.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Partekatu azkar argazkiak aplikazio sozialetan kameratik zuzenean. Aukeratu gehienez %1$d aplikazio. Aplikazio sozialak eskuragarri egongo dira kamera pantaila blokeatutik irekitzen duzunean.</item>
+        <item quantity="one">Partekatu azkar argazkiak aplikazio sozialetan kameratik zuzenean. Aukeratu %1$d aplikazio. Aplikazio sozialak eskuragarri egongo dira kamera pantaila blokeatutik irekitzen duzunean.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Aukeratu %1$d aplikazio</item>
+        <item quantity="one">Aukeratu %1$d aplikazio</item>
+    </plurals>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">ବର୍ଷ୍ଟ (%1$d ଫଟୋ)</item>
+        <item quantity="one">ବର୍ଷ୍ଟ (%1$d ଫଟୋ)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$dଟି ମୁହଁ।</item>
+        <item quantity="one">%1$dଟି ମୁହଁ।</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">କ୍ୟାମେରାରୁ ସିଧାସଳଖ ଭାବରେ ସୋସିଆଲ୍ ଆପ୍‌ଗୁଡ଼ିକରେ ଫଟୋଗୁଡ଼ିକୁ ତୁରନ୍ତ ସେୟାର୍ କରନ୍ତୁ। %1$dଟି ପର୍ଯ୍ୟନ୍ତ ଆପ୍ ବାଛନ୍ତୁ। ଆପଣ ଲକ୍ ସ୍କ୍ରିନ୍‌ରୁ କ୍ୟାମେରା ଖୋଲିଲେ ସୋସିଆଲ୍ ଆପ୍‌ଗୁଡ଼ିକ ଉପଲବ୍ଧ ହେବ।</item>
+        <item quantity="one">କ୍ୟାମେରାରୁ ସିଧାସଳଖ ଭାବରେ ସୋସିଆଲ୍ ଆପ୍‌ଗୁଡ଼ିକରେ ଫଟୋଗୁଡ଼ିକୁ ତୁରନ୍ତ ସେୟାର୍ କରନ୍ତୁ। %1$dଟି ପର୍ଯ୍ୟନ୍ତ ଆପ୍ ବାଛନ୍ତୁ। ଆପଣ ଲକ୍ ସ୍କ୍ରିନ୍‌ରୁ କ୍ୟାମେରା ଖୋଲିଲେ ସୋସିଆଲ୍ ଆପ୍‌ଗୁଡ଼ିକ ଉପଲବ୍ଧ ହେବ।</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">%1$dଟି ପର୍ଯ୍ୟନ୍ତ ଆପ୍ ବାଛନ୍ତୁ</item>
+        <item quantity="one">%1$dଟି ଆପ୍ ବାଛନ୍ତୁ</item>
+    </plurals>
+</resources>

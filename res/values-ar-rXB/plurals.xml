@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">‏‮Burst‬‏ (%1$d ‏‮Photos‬‏)</item>
+        <item quantity="zero">‏‮Burst‬‏ (%1$d ‏‮Photos‬‏)</item>
+        <item quantity="one">‏‮Burst‬‏ (%1$d ‏‮Photo‬‏)</item>
+        <item quantity="two">‏‮Burst‬‏ (%1$d ‏‮Photos‬‏)</item>
+        <item quantity="few">‏‮Burst‬‏ (%1$d ‏‮Photos‬‏)</item>
+        <item quantity="many">‏‮Burst‬‏ (%1$d ‏‮Photos‬‏)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d ‏‮faces‬‏.</item>
+        <item quantity="zero">%1$d ‏‮faces‬‏.</item>
+        <item quantity="one">%1$d ‏‮face‬‏.</item>
+        <item quantity="two">%1$d ‏‮faces‬‏.</item>
+        <item quantity="few">%1$d ‏‮faces‬‏.</item>
+        <item quantity="many">%1$d ‏‮faces‬‏.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">‏‮Quickly‬‏ ‏‮share‬‏ ‏‮photos‬‏ ‏‮on‬‏ ‏‮social‬‏ ‏‮apps‬‏ ‏‮right‬‏ ‏‮from‬‏ ‏‮Camera‬‏. ‏‮Choose‬‏ ‏‮up‬‏ ‏‮to‬‏ %1$d ‏‮apps‬‏. ‏‮Social‬‏ ‏‮apps‬‏ ‏‮will‬‏ ‏‮be‬‏ ‏‮available‬‏ ‏‮when‬‏ ‏‮you‬‏ ‏‮open‬‏ ‏‮Camera‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮lock‬‏ ‏‮screen‬‏.</item>
+        <item quantity="zero">‏‮Quickly‬‏ ‏‮share‬‏ ‏‮photos‬‏ ‏‮on‬‏ ‏‮social‬‏ ‏‮apps‬‏ ‏‮right‬‏ ‏‮from‬‏ ‏‮Camera‬‏. ‏‮Choose‬‏ ‏‮up‬‏ ‏‮to‬‏ %1$d ‏‮apps‬‏. ‏‮Social‬‏ ‏‮apps‬‏ ‏‮will‬‏ ‏‮be‬‏ ‏‮available‬‏ ‏‮when‬‏ ‏‮you‬‏ ‏‮open‬‏ ‏‮Camera‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮lock‬‏ ‏‮screen‬‏.</item>
+        <item quantity="one">‏‮Quickly‬‏ ‏‮share‬‏ ‏‮photos‬‏ ‏‮on‬‏ ‏‮social‬‏ ‏‮apps‬‏ ‏‮right‬‏ ‏‮from‬‏ ‏‮Camera‬‏. ‏‮Choose‬‏ %1$d ‏‮app‬‏. ‏‮Social‬‏ ‏‮apps‬‏ ‏‮will‬‏ ‏‮be‬‏ ‏‮available‬‏ ‏‮when‬‏ ‏‮you‬‏ ‏‮open‬‏ ‏‮Camera‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮lock‬‏ ‏‮screen‬‏.</item>
+        <item quantity="two">‏‮Quickly‬‏ ‏‮share‬‏ ‏‮photos‬‏ ‏‮on‬‏ ‏‮social‬‏ ‏‮apps‬‏ ‏‮right‬‏ ‏‮from‬‏ ‏‮Camera‬‏. ‏‮Choose‬‏ ‏‮up‬‏ ‏‮to‬‏ %1$d ‏‮apps‬‏. ‏‮Social‬‏ ‏‮apps‬‏ ‏‮will‬‏ ‏‮be‬‏ ‏‮available‬‏ ‏‮when‬‏ ‏‮you‬‏ ‏‮open‬‏ ‏‮Camera‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮lock‬‏ ‏‮screen‬‏.</item>
+        <item quantity="few">‏‮Quickly‬‏ ‏‮share‬‏ ‏‮photos‬‏ ‏‮on‬‏ ‏‮social‬‏ ‏‮apps‬‏ ‏‮right‬‏ ‏‮from‬‏ ‏‮Camera‬‏. ‏‮Choose‬‏ ‏‮up‬‏ ‏‮to‬‏ %1$d ‏‮apps‬‏. ‏‮Social‬‏ ‏‮apps‬‏ ‏‮will‬‏ ‏‮be‬‏ ‏‮available‬‏ ‏‮when‬‏ ‏‮you‬‏ ‏‮open‬‏ ‏‮Camera‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮lock‬‏ ‏‮screen‬‏.</item>
+        <item quantity="many">‏‮Quickly‬‏ ‏‮share‬‏ ‏‮photos‬‏ ‏‮on‬‏ ‏‮social‬‏ ‏‮apps‬‏ ‏‮right‬‏ ‏‮from‬‏ ‏‮Camera‬‏. ‏‮Choose‬‏ ‏‮up‬‏ ‏‮to‬‏ %1$d ‏‮apps‬‏. ‏‮Social‬‏ ‏‮apps‬‏ ‏‮will‬‏ ‏‮be‬‏ ‏‮available‬‏ ‏‮when‬‏ ‏‮you‬‏ ‏‮open‬‏ ‏‮Camera‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮lock‬‏ ‏‮screen‬‏.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">‏‮Choose‬‏ ‏‮up‬‏ ‏‮to‬‏ %1$d ‏‮apps‬‏</item>
+        <item quantity="zero">‏‮Choose‬‏ ‏‮up‬‏ ‏‮to‬‏ %1$d ‏‮apps‬‏</item>
+        <item quantity="one">‏‮Choose‬‏ %1$d ‏‮app‬‏</item>
+        <item quantity="two">‏‮Choose‬‏ ‏‮up‬‏ ‏‮to‬‏ %1$d ‏‮apps‬‏</item>
+        <item quantity="few">‏‮Choose‬‏ ‏‮up‬‏ ‏‮to‬‏ %1$d ‏‮apps‬‏</item>
+        <item quantity="many">‏‮Choose‬‏ ‏‮up‬‏ ‏‮to‬‏ %1$d ‏‮apps‬‏</item>
+    </plurals>
+</resources>

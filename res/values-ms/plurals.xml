@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Letusan (%1$d Foto)</item>
+        <item quantity="one">Letusan (%1$d Foto)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d wajah.</item>
+        <item quantity="one">%1$d wajah.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Kongsi foto pada apl sosial dengan pantas, terus daripada Kamera. Pilih sehingga %1$d apl. Apl sosial akan tersedia apabila anda membuka Kamera daripada skrin kunci.</item>
+        <item quantity="one">Kongsi foto pada apl sosial dengan pantas, terus daripada Kamera. Pilih %1$d apl. Apl sosial akan tersedia apabila anda membuka Kamera daripada skrin kunci.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Pilih sehingga %1$d apl</item>
+        <item quantity="one">Pilih %1$d apl</item>
+    </plurals>
+</resources>

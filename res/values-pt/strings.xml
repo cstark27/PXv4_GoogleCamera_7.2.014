@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_up_description">Navegar para cima</string>
+    <string name="abc_action_mode_done">Concluído</string>
+    <string name="abc_capital_off">DESATIVADO</string>
+    <string name="abc_capital_on">ATIVADO</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">espaço</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Pesquisar…</string>
+    <string name="abc_searchview_description_clear">Limpar consulta</string>
+    <string name="abc_searchview_description_search">Pesquisar</string>
+    <string name="abc_searchview_description_submit">Enviar consulta</string>
+    <string name="abc_searchview_description_voice">Pesquisa por voz</string>
+    <string name="abc_toolbar_collapse_description">Recolher</string>
+    <string name="hats_lib_close_button_description">Fechar</string>
+    <string name="hats_lib_default_prompt_title">Ajude-nos a melhorar o Google.</string>
+    <string name="hats_lib_default_star_rating_bar_description">Barra de classificação por estrelas</string>
+    <string name="hats_lib_default_thank_you">Agradecemos seus comentários.</string>
+    <string name="hats_lib_next">Próxima</string>
+    <string name="hats_lib_none_of_the_above">Nenhuma das opções acima</string>
+    <string name="hats_lib_open_text_hint">Digite seus comentários aqui</string>
+    <string name="hats_lib_open_text_no_pii">Não inclua informações pessoais</string>
+    <string name="hats_lib_prompt_no_thanks">Não, obrigado</string>
+    <string name="hats_lib_prompt_take_our_survey">Exibir pergunta</string>
+    <string name="hats_lib_submit">Enviar</string>
+    <string name="hats_lib_thank_you_followup_message">Ajude-nos a melhorar nosso produto respondendo a mais perguntas</string>
+    <string name="preferences_license_title">Licenças de código aberto</string>
+</resources>

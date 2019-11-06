@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Disparo continuo (%1$d fotos)</item>
+        <item quantity="one">Disparo continuo (%1$d foto)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d caras.</item>
+        <item quantity="one">%1$d cara.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Comparte fotos nas aplicacións sociais de forma rápida directamente desde a cámara. Escolle %1$d aplicacións como máximo. As aplicacións sociais estarán dispoñibles cando abras a cámara desde a pantalla de bloqueo.</item>
+        <item quantity="one">Comparte fotos nas aplicacións sociais de forma rápida directamente desde a cámara. Escolle %1$d aplicación. Estará dispoñible cando abras a cámara desde a pantalla de bloqueo.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Escolle %1$d aplicacións como máximo</item>
+        <item quantity="one">Escolle %1$d aplicación</item>
+    </plurals>
+</resources>

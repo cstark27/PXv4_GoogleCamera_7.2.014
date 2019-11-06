@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/social_drawer_bg_padding_side" android:insetRight="@dimen/social_drawer_bg_padding_side"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape>
+        <solid android:color="@color/social_control_bg_color" />
+        <corners android:radius="@dimen/social_drawer_bg_radius" android:bottomLeftRadius="0.0dip" android:bottomRightRadius="0.0dip" />
+        <size android:height="@dimen/social_drawer_bg_height" android:width="@dimen/social_control_size" />
+    </shape>
+</inset>

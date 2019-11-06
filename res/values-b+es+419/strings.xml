@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_share_chooser_title">Compartir con</string>
+    <string name="barcode_chip_text">Escanea el cód. de barras</string>
+    <string name="cancel_btn_text">Cancelar</string>
+    <string name="character_counter_content_description">Caracteres ingresados: %1$d de %2$d</string>
+    <string name="character_counter_overflowed_content_description">Se excedió en %1$d el límite de caracteres de %2$d</string>
+    <string name="clear_text_end_icon_content_description">Borrar texto</string>
+    <string name="connect_btn_text">Conectar</string>
+    <string name="copy_text_chip_text">Copiar texto</string>
+    <string name="error_app_not_found">No se encontró la app en el dispositivo.</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="exposed_dropdown_menu_content_description">Mostrar menú desplegable</string>
+    <string name="fail_to_add_network">No se pudo establecer conexión. No se encontró una red Wi-Fi.</string>
+    <string name="guidance_barcode">"Código de barras en la vista
+Mantén presionada la pantalla para ejecutar más acciones"</string>
+    <string name="guidance_document">"Texto en la vista
+Mantén presionada la pantalla para escanear"</string>
+    <string name="guidance_foreign_text">"Texto en la vista
+Mantén presionada la pantalla para escanear"</string>
+    <string name="guidance_qr_nonwifi">"Código QR en la vista
+Mantén presionada la pantalla para ejecutar más acciones"</string>
+    <string name="hats_lib_close_button_description">Cerrar</string>
+    <string name="hats_lib_default_prompt_title">Ayúdanos a mejorar Google.</string>
+    <string name="hats_lib_default_star_rating_bar_description">Barra de clasificación con estrellas</string>
+    <string name="hats_lib_default_thank_you">Gracias por sus comentarios.</string>
+    <string name="hats_lib_next">Siguiente</string>
+    <string name="hats_lib_none_of_the_above">Ninguna de las anteriores</string>
+    <string name="hats_lib_open_text_hint">Ingresa tus comentarios aquí</string>
+    <string name="hats_lib_open_text_no_pii">No incluyas información personal</string>
+    <string name="hats_lib_prompt_no_thanks">No, gracias</string>
+    <string name="hats_lib_prompt_take_our_survey">Mostrar pregunta</string>
+    <string name="hats_lib_submit">Enviar</string>
+    <string name="hats_lib_thank_you_followup_message">Responde más preguntas para ayudarnos a mejorar nuestro producto</string>
+    <string name="icon_content_description">Ícono de diálogo</string>
+    <string name="iris_talkback_label_address">Dirección: %s</string>
+    <string name="iris_talkback_label_calendar">Agregar un evento de calendario</string>
+    <string name="iris_talkback_label_contact">Crear contacto para %s</string>
+    <string name="iris_talkback_label_email">Dirección de correo electrónico: %s</string>
+    <string name="iris_talkback_label_phone">Número de teléfono: %s</string>
+    <string name="iris_talkback_label_qrcode">Código QR: %s</string>
+    <string name="iris_talkback_label_qrcode_wifi">Conectarse a la red Wi‑Fi %s</string>
+    <string name="iris_talkback_label_sms">Enviar SMS: %s</string>
+    <string name="iris_talkback_label_url">Sitio web: %s</string>
+    <string name="mtrl_picker_a11y_next_month">Cambiar al mes siguiente</string>
+    <string name="mtrl_picker_a11y_prev_month">Cambiar al mes anterior</string>
+    <string name="mtrl_picker_day_of_week_column_header">Columna de días: %1$s</string>
+    <string name="mtrl_picker_navigate_to_year_description">Navegar al año %1$s</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Presiona para seleccionar un día</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Presiona para seleccionar un año</string>
+    <string name="password_toggle_content_description">Mostrar contraseña</string>
+    <string name="qr_wifi_error_could_not_connect">Debes conectarte manualmente a %s</string>
+    <string name="qr_wifi_error_generic_error">No se puede establecer conexión con la red Wi-Fi</string>
+    <string name="qr_wifi_error_no_permissions">La app debe solicitar el permiso de la red Wi‑Fi</string>
+    <string name="qr_wifi_error_no_wifi_available">El dispositivo no puede conectarse a la red Wi‑Fi</string>
+    <string name="qr_wifi_error_password_invalid">El código QR incluye una contraseña de Wi‑Fi incorrecta</string>
+    <string name="qr_wifi_error_ssid_invalid">El código QR incluye un nombre de red Wi‑Fi incorrecto</string>
+    <string name="qr_wifi_successfully_connecting">Conectando a %s…</string>
+    <string name="scan_document_chip_text">Escanear documento</string>
+    <string name="text_copied_to_clipboard">Texto copiado al portapapeles</string>
+    <string name="text_view_connected_text">Conectado a %1$s</string>
+    <string name="text_view_connecting_text">Conectando</string>
+    <string name="text_view_edit_ssid_form_title">SSID</string>
+    <string name="text_view_edit_text_password_title">Contraseña</string>
+    <string name="text_view_modify_dialog_title">Revisa el nombre y la contraseña de Wi-Fi</string>
+    <string name="time_difference_now">Ahora</string>
+    <string name="time_difference_short_days_and_hours">%1$s %2$s﻿</string>
+    <string name="time_difference_short_hours_and_minutes">%1$s %2$s﻿</string>
+    <string name="translate_chip_text">Traducir en Lens</string>
+    <string name="wifi_connection_fail">No se pudo establecer conexión</string>
+    <string name="wifi_could_not_connect">No se pudo establecer conexión. Intenta conectarte a Wi-Fi en la configuración de tu teléfono.</string>
+    <string name="wifi_error_no_wifi_available">No se pudo establecer conexión. Intenta activar Wi-Fi en la configuración de tu teléfono.</string>
+</resources>

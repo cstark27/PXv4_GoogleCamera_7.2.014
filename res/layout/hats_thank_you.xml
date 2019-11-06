@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/hats_lib_thank_you" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hats_display_logo_padding_left" android:layout_marginRight="@dimen/hats_lib_close_button_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/hats_lib_thank_you_logo" android:layout_width="@dimen/hats_display_logo_width" android:layout_height="@dimen/hats_display_logo_height" android:layout_marginTop="@dimen/hats_display_logo_pading_top" android:layout_marginRight="@dimen/hats_display_logo_padding_right" android:layout_marginBottom="@dimen/hats_display_logo_padding_bottom" android:scaleType="fitXY"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/HatsLibThankYouTextStyle" android:id="@id/hats_lib_thank_you_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hats_lib_survey_question_top_padding" android:text="@string/hats_lib_default_thank_you" android:maxLines="3" android:alpha="0.0" />
+        <TextView android:textAppearance="@style/HatsLibFollowupMessageTextStyle" android:id="@id/hats_lib_follow_up_url" android:paddingTop="12.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.0" />
+    </LinearLayout>
+</LinearLayout>

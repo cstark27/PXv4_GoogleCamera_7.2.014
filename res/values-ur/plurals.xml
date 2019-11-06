@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">برسٹ (%1$d تصاویر)</item>
+        <item quantity="one">برسٹ (%1$d تصویر)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d چہرے۔</item>
+        <item quantity="one">%1$d چہرہ۔</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">براہ راست کیمرے سے فوری طور پر سوشل ایپس پر تصاویر کا اشتراک کریں۔ %1$d ایپس تک منتخب کریں۔ جب آپ مقفل اسکرین سے کیمرا کھولتے ہیں تو سوشل ایپس دستیاب ہوں گی۔</item>
+        <item quantity="one">براہ راست کیمرے سے فوری طور پر سوشل ایپس پر تصاویر کا اشتراک کریں۔ %1$d ایپ منتخب کریں۔ جب آپ مقفل اسکرین سے کیمرا کھولتے ہیں تو سوشل ایپس دستیاب ہوں گی۔</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">%1$d ایپس تک منتخب کریں</item>
+        <item quantity="one">%1$d ایپ منتخب کریں</item>
+    </plurals>
+</resources>

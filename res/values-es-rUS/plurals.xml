@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Ráfaga (%1$d fotos)</item>
+        <item quantity="one">Ráfaga (%1$d foto)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d rostros.</item>
+        <item quantity="one">%1$d rostro.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Comparte rápidamente fotos en aplicaciones sociales desde la Cámara. Elige hasta %1$d apps. Las aplicaciones sociales estarán disponibles cuando abras la Cámara desde la pantalla bloqueada.</item>
+        <item quantity="one">Comparte rápidamente fotos en aplicaciones sociales desde la Cámara. Elige %1$d app. Las aplicaciones sociales estarán disponibles cuando abras la Cámara desde la pantalla bloqueada.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Elige hasta %1$d apps</item>
+        <item quantity="one">Elige %1$d app</item>
+    </plurals>
+    <plurals name="time_difference_short_days">
+        <item quantity="other">%d d</item>
+        <item quantity="one">%d d</item>
+    </plurals>
+    <plurals name="time_difference_short_hours">
+        <item quantity="other">%d h</item>
+        <item quantity="one">%d h</item>
+    </plurals>
+    <plurals name="time_difference_short_minutes">
+        <item quantity="other">%d m</item>
+        <item quantity="one">%d m</item>
+    </plurals>
+    <plurals name="time_difference_words_days">
+        <item quantity="other">%d días</item>
+        <item quantity="one">%d día</item>
+    </plurals>
+    <plurals name="time_difference_words_hours">
+        <item quantity="other">%d horas</item>
+        <item quantity="one">%d hora</item>
+    </plurals>
+    <plurals name="time_difference_words_minutes">
+        <item quantity="other">%d min</item>
+        <item quantity="one">%d min</item>
+    </plurals>
+</resources>

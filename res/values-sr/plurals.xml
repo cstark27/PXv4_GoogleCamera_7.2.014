@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Рафално снимање (%1$d слика)</item>
+        <item quantity="one">Рафално снимање (%1$d слика)</item>
+        <item quantity="few">Рафално снимање (%1$d слике)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d лица.</item>
+        <item quantity="one">%1$d лице.</item>
+        <item quantity="few">%1$d лица.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Брзо делите слике на друштвеним апликацијама директно из Камере. Одаберите максимално %1$d апликација. Друштвене апликације ће бити доступне када отворите Камеру са закључаног екрана.</item>
+        <item quantity="one">Брзо делите слике на друштвеним апликацијама директно из Камере. Одаберите максимално %1$d апликацију. Друштвене апликације ће бити доступне када отворите Камеру са закључаног екрана.</item>
+        <item quantity="few">Брзо делите слике на друштвеним апликацијама директно из Камере. Одаберите максимално %1$d апликације. Друштвене апликације ће бити доступне када отворите Камеру са закључаног екрана.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Одаберите највише %1$d апликација</item>
+        <item quantity="one">Одаберите највише %1$d апликацију</item>
+        <item quantity="few">Одаберите највише %1$d апликације</item>
+    </plurals>
+</resources>

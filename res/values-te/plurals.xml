@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">బరస్ట్ (%1$d ఫోటోలు)</item>
+        <item quantity="one">బరస్ట్ (%1$d ఫోటో)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d ముఖాలు.</item>
+        <item quantity="one">%1$d ముఖం.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">నేరుగా కెమెరా నుండే ఫోటోలను, సోషల్ యాప్‌లలో త్వరగా షేర్ చేయవచ్చు. %1$d యాప్‌ల వరకు ఎంచుకోండి. మీరు లాక్ స్క్రీన్ నుండి కెమెరా తెరచినప్పుడు, సోషల్ యాప్‌లు అందుబాటులోకి వస్తాయి.</item>
+        <item quantity="one">నేరుగా కెమెరా నుండే ఫోటోలను, సోషల్ యాప్‌లలో త్వరగా షేర్ చేయవచ్చు. %1$d యాప్ ఎంచుకోండి. మీరు లాక్ స్క్రీన్ నుండి కెమెరా తెరచినప్పుడు, సోషల్ యాప్‌లు అందుబాటులోకి వస్తాయి.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">%1$d యాప్‌ల వరకు ఎంచుకోండి</item>
+        <item quantity="one">%1$d యాప్‌ను ఎంచుకోండి</item>
+    </plurals>
+</resources>

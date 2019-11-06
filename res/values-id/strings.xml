@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel_button">Batal</string>
+    <string name="dialog_title_warning">Peringatan</string>
+    <string name="dialog_vr_core_not_enabled">Aplikasi ini mungkin tidak bekerja dengan benar tanpa mengaktifkan Layanan Google VR. Aktifkan Layanan Google VR di Setelan ponsel sebelum melanjutkan.</string>
+    <string name="dialog_vr_core_not_installed">Aplikasi ini mungkin tidak bekerja dengan benar tanpa Layanan Google VR. Instal Layanan Google VR dari Play Store sebelum melanjutkan.</string>
+    <string name="go_to_playstore_button">Buka Play Store</string>
+    <string name="go_to_vr_listeners_settings_button">Buka Setelan</string>
+    <string name="hats_lib_close_button_description">Tutup</string>
+    <string name="hats_lib_default_prompt_title">Bantu kami menyempurnakan Google.</string>
+    <string name="hats_lib_default_star_rating_bar_description">Bilah Rating Bintang</string>
+    <string name="hats_lib_default_thank_you">Terima kasih atas masukan Anda!</string>
+    <string name="hats_lib_next">Berikutnya</string>
+    <string name="hats_lib_none_of_the_above">Tidak satu pun di atas</string>
+    <string name="hats_lib_open_text_hint">Masukkan komentar di sini</string>
+    <string name="hats_lib_open_text_no_pii">Jangan sertakan informasi pribadi</string>
+    <string name="hats_lib_prompt_no_thanks">Lain kali</string>
+    <string name="hats_lib_prompt_take_our_survey">Buka pertanyaan</string>
+    <string name="hats_lib_submit">Kirim</string>
+    <string name="hats_lib_thank_you_followup_message">Bantu kami menyempurnakan produk dengan menjawab pertanyaan lainnya</string>
+    <string name="preferences_license_title">Lisensi open source</string>
+</resources>

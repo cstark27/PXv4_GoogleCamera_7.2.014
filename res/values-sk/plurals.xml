@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Séria (%1$d fotiek)</item>
+        <item quantity="one">Séria (%1$d fotka)</item>
+        <item quantity="few">Séria (%1$d fotky)</item>
+        <item quantity="many">Séria (%1$d fotky)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d tvárí.</item>
+        <item quantity="one">%1$d tvár.</item>
+        <item quantity="few">%1$d tváre.</item>
+        <item quantity="many">%1$d tváre.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Rýchlo zdieľajte fotky v spoločenských aplikáciách priamo z Fotoaparátu. Môžete vybrať maximálne %1$d aplikácií. Spoločenské aplikácie budú k dispozícii, keď otvoríte Fotoaparát z uzamknutej obrazovky.</item>
+        <item quantity="one">Rýchlo zdieľajte fotky v spoločenských aplikáciách priamo z Fotoaparátu. Vyberte %1$d aplikáciu. Spoločenské aplikácie budú k dispozícii, keď otvoríte Fotoaparát z uzamknutej obrazovky.</item>
+        <item quantity="few">Rýchlo zdieľajte fotky v spoločenských aplikáciách priamo z Fotoaparátu. Môžete vybrať maximálne %1$d aplikácie. Spoločenské aplikácie budú k dispozícii, keď otvoríte Fotoaparát z uzamknutej obrazovky.</item>
+        <item quantity="many">Rýchlo zdieľajte fotky v spoločenských aplikáciách priamo z Fotoaparátu. Choose up to %1$d apps. Spoločenské aplikácie budú k dispozícii, keď otvoríte Fotoaparát z uzamknutej obrazovky.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Môžete vybrať maximálne %1$d aplikácií</item>
+        <item quantity="one">Vyberte %1$d aplikáciu</item>
+        <item quantity="few">Môžete vybrať maximálne %1$d aplikácie</item>
+        <item quantity="many">Choose up to %1$d apps</item>
+    </plurals>
+</resources>

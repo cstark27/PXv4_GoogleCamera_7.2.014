@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Qatorasiga (%1$d ta surat)</item>
+        <item quantity="one">Qatorasiga (%1$d ta surat)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d ta yuz.</item>
+        <item quantity="one">%1$d ta yuz.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Suratlarni ijtimoiy tarmoq ilovalariga kameraning oʻzidan ulashing. %1$d tagacha ilova tanlashingiz mumkin. Ijtimoiy tarmoq ilovalari kamera ekran qulfidan ochilganda chiqadi.</item>
+        <item quantity="one">Suratlarni ijtimoiy tarmoq ilovalariga kameraning oʻzidan ulashing. %1$d ta ilovani tanlashingiz mumkin. Ijtimoiy tarmoq ilovalari kamera ekran qulfidan ochilganda chiqadi.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">%1$d tagacha ilova tanlashingiz mumkin</item>
+        <item quantity="one">%1$d ta ilova tanlashingiz mumkin</item>
+    </plurals>
+</resources>

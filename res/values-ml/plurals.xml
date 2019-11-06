@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">ശ്രേണി (%1$d ഫോട്ടോകൾ)</item>
+        <item quantity="one">ശ്രേണി (%1$d ഫോട്ടോ)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d മുഖങ്ങൾ.</item>
+        <item quantity="one">%1$d മുഖങ്ങൾ.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">ക്യാമറയിൽ നിന്ന് നേരിട്ട്, സോഷ്യൽ ആപ്പുകളിൽ ഫോട്ടോകൾ വേഗത്തിൽ പങ്കിടുക. %1$d ആപ്പുകൾ വരെ തിരഞ്ഞെടുക്കുക. ലോക്ക് സ്‌ക്രീനിൽ നിന്ന് ക്യാമറ തുറക്കുമ്പോൾ സോഷ്യൽ ആപ്പുകൾ ലഭ്യമാകും.</item>
+        <item quantity="one">ക്യാമറയിൽ നിന്ന് നേരിട്ട്, സോഷ്യൽ ആപ്പുകളിൽ ഫോട്ടോകൾ വേഗത്തിൽ പങ്കിടുക. %1$d ആപ്പ് തിരഞ്ഞെടുക്കുക. ലോക്ക് സ്‌ക്രീനിൽ നിന്ന് ക്യാമറ തുറക്കുമ്പോൾ സോഷ്യൽ ആപ്പുകൾ ലഭ്യമാകും.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">%1$d ആപ്പുകൾ വരെ തിരഞ്ഞെടുക്കുക</item>
+        <item quantity="one">%1$d ആപ്പ് തിരഞ്ഞെടുക്കുക</item>
+    </plurals>
+</resources>

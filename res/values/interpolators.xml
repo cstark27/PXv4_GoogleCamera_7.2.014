@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="interpolator" name="APKTOOL_DUMMY_6">false</item>
+    <item type="interpolator" name="APKTOOL_DUMMY_7">false</item>
+    <item type="interpolator" name="APKTOOL_DUMMY_9">false</item>
+    <item type="interpolator" name="APKTOOL_DUMMY_c">false</item>
+    <item type="interpolator" name="APKTOOL_DUMMY_d">false</item>
+    <item type="interpolator" name="APKTOOL_DUMMY_e">false</item>
+    <item type="interpolator" name="APKTOOL_DUMMY_f">false</item>
+</resources>

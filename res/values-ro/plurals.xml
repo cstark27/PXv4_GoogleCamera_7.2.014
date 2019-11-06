@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Rafală (%1$d de fotografii)</item>
+        <item quantity="one">Rafală (%1$d fotografie)</item>
+        <item quantity="few">Rafală (%1$d fotografii)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d de fețe.</item>
+        <item quantity="one">%1$d față.</item>
+        <item quantity="few">%1$d fețe.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Trimiteți rapid fotografii în aplicațiile sociale direct din camera foto. Alegeți maximum %1$d de aplicații. Aplicațiile sociale vor fi disponibile atunci când deschideți camera foto din ecranul de blocare.</item>
+        <item quantity="one">Trimiteți rapid fotografii în aplicațiile sociale direct din camera foto. Alegeți %1$d aplicație. Aplicațiile sociale vor fi disponibile atunci când deschideți camera foto din ecranul de blocare.</item>
+        <item quantity="few">Trimiteți rapid fotografii în aplicațiile sociale direct din camera foto. Alegeți maximum %1$d aplicații. Aplicațiile sociale vor fi disponibile atunci când deschideți camera foto din ecranul de blocare.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Alegeți maximum %1$d de aplicații</item>
+        <item quantity="one">Alegeți %1$d aplicație</item>
+        <item quantity="few">Alegeți maximum %1$d aplicații</item>
+    </plurals>
+</resources>

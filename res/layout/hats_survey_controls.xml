@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:id="@id/hats_lib_survey_controls_container" android:background="@color/hats_lib_white_100" android:paddingTop="@dimen/hats_lib_survey_controls_padding_top" android:paddingRight="@dimen/hats_lib_survey_horizontal_right_padding" android:paddingBottom="@dimen/hats_lib_survey_controls_padding_bottom" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:theme="@style/HatsLibFlatButton" android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/button_text_color" android:layout_gravity="right" android:id="@id/hats_lib_next" android:background="@drawable/hats_white_button" android:layout_width="100.0dip" android:layout_height="@dimen/hats_lib_survey_controls_height" android:text="@string/hats_lib_next" android:textAllCaps="true" android:fontFamily="sans-serif" style="@style/Widget.AppCompat.Button.Borderless" />
+</FrameLayout>

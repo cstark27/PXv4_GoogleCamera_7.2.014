@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">বার্স্ট (%1$dটি ফটো)</item>
+        <item quantity="one">বার্স্ট (%1$dটি ফটো)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$dটি মুখ৷</item>
+        <item quantity="one">%1$dটি মুখ৷</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">"ক্যামেরা থেকেই বিভিন্ন সোশ্যাল অ্যাপে চটপট ফটো শেয়ার করা যায়। সর্বাধিক %1$dটি অ্যাপ বেছে নিন। স্ক্রিন লক থাকাকালীন 'ক্যামেরা' চালু করলেও সোশ্যাল অ্যাপগুলি বেছে নেওয়া যাবে।"</item>
+        <item quantity="one">"ক্যামেরা থেকেই বিভিন্ন সোশ্যাল অ্যাপে চটপট ফটো শেয়ার করা যায়। সর্বাধিক %1$dটি অ্যাপ বেছে নিন। স্ক্রিন লক থাকাকালীন 'ক্যামেরা' চালু করলেও সোশ্যাল অ্যাপগুলি বেছে নেওয়া যাবে।"</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">সর্বাধিক %1$dটি অ্যাপ বেছে নিন</item>
+        <item quantity="one">সর্বাধিক %1$dটি অ্যাপ বেছে নিন</item>
+    </plurals>
+</resources>

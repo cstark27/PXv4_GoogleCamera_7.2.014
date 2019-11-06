@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Myndaröð (%1$d myndir)</item>
+        <item quantity="one">Myndaröð (%1$d mynd)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d andlit.</item>
+        <item quantity="one">%1$d andlit.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Deildu myndum í samfélagsforritum með fljótlegum hætti beint úr myndavélinni. Veldu allt að %1$d forrit. Samfélagsforrit verða tiltæk þegar þú opnar myndavélina af lásskjánum</item>
+        <item quantity="one">Deildu myndum í samfélagsforritum með fljótlegum hætti beint úr myndavélinni. Veldu allt að %1$d forrit. Samfélagsforrit verða tiltæk þegar þú opnar myndavélina af lásskjánum</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Veldu allt að %1$d forrit</item>
+        <item quantity="one">Veldu allt að %1$d forrit</item>
+    </plurals>
+</resources>

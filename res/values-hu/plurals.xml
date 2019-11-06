@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Sorozatfelvétel (%1$d fotó)</item>
+        <item quantity="one">Sorozatfelvétel (%1$d fotó)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d arc.</item>
+        <item quantity="one">%1$d arc.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Gyorsan megoszthat fotókat a közösségi alkalmazásokban közvetlenül a Kamerából. Legfeljebb %1$d alkalmazást választhat ki. A közösségi alkalmazások akkor állnak rendelkezésre, amikor a lezárási képernyőről nyitja meg a Kamerát.</item>
+        <item quantity="one">Gyorsan megoszthat fotókat a közösségi alkalmazásokban közvetlenül a Kamerából. %1$d alkalmazást választhat ki. A közösségi alkalmazások akkor állnak rendelkezésre, amikor a lezárási képernyőről nyitja meg a Kamerát.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Legfeljebb %1$d alkalmazást választhat ki</item>
+        <item quantity="one">%1$d alkalmazást választhat ki</item>
+    </plurals>
+</resources>

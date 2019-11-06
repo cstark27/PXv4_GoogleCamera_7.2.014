@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">ፍንጠቃ (%1$d ፎቶዎች)</item>
+        <item quantity="one">ፍንጠቃ (%1$d ፎቶዎች)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d መልኮች።</item>
+        <item quantity="one">%1$d መልኮች።</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">ከዚያው ከካሜራው ሆነው ፎቶዎችን በማህበራዊ መተግበሪያዎች ላይ በፍጥነት ያጋሩ። እስከ %1$d መተግበሪያዎች ድረስ ያጋሩ። ካሜራውን ከማያ መቆለፊያው ሆነው ሲከፍቱት ማህበራዊ መተግበሪያዎች የሚገኙ ይሆናሉ።</item>
+        <item quantity="one">ከዚያው ከካሜራው ሆነው ፎቶዎችን በማህበራዊ መተግበሪያዎች ላይ በፍጥነት ያጋሩ። እስከ %1$d መተግበሪያዎች ድረስ ያጋሩ። ካሜራውን ከማያ መቆለፊያው ሆነው ሲከፍቱት ማህበራዊ መተግበሪያዎች የሚገኙ ይሆናሉ።</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">እስከ %1$d መተግበሪያዎች ድረስ ይምረጡ</item>
+        <item quantity="one">እስከ %1$d መተግበሪያዎች ድረስ ይምረጡ</item>
+    </plurals>
+</resources>

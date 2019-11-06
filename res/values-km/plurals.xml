@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">រូបថតញាប់ (រូបថត %1$d)</item>
+        <item quantity="one">រូបថតញាប់ (រូបថត %1$d)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">មុខ %1$d</item>
+        <item quantity="one">មុខ %1$d</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">ចែករំលែក​រូបថតនៅលើ​កម្មវិធី​សង្គមពីកាមេរ៉ាផ្ទាល់​បានយ៉ាងរហ័ស។ ជ្រើសរើស​កម្មវិធីសង្គមបាន​រហូត ដល់ %1$d។ កម្មវិធីសង្គម​នឹងមានផ្ដល់ជូន​សម្រាប់​ជ្រើសរើស នៅពេល​អ្នកបើក​កាមេរ៉ា​ពីអេក្រង់ចាក់សោ។</item>
+        <item quantity="one">ចែករំលែក​រូបថតនៅលើ​កម្មវិធី​សង្គមពីកាមេរ៉ាផ្ទាល់​បានយ៉ាងរហ័ស។ ជ្រើសរើសក​ម្មវិធីសង្គម %1$d។ កម្មវិធីសង្គម​នឹងមានផ្ដល់ជូន​សម្រាប់​ជ្រើសរើស នៅពេល​អ្នកបើក​កាមេរ៉ា​ពីអេក្រង់ចាក់សោ។</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">ជ្រើសរើស​កម្មវិធីសង្គមបាន​រហូតដល់ %1$d</item>
+        <item quantity="one">ជ្រើសរើស​កម្មវិធីសង្គម %1$d</item>
+    </plurals>
+</resources>

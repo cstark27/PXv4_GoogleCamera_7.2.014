@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/google/mediapipe/framework/GlSyncToken;
+.super Ljava/lang/Object;
+.source "PG"
+
+
+# virtual methods
+.method public abstract release()V
+.end method
+
+.method public abstract waitOnCpu()V
+.end method
+
+.method public abstract waitOnGpu()V
+.end method

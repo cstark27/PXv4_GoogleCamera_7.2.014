@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/hats_lib_survey_question_rating_container" android:background="@drawable/survey_container_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/hats_lib_rating_survey_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/hats_lib_rating_question_text" android:background="@drawable/survey_container_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hats_display_logo_padding_left" android:layout_marginRight="@dimen/hats_lib_survey_question_text_right_padding" android:layout_marginBottom="12.0dip">
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/hats_lib_rating_banner_logo" android:layout_width="@dimen/hats_display_logo_width" android:layout_height="@dimen/hats_display_logo_height" android:layout_marginTop="@dimen/hats_display_logo_pading_top" android:layout_marginRight="@dimen/hats_display_logo_padding_right" android:scaleType="fitXY" />
+        <TextView android:id="@id/hats_lib_survey_question_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hats_lib_survey_rating_question_top_padding" style="@style/HatsLibQuestionTextStyle" />
+    </LinearLayout>
+    <com.google.android.libraries.hats20.view.RatingView android:id="@id/hats_lib_rating_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

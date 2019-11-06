@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="burst">
+        <item quantity="other">Në seri (%1$d fotografi)</item>
+        <item quantity="one">Në seri (%1$d fotografi)</item>
+    </plurals>
+    <plurals name="number_of_faces_announcement">
+        <item quantity="other">%1$d fytyra.</item>
+        <item quantity="one">%1$d fytyrë.</item>
+    </plurals>
+    <plurals name="social_share_info">
+        <item quantity="other">Ndaj me shpejtësi fotografitë në aplikacionet sociale direkt nga \"Kamera\". Zgjidh deri në %1$d aplikacione. Aplikacionet sociale do të ofrohen kur ta hapësh \"Kamerën\" nga ekrani i kyçjes.</item>
+        <item quantity="one">Ndaj me shpejtësi fotografitë në aplikacionet sociale direkt nga \"Kamera\". Zgjidh %1$d aplikacion. Aplikacionet sociale do të ofrohen kur ta hapësh \"Kamerën\" nga ekrani i kyçjes.</item>
+    </plurals>
+    <plurals name="social_share_select_error">
+        <item quantity="other">Zgjidh deri në %1$d aplikacione</item>
+        <item quantity="one">Zgjidh %1$d aplikacion</item>
+    </plurals>
+</resources>

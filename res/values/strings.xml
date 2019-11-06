@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="accessibility_autotimer_start">Start auto-timer</string>
+    <string name="accessibility_autotimer_stop">Stop auto-timer</string>
+    <string name="accessibility_cancel_button">Cancel</string>
+    <string name="accessibility_capture_imax_start">Start panorama</string>
+    <string name="accessibility_capture_imax_stop">Stop panorama</string>
+    <string name="accessibility_capture_stopped">Capture stopped</string>
+    <string name="accessibility_capture_video_start">Start video</string>
+    <string name="accessibility_capture_video_stop">Stop video</string>
+    <string name="accessibility_cheetah_video_start">Start time lapse</string>
+    <string name="accessibility_cheetah_video_stop">Stop time lapse</string>
+    <string name="accessibility_close_button">Close</string>
+    <string name="accessibility_close_social_share">Close Social Share</string>
+    <string name="accessibility_done_button">Done</string>
+    <string name="accessibility_elapsed_time_during_video_recording">Time spent recording</string>
+    <string name="accessibility_filmstrip_toggle">Photo gallery</string>
+    <string name="accessibility_hfr_video_start">Start slow motion</string>
+    <string name="accessibility_hfr_video_stop">Stop slow motion</string>
+    <string name="accessibility_imax_backtracking">Move in original direction</string>
+    <string name="accessibility_imax_too_fast">Slow down</string>
+    <string name="accessibility_imax_too_much_roll">Hold phone straight</string>
+    <string name="accessibility_imax_too_much_tilt_down">Move up slightly</string>
+    <string name="accessibility_imax_too_much_tilt_left">Move right slightly</string>
+    <string name="accessibility_imax_too_much_tilt_right">Move left slightly</string>
+    <string name="accessibility_imax_too_much_tilt_up">Move down slightly</string>
+    <string name="accessibility_longshot_capture">Take quick video</string>
+    <string name="accessibility_mode_last_filmstrip_item">Scroll to last item</string>
+    <string name="accessibility_mode_next_filmstrip_item">Scroll to next item</string>
+    <string name="accessibility_night_stop_button">Stop</string>
+    <string name="accessibility_open_social_share">Open Social Share</string>
+    <string name="accessibility_output_time_during_video_recording">Length of time lapse video</string>
+    <string name="accessibility_photobooth_shutter_start">Start Photobooth Mode</string>
+    <string name="accessibility_photobooth_shutter_stop">Stop Photobooth Mode</string>
+    <string name="accessibility_processing_the_photo">Processing the photo</string>
+    <string name="accessibility_shutter_button">Shutter</string>
+    <string name="accessibility_speed">Speed is %s</string>
+    <string name="accessibility_take_nightsight_button">Take night sight photo</string>
+    <string name="accessibility_take_photo_button">Take photo</string>
+    <string name="accessibility_take_photosphere_button">Take photosphere</string>
+    <string name="accessibility_take_portrait_button">Take portrait</string>
+    <string name="accessibility_unlock_to_camera">Unlock to Camera</string>
+    <string name="action_share_chooser_title">Share with</string>
+    <string name="advice_dirty_lens">Your lens may need cleaning</string>
+    <string name="advice_dirty_lens_popup_text">"Lens smudges aren't always easy to see, and they can come from fingerprints, oil or dirt.
+
+Clean your lens for better photo quality."</string>
+    <string name="advice_scene_distance_message">Move back to improve focus</string>
+    <string name="ae_af_lock_label">Exposure and focus lock</string>
+    <string name="af_ae_lock">AF / AE Lock</string>
+    <string name="af_desc">Focus options</string>
+    <string name="af_off_far_acc_desc">Lock focus to far</string>
+    <string name="af_off_far_desc">Far</string>
+    <string name="af_off_infinity_acc_desc">Lock focus to infinity</string>
+    <string name="af_off_infinity_desc">Infinity</string>
+    <string name="af_off_near_acc_desc">Lock focus to near</string>
+    <string name="af_off_near_desc">Near</string>
+    <string name="af_on_acc_desc">Turn on autofocus</string>
+    <string name="af_on_option_desc">Auto</string>
+    <string name="af_option_desc">FOCUS</string>
+    <string name="af_option_tooltip">Try focus options</string>
+    <string name="all_photos">ALL PHOTOS</string>
+    <string name="animation">Animation</string>
+    <string name="aperture">Aperture</string>
+    <string name="app_name">Camera</string>
+    <string name="aspect_ratio_desc">RATIO</string>
+    <string name="auto">Auto</string>
+    <string name="autotimer_tutorial_body">Get in the shot and smile or make a funny face to get photos automatically. Tap the button to start.</string>
+    <string name="autotimer_tutorial_title">Snap photos with a smile</string>
+    <string name="barcode_chip_text">Scan barcode</string>
+    <string name="bottom_center">Bottom-center</string>
+    <string name="bottom_left">Bottom-left</string>
+    <string name="bottom_right">Bottom-right</string>
+    <string name="brightness_ev_announcement">Brightness is now %1$s</string>
+    <string name="brightness_knob_accessibility_description">Brightness knob</string>
+    <string name="brightness_knob_tooltip_description">Adjusts brightness</string>
+    <string name="btn_last_filmstrip_item">Last</string>
+    <string name="btn_next_filmstrip_item">Next</string>
+    <string name="burst_date_content_description">Stack of %1$s burst photos taken on %2$s</string>
+    <string name="burst_description">Tap the burst button to show the best photos only</string>
+    <string name="burst_editor_best_frame_description">Best burst frame</string>
+    <string name="burst_editor_frame_description">Burst frame %1$s</string>
+    <string name="burst_editor_navigate_up">Navigate up</string>
+    <string name="burst_editor_section_header_all">All Photos</string>
+    <string name="burst_editor_section_header_best">Best Photos</string>
+    <string name="burst_name">Smartburst</string>
+    <string name="burst_process_creation">Saving</string>
+    <string name="burst_process_done">All items processed</string>
+    <string name="burst_text">Smartburst</string>
+    <string name="cam_flash_auto">Auto</string>
+    <string name="cam_flash_off">Off</string>
+    <string name="cam_flash_on">On</string>
+    <string name="camera_id_back_desc">Switch to front camera</string>
+    <string name="camera_id_front_desc">Switch to back camera</string>
+    <string name="camera_menu_settings_label">@string/mode_settings</string>
+    <string name="camera_mode_chip_description">Return to camera</string>
+    <string name="camera_mode_name">Camera</string>
+    <string name="camera_permissions_error_title">Permissions needed</string>
+    <string name="cancel_btn_text">Cancel</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="cancel_button_description">Cancel</string>
+    <string name="cancel_panorama">Discard Panorama</string>
+    <string name="cancel_photo_sphere">Discard Photo Sphere</string>
+    <string name="capture_error">Capture error</string>
+    <string name="center">Center</string>
+    <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
+    <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="cheetah_description">Record action that takes a long time – say, a sunset – in a video that plays back in a shorter time</string>
+    <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="cling_text_for_refocus_editor_button">To refocus, tap here</string>
+    <string name="close">Close</string>
+    <string name="collage">Collage</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
+    <string name="complicationDrawable_noDataText">--</string>
+    <string name="complicationDrawable_textTypeface">sans-serif-condensed</string>
+    <string name="complicationDrawable_titleTypeface">sans-serif-condensed</string>
+    <string name="compute_error">Processing error</string>
+    <string name="connect_btn_text">Connect</string>
+    <string name="copy_text_chip_text">Copy text</string>
+    <string name="cuttlefish_capture_text_1">Capturing more light</string>
+    <string name="cuttlefish_capture_text_2">Wait longer for a better photo</string>
+    <string name="cuttlefish_capture_text_3">Fine-tuning image</string>
+    <string name="cuttlefish_capturing_first">Hold still</string>
+    <string name="cuttlefish_description">Takes vibrant and bright photos in low light</string>
+    <string name="cuttlefish_hold_steady_advice">Hold phone steady</string>
+    <string name="cuttlefish_name">Night Sight</string>
+    <string name="cuttlefish_stable_text">Astrophotography on</string>
+    <string name="delete">Delete</string>
+    <string name="delete_button_description">Delete</string>
+    <string name="deleted">Deleted</string>
+    <string name="description">Description</string>
+    <string name="detailed_face_announcement">%1$d face. %2$s. %3$s.</string>
+    <string name="details">Details</string>
+    <string name="details_button_description">Details</string>
+    <string name="details_hms">%1$d:%2$02d:%3$02d</string>
+    <string name="details_ms">%1$02d:%2$02d</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_dismiss">Dismiss</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_title_warning">Warning</string>
+    <string name="dialog_vr_core_not_enabled">This application may not work properly without enabling Google VR Services, please enable this in phone Settings before continuing.</string>
+    <string name="dialog_vr_core_not_installed">This application may not work properly without Google VR Services. Please install Google VR Services from the Play Store before continuing.</string>
+    <string name="double_tap_switch_camera">Switch Camera</string>
+    <string name="double_tap_zoom">Zoom</string>
+    <string name="duration">Duration</string>
+    <string name="edit_button_description">Edit</string>
+    <string name="edit_with">Edit with</string>
+    <string name="education_swipe_toast_text">Swipe for options</string>
+    <string name="error_app_not_found">This app not found on your device.</string>
+    <string name="error_camera_device">The camera device encountered a fatal error.</string>
+    <string name="error_camera_disabled">Camera has been disabled because of security policies.</string>
+    <string name="error_camera_in_use">The camera could not be opened because it is currently in use.</string>
+    <string name="error_camera_service">The camera driver encountered a fatal error.</string>
+    <string name="error_cannot_connect_camera">"Can't connect to the camera."</string>
+    <string name="error_fast_motion">Device moved too fast</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="error_max_cameras_in_use">The camera could not be opened because too many camera devices are already open.</string>
+    <string name="error_media_recorder_failure">There was a problem with the media recorder.</string>
+    <string name="error_media_storage_failure">There was a problem saving your photo or video.</string>
+    <string name="error_permissions_keyguard_updated">To use Camera, unlock your device and turn on Camera, Microphone, and Storage permissions</string>
+    <string name="error_permissions_updated">To use Camera, turn on Camera, Microphone, and Storage permissions.</string>
+    <string name="error_scene">"Can't isolate subject or subject moved"</string>
+    <string name="error_slow_motion">"Device moved too slowly
+ or scene too far away"</string>
+    <string name="error_tracking_failed">"Can't capture this shot"</string>
+    <string name="error_viewport">Framing changed too much</string>
+    <string name="ev_announcement">Exposure is now %1$s</string>
+    <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string name="exposure_knob_description">Exposure knob</string>
+    <string name="exposure_time">Exposure time</string>
+    <string name="ext_mic_desc">EXTERNAL MIC</string>
+    <string name="ext_mic_off_acc_desc">"Use phone's microphone"</string>
+    <string name="ext_mic_off_option_desc">Off</string>
+    <string name="ext_mic_on_acc_desc">Use external microphone</string>
+    <string name="ext_mic_on_option_desc">On</string>
+    <string name="ext_mic_options_desc">External microphone options</string>
+    <string name="external_mic_left">Swipe left for external mic</string>
+    <string name="external_mic_portrait">Swipe down for external mic</string>
+    <string name="external_mic_right">Swipe right for external mic</string>
+    <string name="face_in_selfie_range">Good for selfie</string>
+    <string name="face_retouching_on_natural">Natural face retouching is on</string>
+    <string name="face_retouching_on_soft">Soft face retouching is on</string>
+    <string name="face_size_percent_screen">Width %1$d percent of screen</string>
+    <string name="face_size_tiny">Tiny</string>
+    <string name="face_very_close">Very close</string>
+    <string name="faceretouch">FACE RETOUCHING</string>
+    <string name="faceretouch_desc">Face retouching options</string>
+    <string name="faceretouch_off_acc_desc">Face retouching off</string>
+    <string name="faceretouch_off_option_desc">Off</string>
+    <string name="faceretouch_on_light_acc_desc">Face retouching natural</string>
+    <string name="faceretouch_on_light_desc">Natural</string>
+    <string name="faceretouch_on_strong_acc_desc">Face retouching smooth</string>
+    <string name="faceretouch_on_strong_option_desc">Smooth</string>
+    <string name="fail_to_add_network">"Failed to connect. Can't find Wi-Fi network."</string>
+    <string name="feedback_description_empty" />
+    <string name="file_size">File size</string>
+    <string name="filmstrip_item_deleted">Item deleted</string>
+    <string name="filmstrip_item_undeleted">Item undeleted</string>
+    <string name="filmstrip_no_photos_description">You have no photos</string>
+    <string name="fisheye_accessibility_peek">Fisheye photo taken</string>
+    <string name="flash">Flash</string>
+    <string name="flash_auto_desc">Flash auto</string>
+    <string name="flash_chip_text">Flash</string>
+    <string name="flash_desc">FLASH</string>
+    <string name="flash_off">No flash</string>
+    <string name="flash_off_desc">Flash off</string>
+    <string name="flash_on">Flash fired</string>
+    <string name="flash_on_desc">Flash on</string>
+    <string name="flash_options_desc">Flash options</string>
+    <string name="focal_length">Focal Length</string>
+    <string name="four_by_three">Full image (4:3)</string>
+    <string name="four_by_three_desc">full image four by three</string>
+    <string name="fps_30">30</string>
+    <string name="fps_30_desc">30 frames per second</string>
+    <string name="fps_60">60</string>
+    <string name="fps_60_desc">60 frames per second</string>
+    <string name="fps_auto">Auto</string>
+    <string name="fps_auto_desc">Auto frames per second</string>
+    <string name="fps_option_desc">FRAMES/SEC</string>
+    <string name="fps_options_desc">Frames per second options</string>
+    <string name="frequent_faces_info">"When you take motion photos or touch and hold for Top Shot, Frequent Faces recommends shots that prioritize the people you photograph most.
+
+Frequent Faces data is only saved on this device, and can only be accessed by this Camera app.
+
+When you turn off Frequent Faces, faces data will be deleted.
+
+Frequent Faces will be available when you open Camera from the lock screen."</string>
+    <string name="frequent_faces_learn_more">Learn more</string>
+    <string name="frequent_faces_off">Off</string>
+    <string name="frequent_faces_on">On</string>
+    <string name="gcam_HDR_plus_enhanced_processing">Taking HDR+ enhanced photo</string>
+    <string name="go_to_playstore_button">Go to the Play Store</string>
+    <string name="go_to_vr_listeners_settings_button">Go to Settings</string>
+    <string name="grid_mode_four_by_four">4 x 4</string>
+    <string name="grid_mode_golden_ratio">Golden ratio</string>
+    <string name="grid_mode_off">Off</string>
+    <string name="grid_mode_three_by_three">3 x 3</string>
+    <string name="guidance_barcode">"Barcode in view
+Touch &amp; hold to do more"</string>
+    <string name="guidance_document">"Text in view
+Touch &amp; hold to scan"</string>
+    <string name="guidance_foreign_text">"Text in view
+Touch &amp; hold to scan"</string>
+    <string name="guidance_qr_nonwifi">"QRcode in view
+Touch &amp; hold to do more"</string>
+    <string name="had_warning_fast_motion">Device moved too fast</string>
+    <string name="had_warning_low_light">Low light</string>
+    <string name="had_warning_viewport">Capture error</string>
+    <string name="hats_lib_close_button_description">Close</string>
+    <string name="hats_lib_default_prompt_title">Please help us improve Google.</string>
+    <string name="hats_lib_default_star_rating_bar_description">Star Rating Bar</string>
+    <string name="hats_lib_default_thank_you">Thank you for your feedback!</string>
+    <string name="hats_lib_next">Next</string>
+    <string name="hats_lib_none_of_the_above">None of the above</string>
+    <string name="hats_lib_open_text_hint">Enter your comments here</string>
+    <string name="hats_lib_open_text_no_pii">"Don't include personal information"</string>
+    <string name="hats_lib_prompt_no_thanks">No thanks</string>
+    <string name="hats_lib_prompt_take_our_survey">Show question</string>
+    <string name="hats_lib_submit">Submit</string>
+    <string name="hats_lib_thank_you_followup_message">Help us improve our product by answering more questions</string>
+    <string name="hdr_auto_desc">HDR+ auto</string>
+    <string name="hdr_desc">HDR+</string>
+    <string name="hdr_enhanced">Enhanced</string>
+    <string name="hdr_enhanced_desc">HDR+ enhanced</string>
+    <string name="hdr_off">Off</string>
+    <string name="hdr_off_desc">HDR+ off</string>
+    <string name="hdr_on">On</string>
+    <string name="hdr_on_desc">HDR+ on</string>
+    <string name="hdr_plus_options_desc">HDR+ options</string>
+    <string name="height">Height</string>
+    <string name="hfr_fps_120">1/4x</string>
+    <string name="hfr_fps_240">1/8x</string>
+    <string name="hfr_mode_120fps">Video is set to one quarter of normal speed</string>
+    <string name="hfr_mode_240fps">Video is set to one eighth of normal speed</string>
+    <string name="hit_target_to_start">To start, keep dot inside circle</string>
+    <string name="horizontal_panorama_accessibility_peek">Horizontal Panorama taken</string>
+    <string name="icon_content_description">Dialog Icon</string>
+    <string name="illumination_desc">SELFIE ILLUMINATION</string>
+    <string name="illumination_off_desc">Illumination off</string>
+    <string name="illumination_off_option_desc">Off</string>
+    <string name="illumination_on_desc">Illumination on</string>
+    <string name="illumination_on_option_desc">On</string>
+    <string name="illumination_options_desc">Selfie-flash illumination options</string>
+    <string name="im2query_display_name">IM2QUERY</string>
+    <string name="image_intent_label">Camera</string>
+    <string name="imax_audio_recording_desc">AUDIO RECORDING</string>
+    <string name="imax_disable_audio_recording">Off</string>
+    <string name="imax_disable_audio_recording_desc">Audio recording off</string>
+    <string name="imax_enable_audio_recording">On</string>
+    <string name="imax_enable_audio_recording_desc">Audio recording on</string>
+    <string name="imax_stopped_backtracking">Capture stopped. Move phone in one direction.</string>
+    <string name="imax_stopped_too_fast">Capture stopped. Phone moved too fast.</string>
+    <string name="imax_stopped_too_much_roll">Capture stopped. Phone not straight.</string>
+    <string name="imax_stopped_too_much_tilt_down">Capture stopped. Phone moved down too far.</string>
+    <string name="imax_stopped_too_much_tilt_left">Capture stopped. Phone moved left too far.</string>
+    <string name="imax_stopped_too_much_tilt_right">Capture stopped. Phone moved right too far.</string>
+    <string name="imax_stopped_too_much_tilt_up">Capture stopped. Phone moved up too far.</string>
+    <string name="imax_suggestion_text">Take a Panorama</string>
+    <string name="imax_tapped_before_start">Tap the shutter to start</string>
+    <string name="imax_tapped_while_start_imax_capture">Move phone left or right</string>
+    <string name="infopane_got_it">Got it</string>
+    <string name="infopane_learn_more">Learn more</string>
+    <string name="iris_talkback_label_address">Address: %s</string>
+    <string name="iris_talkback_label_calendar">Add Calendar event</string>
+    <string name="iris_talkback_label_contact">Create Contact for %s</string>
+    <string name="iris_talkback_label_email">E-mail Address: %s</string>
+    <string name="iris_talkback_label_phone">Phone Number: %s</string>
+    <string name="iris_talkback_label_qrcode">QR Code: %s</string>
+    <string name="iris_talkback_label_qrcode_wifi">Connect to WiFi: %s</string>
+    <string name="iris_talkback_label_sms">Send SMS: %s</string>
+    <string name="iris_talkback_label_url">Website: %s</string>
+    <string name="iso">ISO</string>
+    <string name="left">Left</string>
+    <string name="location">Location</string>
+    <string name="long_press_tooltip">Hold for quick video</string>
+    <string name="longexposure_suggestion_text">Try Night Sight</string>
+    <string name="longshot_accessibility_peek">Quick video taken</string>
+    <string name="maker">Maker</string>
+    <string name="manual">Manual</string>
+    <string name="max_face_announcement">At least %1$d faces.</string>
+    <string name="mcfly_current_image_content_description">McFly current image preview.</string>
+    <string name="media_accessibility_peek">Capture taken</string>
+    <string name="media_processing_content_description">Media processing</string>
+    <string name="micro_auto">Auto</string>
+    <string name="micro_auto_desc">Motion auto</string>
+    <string name="micro_desc">Motion photo options</string>
+    <string name="micro_off">Off</string>
+    <string name="micro_off_desc">Motion off</string>
+    <string name="micro_on">On</string>
+    <string name="micro_on_desc">Motion on</string>
+    <string name="micro_option_desc">MOTION</string>
+    <string name="micro_tutorial_text">When you take a motion photo, Pixel includes a short video to capture more of the moment. Pixel will also suggest moments, or frames, that are worth saving.</string>
+    <string name="micro_tutorial_title">Motion photo</string>
+    <string name="mimetype">MIME type</string>
+    <string name="mode_camera">Camera</string>
+    <string name="mode_camera_desc">Switch to Camera Mode</string>
+    <string name="mode_cheetah_desc">Switch to Time Lapse Mode</string>
+    <string name="mode_cuttlefish">Night Sight</string>
+    <string name="mode_cuttlefish_desc">Switch to Night Sight</string>
+    <string name="mode_lens">Lens</string>
+    <string name="mode_lens_desc">Switch to Lens mode</string>
+    <string name="mode_measure">Measure</string>
+    <string name="mode_measure_desc">Switch to Measure mode</string>
+    <string name="mode_ornament">Playground</string>
+    <string name="mode_ornament_desc">Switch to Playground mode</string>
+    <string name="mode_paneer">Paneer</string>
+    <string name="mode_panorama">Panorama</string>
+    <string name="mode_panorama_desc">Switch to Panorama Mode</string>
+    <string name="mode_photobooth">Photobooth</string>
+    <string name="mode_photobooth_desc">Switch to Photobooth mode</string>
+    <string name="mode_photosphere">Photo Sphere</string>
+    <string name="mode_photosphere_desc">Switch to Photo Sphere Mode</string>
+    <string name="mode_portrait">Portrait</string>
+    <string name="mode_portrait_desc">Switch to Portrait Mode</string>
+    <string name="mode_refocus">Lens Blur</string>
+    <string name="mode_refocus_desc">Switch to Lens Blur Mode</string>
+    <string name="mode_rewind">McFly</string>
+    <string name="mode_rewind_desc">Switch to McFly mode</string>
+    <string name="mode_settings">Settings</string>
+    <string name="mode_timelapse">Time Lapse</string>
+    <string name="mode_video">Video</string>
+    <string name="mode_video_desc">Switch to Video Camera</string>
+    <string name="mode_video_slomo">Slow Motion</string>
+    <string name="mode_video_slomo_desc">Switch to Slow Motion Mode</string>
+    <string name="model">Model</string>
+    <string name="more_modes">More</string>
+    <string name="more_modes_desc">More modes</string>
+    <string name="mtrl_picker_a11y_next_month">Change to next month</string>
+    <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
+    <string name="mtrl_picker_day_of_week_column_header">Column of days: %1$s</string>
+    <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$s</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to selecting a day</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
+    <string name="notification_enter_power_saving_mode">Dimming screen to save power</string>
+    <string name="notification_enter_power_saving_mode_stage_2">Still recording. Screen dimmed to save power.</string>
+    <string name="ok">OK, Got it</string>
+    <string name="open_source_licenses">Open source licenses</string>
+    <string name="options_menu_button_desc">Open options menu</string>
+    <string name="options_menu_disabled">Disabled</string>
+    <string name="options_menu_disabled_desc">Options disabled</string>
+    <string name="options_menu_title">Options</string>
+    <string name="orientation">Orientation</string>
+    <string name="pano_orientation_fisheye">pano_fisheye</string>
+    <string name="pano_orientation_horizontal">pano_horizontal</string>
+    <string name="pano_orientation_photosphere">pano_photosphere</string>
+    <string name="pano_orientation_vertical">pano_vertical</string>
+    <string name="pano_orientation_wide">pano_wide</string>
+    <string name="panorama">360</string>
+    <string name="panorama_date_content_description">Panorama taken on %s</string>
+    <string name="panorama_desc">Photosphere</string>
+    <string name="panorama_description">A wide or tall photo</string>
+    <string name="panorama_fish_eye">Fish eye</string>
+    <string name="panorama_fish_eye_desc">Fish eye photosphere</string>
+    <string name="panorama_horizontal">Horizontal</string>
+    <string name="panorama_horizontal_desc">Horizontal photosphere</string>
+    <string name="panorama_name">Panorama</string>
+    <string name="panorama_vertical">Vertical</string>
+    <string name="panorama_vertical_desc">Vertical photosphere</string>
+    <string name="panorama_wide">Wide angle</string>
+    <string name="panorama_wide_desc">Wide angle photosphere</string>
+    <string name="password_toggle_content_description">Show password</string>
+    <string name="path">Path</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="pause_video">Pause video</string>
+    <string name="pause_video_recording">Pause recording</string>
+    <string name="photo">Photo</string>
+    <string name="photo_accessibility_peek">Photo taken</string>
+    <string name="photo_accessibility_shot_canceled">Shot canceled</string>
+    <string name="photo_date_content_description">Photo taken on %s</string>
+    <string name="photo_description">Photo</string>
+    <string name="photo_name">Photo</string>
+    <string name="photo_processing">Processing</string>
+    <string name="photo_storage_full_error_dialog_title">Free up space to take photos</string>
+    <string name="photobooth_capture_failed_notification">"Can't capture, try again"</string>
+    <string name="photobooth_paused_notification">Stopped</string>
+    <string name="photobooth_shutter_start">Start</string>
+    <string name="photobooth_start_capture_notification">Tap the button to start</string>
+    <string name="photobooth_tutorial_body">Get in the shot and smile or make a funny face to get photos automatically. Tap the button to start.</string>
+    <string name="photobooth_tutorial_title">Snap photos with a smile</string>
+    <string name="photosphere_accessibility_peek">Photosphere taken</string>
+    <string name="photosphere_calibration_finished">All finished. Press the capture button and have fun!</string>
+    <string name="photosphere_calibration_step_one">"Calibrate your camera for Photo Sphere.
+
+1. Align dot with circle"</string>
+    <string name="photosphere_calibration_step_three">3. Rotate to align last dot</string>
+    <string name="photosphere_calibration_step_two">2. Rotate up or down to align next dot</string>
+    <string name="photosphere_date_content_description">Photo Sphere taken on %s</string>
+    <string name="photosphere_description">Drag to look around the interactive photo</string>
+    <string name="photosphere_fisheye_confirm_dialog">Your fisheye is not complete, process anyway?</string>
+    <string name="photosphere_name">Photo Sphere</string>
+    <string name="photosphere_no_back_camera">Sorry, your device does not have a back facing camera</string>
+    <string name="photosphere_type">TYPE</string>
+    <string name="photosphere_type_desc">Type photosphere</string>
+    <string name="play_video">Play video</string>
+    <string name="portrait_description">Adds effects to make professional-looking portraits</string>
+    <string name="portrait_name">Portrait</string>
+    <string name="portrait_notification_tap_to_focus">Tap to focus</string>
+    <string name="portrait_suggestion_text">Try Portrait mode</string>
+    <string name="pref_camera_coach_summary">Hints for taking better photos</string>
+    <string name="pref_camera_coach_title">Framing hints</string>
+    <string name="pref_camera_custom_hotkeys_summary">Select hotkeys to control camera actions.</string>
+    <string name="pref_camera_custom_hotkeys_title">Custom Hotkeys</string>
+    <string name="pref_camera_dirty_lens_summary">Display warning when the lens may be too dirty to take high-quality pictures. Wiping off the lens may help.</string>
+    <string name="pref_camera_dirty_lens_title">Show dirty lens warning</string>
+    <string name="pref_camera_double_tap_action_title">Double-tap action</string>
+    <string name="pref_camera_focusmode_default">continuous-picture</string>
+    <string name="pref_camera_frequent_faces_title">Frequent Faces</string>
+    <string name="pref_camera_gestures_title">Gestures</string>
+    <string name="pref_camera_hdr_plus_default">@string/setting_off_value</string>
+    <string name="pref_camera_hdr_plus_default_auto">@string/setting_auto_value</string>
+    <string name="pref_camera_id_entry_back_value">0</string>
+    <string name="pref_camera_id_entry_front_value">1</string>
+    <string name="pref_camera_iris_title">Google Lens suggestions</string>
+    <string name="pref_camera_jpeg_quality_fine">fine</string>
+    <string name="pref_camera_jpeg_quality_normal">normal</string>
+    <string name="pref_camera_jpeg_quality_superfine">superfine</string>
+    <string name="pref_camera_mirror_image_title">Save selfie as previewed</string>
+    <string name="pref_camera_picturesize_default">Full resolution</string>
+    <string name="pref_camera_picturesize_medium">"Medium resolution
+(Uses less storage)"</string>
+    <string name="pref_camera_save_location_title">Save location</string>
+    <string name="pref_camera_scenemode_default">auto</string>
+    <string name="pref_camera_selfie_mirror_image_summary">Save pictures with the same orientation seen in the viewer.</string>
+    <string name="pref_camera_shutter_command_title">Shutter</string>
+    <string name="pref_camera_social_share_title">Social Share</string>
+    <string name="pref_camera_sounds_title">Camera sounds</string>
+    <string name="pref_camera_switch_camera_command_title">Switch Camera</string>
+    <string name="pref_camera_switch_to_next_mode_command_title">Switch to Next Mode</string>
+    <string name="pref_camera_switch_to_previous_mode_command_title">Switch to Previous Mode</string>
+    <string name="pref_camera_video_flashmode_default">@string/pref_camera_video_flashmode_off</string>
+    <string name="pref_camera_video_flashmode_off">off</string>
+    <string name="pref_camera_video_flashmode_torch">torch</string>
+    <string name="pref_camera_volume_key_action_title">Volume key action</string>
+    <string name="pref_camera_zoom_in_command_title">Zoom In</string>
+    <string name="pref_camera_zoom_out_command_title">Zoom Out</string>
+    <string name="pref_category_advanced">Advanced</string>
+    <string name="pref_depth_every_photo_summary">Depth data will be saved. This data may be used by social media apps. Motion photos will be turned off and photos may take longer to process.</string>
+    <string name="pref_depth_every_photo_title">Social media depth features</string>
+    <string name="pref_developer_settings">Developer Settings</string>
+    <string name="pref_gestures_summary">%1$s, %2$s</string>
+    <string name="pref_hdr_plus_control_summary">Show manual control for HDR+. When this setting is off, HDR+ stays on all the time.</string>
+    <string name="pref_hdr_plus_control_title">HDR+ control</string>
+    <string name="pref_hevc_control_summary">Use H.265/HEVC format instead of H.264/AVC for a smaller file size. HEVC may not be supported on some platforms.</string>
+    <string name="pref_raw_output_control_action_button">View RAW folder</string>
+    <string name="pref_raw_output_control_summary">Show manual control for RAW+JPEG. The RAW (DNG) file is saved separately, along with identifiable camera data, in a device folder in Google Photos. Uses additional storage.</string>
+    <string name="pref_raw_output_control_title">RAW+JPEG control</string>
+    <string name="pref_video_effect_default">none</string>
+    <string name="pref_video_hevc">Store videos efficiently</string>
+    <string name="pref_video_quality_large">large</string>
+    <string name="pref_video_stabilization">Video stabilization</string>
+    <string name="pref_video_ultra_high_summary">Back camera only. Uses more storage.</string>
+    <string name="preference_double_tap_none">none</string>
+    <string name="preference_double_tap_switch_camera">camera</string>
+    <string name="preference_double_tap_zoom">zoom</string>
+    <string name="preference_volume_key_off">off</string>
+    <string name="preference_volume_key_shutter">shutter</string>
+    <string name="preference_volume_key_volume">nothing</string>
+    <string name="preference_volume_key_zoom">zoom</string>
+    <string name="preferences_license_title">Open source licenses</string>
+    <string name="primes_marker">PrImEs</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="processing">Processing</string>
+    <string name="processing_content_description">processing…</string>
+    <string name="processing_hdr_plus">Processing HDR+</string>
+    <string name="processing_notification">Processing Lens Blur</string>
+    <string name="processing_notification_channel">Background Processing</string>
+    <string name="processing_panorama">Processing Panorama</string>
+    <string name="processing_photo_sphere">Processing Photo Sphere</string>
+    <string name="qr_of_unsupported_type">QR code</string>
+    <string name="qr_wifi_error_could_not_connect">You need to manually connect to %s</string>
+    <string name="qr_wifi_error_generic_error">"Can't connect to Wi-Fi"</string>
+    <string name="qr_wifi_error_no_permissions">App needs to request Wi-Fi permission</string>
+    <string name="qr_wifi_error_no_wifi_available">"Device can't connect to Wi-Fi"</string>
+    <string name="qr_wifi_error_password_invalid">QR code contains incorrect Wi-Fi password</string>
+    <string name="qr_wifi_error_ssid_invalid">QR code contains incorrect Wi-Fi network name</string>
+    <string name="qr_wifi_successfully_connecting">Connecting to %s…</string>
+    <string name="quickly_share_tips">Tap + to add apps for quick sharing.</string>
+    <string name="raid1_display_name">RAID</string>
+    <string name="raw_desc">RAW</string>
+    <string name="raw_output_desc">RAW mode options</string>
+    <string name="raw_output_off_desc">JPEG only</string>
+    <string name="raw_output_on_desc">RAW + JPEG</string>
+    <string name="record_location_notification">Save location is on</string>
+    <string name="refocus_accessibility_peek">Lens blur taken</string>
+    <string name="refocus_action_name">Change where the photo is focused</string>
+    <string name="refocus_action_promote">Drag to adjust lens blur</string>
+    <string name="refocus_date_content_description">Lens blur taken on %s</string>
+    <string name="refocus_description">Shoot with Lens Blur to help the subject stand out</string>
+    <string name="refocus_editor_button_text_done">Done</string>
+    <string name="refocus_editor_name">Lens Blur Editor</string>
+    <string name="refocus_instructions">"Slowly raise your device.
+Keep subject centered."</string>
+    <string name="refocus_name">Lens Blur</string>
+    <string name="refocus_slider_cling_text">To adjust blur, drag slider</string>
+    <string name="resume_video_recording">Resume recording</string>
+    <string name="retake_button_description">Retake</string>
+    <string name="review_button_description">Review</string>
+    <string name="right">Right</string>
+    <string name="saving_reference">Saving Lens Blur</string>
+    <string name="scan_document_chip_text">Scan document</string>
+    <string name="selfie_angle_description">Research shows that selfies are best taken from above, with the camera pointed downwards.</string>
+    <string name="selfie_angle_message">Raise camera for a better angle</string>
+    <string name="session_saving_image">Saving…</string>
+    <string name="setting_auto_value">auto</string>
+    <string name="setting_camera_photo">Camera photo resolution</string>
+    <string name="setting_camera_video">Ultra-high resolution video (4K)</string>
+    <string name="setting_general">General</string>
+    <string name="setting_google_feedback">Send feedback</string>
+    <string name="setting_google_help">Help</string>
+    <string name="setting_google_help_and_feedback">Help &amp; feedback</string>
+    <string name="setting_grid_mode">Grid type</string>
+    <string name="setting_off">Off</string>
+    <string name="setting_off_value">off</string>
+    <string name="settings_open_desc">Open settings</string>
+    <string name="shadow_ev_announcement">Shadow is now %1$s</string>
+    <string name="shadow_knob_accessibility_description">Shadow knob</string>
+    <string name="shadow_knob_tooltip_description">"Adjusts only dark parts
+ of image"</string>
+    <string name="shadow_knob_tooltip_with_tips_description">"Adjusts only dark parts
+ of image. Tap to learn more"</string>
+    <string name="share">Share</string>
+    <string name="share_button_description">Share</string>
+    <string name="share_starting">Sharing to %s…</string>
+    <string name="share_to">Share to</string>
+    <string name="shortcut_selfie_long_label">Take a selfie</string>
+    <string name="shortcut_selfie_short_label">Selfie</string>
+    <string name="shortcut_video_long_label">Take a video</string>
+    <string name="shortcut_video_short_label">Video</string>
+    <string name="sixteen_by_nine">Wide crop (16:9)</string>
+    <string name="sixteen_by_nine_desc">wide crop sixteen by nine</string>
+    <string name="social_share_off">Off</string>
+    <string name="social_share_on">On</string>
+    <string name="social_target_add">Social Share Setting</string>
+    <string name="social_toast_activity_not_found">Cannot share to %s! Please try again.</string>
+    <string name="sparrow_allowed_package">com.google.android.apps.camera.remotecontrol</string>
+    <string name="storage_error_button_text">GOT IT</string>
+    <string name="storage_error_dialog_message">You may need to reinsert your external storage device. To change your storage settings, open Settings > Storage.</string>
+    <string name="storage_error_dialog_title">No storage found</string>
+    <string name="tap_to_start">To start, touch the icon below</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="text_copied_to_clipboard">Text copied to clipboard</string>
+    <string name="text_view_connected_text">Connected to %1$s</string>
+    <string name="text_view_connecting_text">Connecting</string>
+    <string name="text_view_edit_ssid_form_title">SSID</string>
+    <string name="text_view_edit_text_password_title">Password</string>
+    <string name="text_view_modify_dialog_title">Check Wi-Fi name &amp; password</string>
+    <string name="thermal_flash_disabled_chip_text">Device is too hot. Flash has been turned off.</string>
+    <string name="thermal_recording_disasbled_chip_text">Device is too hot. Close Camera until device cools off.</string>
+    <string name="thermal_recording_stopped_chip_text">Recording stopped. Close Camera until device cools off.</string>
+    <string name="thermal_video_quality_chip_text">Device is too hot. Video quality may be affected.</string>
+    <string name="time">Time</string>
+    <string name="time_difference_now">Now</string>
+    <string name="time_difference_short_days_and_hours">%1$s %2$s</string>
+    <string name="time_difference_short_hours_and_minutes">%1$s %2$s</string>
+    <string name="timelapse_suggestion_text">Take a Timelapse</string>
+    <string name="timer_10_seconds">10 sec</string>
+    <string name="timer_10_seconds_option_desc">Timer 10 Seconds</string>
+    <string name="timer_3_seconds">3 sec</string>
+    <string name="timer_3_seconds_option_desc">Timer 3 Seconds</string>
+    <string name="timer_auto">Auto</string>
+    <string name="timer_auto_desc">Timer auto</string>
+    <string name="timer_desc">TIMER</string>
+    <string name="timer_off">Off</string>
+    <string name="timer_off_desc">Timer off</string>
+    <string name="timer_options_desc">Timer options</string>
+    <string name="title">Title</string>
+    <string name="toast_motion_text">Motion is enabled</string>
+    <string name="toast_options">Options</string>
+    <string name="too_fast">Too fast</string>
+    <string name="tooltip_msg_speed_up_ratio_10x">Good for walking</string>
+    <string name="tooltip_msg_speed_up_ratio_120x">Good for sunsets</string>
+    <string name="tooltip_msg_speed_up_ratio_1x">Normal speed</string>
+    <string name="tooltip_msg_speed_up_ratio_30x">Good for busy spots</string>
+    <string name="tooltip_msg_speed_up_ratio_5x">Good for lively groups</string>
+    <string name="top_center">Top-center</string>
+    <string name="top_left">Top-left</string>
+    <string name="top_right">Top-right</string>
+    <string name="translate_chip_text">Translate in Lens</string>
+    <string name="undo">UNDO</string>
+    <string name="undo_delete">Undo Delete</string>
+    <string name="unit_mm">mm</string>
+    <string name="unknown">Unknown</string>
+    <string name="update_camera_to_use_lens">Check for updates</string>
+    <string name="user_hint_bad_lighting">Not enough light</string>
+    <string name="user_hint_motion_blur">Hold the camera still</string>
+    <string name="user_hint_no_face">No faces found</string>
+    <string name="user_hint_reduced_accuracy">Try different lighting</string>
+    <string name="user_hint_small_face">Move closer</string>
+    <string name="vertical_panorama_accessibility_peek">Vertical panorama taken</string>
+    <string name="vid_chip_4">"Couldn't capture snapshot."</string>
+    <string name="vid_chip_br_mic">"Can't record audio. Mic isn't working."</string>
+    <string name="vid_chip_err">Something went wrong. Try recording again.</string>
+    <string name="vid_chip_no_aud">"Can't record audio. Another app is using the mic."</string>
+    <string name="vid_chip_part_err">Something went wrong. Part of this video may not be saved.</string>
+    <string name="vid_chip_part_err_done">Something went wrong. Part of last video may not have saved.</string>
+    <string name="vid_chip_session_err">"Couldn't record video. Leave video mode, then try again."</string>
+    <string name="video_accessibility_peek">Video taken</string>
+    <string name="video_control_play">Play Video</string>
+    <string name="video_date_content_description">Video taken on %s</string>
+    <string name="video_intent_label">Video</string>
+    <string name="video_recording_paused_indicator">PAUSED %1$s</string>
+    <string name="video_storage_full_error_dialog_body">"There isn't enough storage left on this device to capture photos or videos. You can free up space by removing backed up photos and videos."</string>
+    <string name="video_storage_full_error_dialog_title">"Can't record video"</string>
+    <string name="video_storage_full_error_free_up_space">Free up space</string>
+    <string name="video_storage_full_error_recording_dialog_body">Out of storage space on this device.</string>
+    <string name="video_storage_full_error_recording_dialog_title">"Can't record more video"</string>
+    <string name="video_storage_max_duration_dialog_body">Video reached the duration limit.</string>
+    <string name="video_storage_max_file_size_dialog_body">Video reached the 4 GB size limit.</string>
+    <string name="view_button_description">View</string>
+    <string name="volume_key_off">Off</string>
+    <string name="volume_key_shutter">Shutter</string>
+    <string name="volume_key_volume">Volume</string>
+    <string name="volume_key_zoom">Zoom</string>
+    <string name="warm_light_on_with_flash">Screen will light up</string>
+    <string name="warning_fast_motion">Device moving too fast</string>
+    <string name="warning_low_light_motion">"Low light
+Move device slowly"</string>
+    <string name="warning_viewport">Keep subject centered</string>
+    <string name="wear_install_notification_toast">Finish setup on watch</string>
+    <string name="white_balance">White balance</string>
+    <string name="wide_angle_accessibility_peek">Wide angle photo taken</string>
+    <string name="width">Width</string>
+    <string name="wifi_connection_fail">Failed to connect</string>
+    <string name="wifi_could_not_connect">"Can't connect. Try connecting to Wi-Fi in your phone's Settings."</string>
+    <string name="wifi_error_no_wifi_available">"Can't connect. Try turning on your phone's Wi-Fi in Settings."</string>
+    <string name="zoom_ffc_wide_tooltip">Zoom out for wider selfies</string>
+    <string name="zoom_minus_desc">Zoom out</string>
+    <string name="zoom_plus_desc">Zoom in</string>
+    <item type="string" name="APKTOOL_DUMMY_0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_17">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_41">false</item>
+    <item type="string" name="APKTOOL_DUMMY_42">false</item>
+    <item type="string" name="APKTOOL_DUMMY_47">false</item>
+    <item type="string" name="APKTOOL_DUMMY_48">false</item>
+    <item type="string" name="APKTOOL_DUMMY_49">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_50">false</item>
+    <item type="string" name="APKTOOL_DUMMY_51">false</item>
+    <item type="string" name="APKTOOL_DUMMY_52">false</item>
+    <item type="string" name="APKTOOL_DUMMY_53">false</item>
+    <item type="string" name="APKTOOL_DUMMY_54">false</item>
+    <item type="string" name="APKTOOL_DUMMY_55">false</item>
+    <item type="string" name="APKTOOL_DUMMY_56">false</item>
+    <item type="string" name="APKTOOL_DUMMY_57">false</item>
+    <item type="string" name="APKTOOL_DUMMY_58">false</item>
+    <item type="string" name="APKTOOL_DUMMY_59">false</item>
+    <item type="string" name="APKTOOL_DUMMY_5b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_5c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_5d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_5e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_5f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_62">false</item>
+    <item type="string" name="APKTOOL_DUMMY_6e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_72">false</item>
+    <item type="string" name="APKTOOL_DUMMY_77">false</item>
+    <item type="string" name="APKTOOL_DUMMY_79">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_83">false</item>
+    <item type="string" name="APKTOOL_DUMMY_93">false</item>
+    <item type="string" name="APKTOOL_DUMMY_94">false</item>
+    <item type="string" name="APKTOOL_DUMMY_96">false</item>
+    <item type="string" name="APKTOOL_DUMMY_97">false</item>
+    <item type="string" name="APKTOOL_DUMMY_98">false</item>
+    <item type="string" name="APKTOOL_DUMMY_99">false</item>
+    <item type="string" name="APKTOOL_DUMMY_9a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_9b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_9c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_9d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_9e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_9f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_a0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_a1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_a2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_a3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_a4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_a5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_a6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_a7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_a8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_a9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_aa">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ab">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ac">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ad">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ae">false</item>
+    <item type="string" name="APKTOOL_DUMMY_af">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ea">false</item>
+    <item type="string" name="APKTOOL_DUMMY_eb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ed">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ee">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ef">false</item>
+    <item type="string" name="APKTOOL_DUMMY_f0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_f1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_f2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_f3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_105">false</item>
+    <item type="string" name="APKTOOL_DUMMY_106">false</item>
+    <item type="string" name="APKTOOL_DUMMY_109">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_113">false</item>
+    <item type="string" name="APKTOOL_DUMMY_114">false</item>
+    <item type="string" name="APKTOOL_DUMMY_115">false</item>
+    <item type="string" name="APKTOOL_DUMMY_116">false</item>
+    <item type="string" name="APKTOOL_DUMMY_11d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_11e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_120">false</item>
+    <item type="string" name="APKTOOL_DUMMY_121">false</item>
+    <item type="string" name="APKTOOL_DUMMY_127">false</item>
+    <item type="string" name="APKTOOL_DUMMY_12a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_12e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_12f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_130">false</item>
+    <item type="string" name="APKTOOL_DUMMY_131">false</item>
+    <item type="string" name="APKTOOL_DUMMY_134">false</item>
+    <item type="string" name="APKTOOL_DUMMY_13a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_13b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_13c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_13d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_13e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_13f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_140">false</item>
+    <item type="string" name="APKTOOL_DUMMY_141">false</item>
+    <item type="string" name="APKTOOL_DUMMY_142">false</item>
+    <item type="string" name="APKTOOL_DUMMY_143">false</item>
+    <item type="string" name="APKTOOL_DUMMY_144">false</item>
+    <item type="string" name="APKTOOL_DUMMY_145">false</item>
+    <item type="string" name="APKTOOL_DUMMY_146">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_15e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_163">false</item>
+    <item type="string" name="APKTOOL_DUMMY_166">false</item>
+    <item type="string" name="APKTOOL_DUMMY_167">false</item>
+    <item type="string" name="APKTOOL_DUMMY_168">false</item>
+    <item type="string" name="APKTOOL_DUMMY_169">false</item>
+    <item type="string" name="APKTOOL_DUMMY_16b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_16c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_184">false</item>
+    <item type="string" name="APKTOOL_DUMMY_185">false</item>
+    <item type="string" name="APKTOOL_DUMMY_18c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_18d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_18f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_190">false</item>
+    <item type="string" name="APKTOOL_DUMMY_191">false</item>
+    <item type="string" name="APKTOOL_DUMMY_192">false</item>
+    <item type="string" name="APKTOOL_DUMMY_193">false</item>
+    <item type="string" name="APKTOOL_DUMMY_194">false</item>
+    <item type="string" name="APKTOOL_DUMMY_195">false</item>
+    <item type="string" name="APKTOOL_DUMMY_196">false</item>
+    <item type="string" name="APKTOOL_DUMMY_199">false</item>
+    <item type="string" name="APKTOOL_DUMMY_19a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1a3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1a7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1a8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1b4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1be">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1bf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1ca">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1cb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1cc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1cd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1d9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1da">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1e9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1eb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1ec">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1ed">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1ee">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1ef">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1f0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1f1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1f5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1f9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1fc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_201">false</item>
+    <item type="string" name="APKTOOL_DUMMY_202">false</item>
+    <item type="string" name="APKTOOL_DUMMY_203">false</item>
+    <item type="string" name="APKTOOL_DUMMY_205">false</item>
+    <item type="string" name="APKTOOL_DUMMY_206">false</item>
+    <item type="string" name="APKTOOL_DUMMY_207">false</item>
+    <item type="string" name="APKTOOL_DUMMY_211">false</item>
+    <item type="string" name="APKTOOL_DUMMY_213">false</item>
+    <item type="string" name="APKTOOL_DUMMY_214">false</item>
+    <item type="string" name="APKTOOL_DUMMY_215">false</item>
+    <item type="string" name="APKTOOL_DUMMY_216">false</item>
+    <item type="string" name="APKTOOL_DUMMY_21c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_21f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_221">false</item>
+    <item type="string" name="APKTOOL_DUMMY_243">false</item>
+    <item type="string" name="APKTOOL_DUMMY_247">false</item>
+    <item type="string" name="APKTOOL_DUMMY_248">false</item>
+    <item type="string" name="APKTOOL_DUMMY_249">false</item>
+    <item type="string" name="APKTOOL_DUMMY_24c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_24d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_24e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_24f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_250">false</item>
+    <item type="string" name="APKTOOL_DUMMY_251">false</item>
+    <item type="string" name="APKTOOL_DUMMY_252">false</item>
+    <item type="string" name="APKTOOL_DUMMY_253">false</item>
+    <item type="string" name="APKTOOL_DUMMY_255">false</item>
+    <item type="string" name="APKTOOL_DUMMY_256">false</item>
+    <item type="string" name="APKTOOL_DUMMY_258">false</item>
+    <item type="string" name="APKTOOL_DUMMY_259">false</item>
+    <item type="string" name="APKTOOL_DUMMY_25a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_25b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_25c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_25d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_25e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_25f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_260">false</item>
+    <item type="string" name="APKTOOL_DUMMY_261">false</item>
+    <item type="string" name="APKTOOL_DUMMY_262">false</item>
+    <item type="string" name="APKTOOL_DUMMY_263">false</item>
+    <item type="string" name="APKTOOL_DUMMY_265">false</item>
+    <item type="string" name="APKTOOL_DUMMY_267">false</item>
+    <item type="string" name="APKTOOL_DUMMY_268">false</item>
+    <item type="string" name="APKTOOL_DUMMY_269">false</item>
+    <item type="string" name="APKTOOL_DUMMY_26a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_26e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_26f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_270">false</item>
+    <item type="string" name="APKTOOL_DUMMY_271">false</item>
+    <item type="string" name="APKTOOL_DUMMY_273">false</item>
+    <item type="string" name="APKTOOL_DUMMY_274">false</item>
+    <item type="string" name="APKTOOL_DUMMY_275">false</item>
+    <item type="string" name="APKTOOL_DUMMY_276">false</item>
+    <item type="string" name="APKTOOL_DUMMY_299">false</item>
+    <item type="string" name="APKTOOL_DUMMY_29e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2ad">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2b3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2b4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2b6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2bb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2c3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2c4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2c8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2c9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2ce">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2cf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2d0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2d1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2d8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2d9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2da">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2dc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2dd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2de">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2e2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2f0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2f4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2f5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2f6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2fb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2fc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2fd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2fe">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2ff">false</item>
+    <item type="string" name="APKTOOL_DUMMY_300">false</item>
+    <item type="string" name="APKTOOL_DUMMY_305">false</item>
+    <item type="string" name="APKTOOL_DUMMY_306">false</item>
+    <item type="string" name="APKTOOL_DUMMY_307">false</item>
+    <item type="string" name="APKTOOL_DUMMY_309">false</item>
+    <item type="string" name="APKTOOL_DUMMY_30a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_30b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_30c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_30d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_30e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_30f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_310">false</item>
+    <item type="string" name="APKTOOL_DUMMY_311">false</item>
+    <item type="string" name="APKTOOL_DUMMY_313">false</item>
+    <item type="string" name="APKTOOL_DUMMY_314">false</item>
+    <item type="string" name="APKTOOL_DUMMY_315">false</item>
+    <item type="string" name="APKTOOL_DUMMY_31f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_32a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_32b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_340">false</item>
+    <item type="string" name="APKTOOL_DUMMY_34c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_34d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_350">false</item>
+    <item type="string" name="APKTOOL_DUMMY_351">false</item>
+    <item type="string" name="APKTOOL_DUMMY_352">false</item>
+    <item type="string" name="APKTOOL_DUMMY_357">false</item>
+    <item type="string" name="APKTOOL_DUMMY_35d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_35e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_35f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_362">false</item>
+    <item type="string" name="APKTOOL_DUMMY_363">false</item>
+    <item type="string" name="APKTOOL_DUMMY_364">false</item>
+    <item type="string" name="APKTOOL_DUMMY_365">false</item>
+    <item type="string" name="APKTOOL_DUMMY_366">false</item>
+    <item type="string" name="APKTOOL_DUMMY_367">false</item>
+    <item type="string" name="APKTOOL_DUMMY_368">false</item>
+    <item type="string" name="APKTOOL_DUMMY_36a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_37e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_37f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_380">false</item>
+    <item type="string" name="APKTOOL_DUMMY_384">false</item>
+    <item type="string" name="APKTOOL_DUMMY_385">false</item>
+    <item type="string" name="APKTOOL_DUMMY_386">false</item>
+    <item type="string" name="APKTOOL_DUMMY_387">false</item>
+    <item type="string" name="APKTOOL_DUMMY_388">false</item>
+    <item type="string" name="APKTOOL_DUMMY_39b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_39e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3a6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3b3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3b4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3b6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3ca">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3cd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3d3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3d6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3de">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3e3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3e4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3e5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3e6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3e8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3e9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3ea">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3eb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3ed">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3ee">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3ef">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3f0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3f1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3f2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3f3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3f9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3fa">false</item>
+</resources>
