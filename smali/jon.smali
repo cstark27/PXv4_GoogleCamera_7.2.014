@@ -40,6 +40,8 @@
 
     move-result v0
 
+	const v0, 0x1		# enable tracking focus
+
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0

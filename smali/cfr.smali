@@ -69,12 +69,22 @@
 
     if-eqz p1, :cond_0
 
+	# disable video tracking focus for P1 and P2
+	sget v0, Lcom/custom/extras;->isPixel1:I
+	
+	if-nez v0, :cond_0
+	
+	sget v0, Lcom/custom/extras;->isPixel2:I
+	
+	if-nez v0, :cond_0
+
     const/4 p1, 0x1
 
+	:goto_0
     return p1
 
     :cond_0
     const/4 p1, 0x0
 
-    return p1
+    goto :goto_0
 .end method
