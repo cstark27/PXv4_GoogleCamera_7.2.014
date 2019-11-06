@@ -321,6 +321,14 @@
 
     sget-object v0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
 
+	const-string v1, "Google"		# If device is Google
+
+	invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+	move-result v1
+	
+	sput v1, Lcom/custom/extras;->isGoogle:I
+
     sget-object v1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
     sget-object v2, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
