@@ -366,6 +366,34 @@
 
     invoke-virtual {v0, p2}, Lcom/google/googlex/gcam/ShotParams;->setCompress_merged_dng(Z)V
 
+	# HDR+E custom frame count
+	const-string p6, "pref_nonzsl_frames"
+
+	invoke-static {p6}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result p6
+	
+	if-eqz p6, :cond_defenh
+
+	invoke-virtual {v0, p6}, Lcom/google/googlex/gcam/ShotParams;->setNonzsl_frame_count_override(I)V
+
+	# HDR+E Light Trail
+	:cond_defenh
+	const-string p6, "pref_align_key"
+
+	invoke-static {p6}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result p6
+
+	if-eqz p6, :cond_defalign
+
+	sget p6, Lcom/toggle/align/AlignZ2;->AlignZ2S:I
+
+	invoke-virtual {v0, p6}, Lcom/google/googlex/gcam/ShotParams;->setDisable_align(Z)V
+
+	invoke-virtual {v0, p6}, Lcom/google/googlex/gcam/ShotParams;->setMerge_method_override(I)V
+
+	:cond_defalign
     invoke-direct {p0, p1, p3}, Ldqj;->a(FLgrk;)Lcom/google/googlex/gcam/AeShotParams;
 
     move-result-object p1
@@ -507,7 +535,13 @@
 
     move-result p1
 
-    if-nez p1, :cond_6
+	const-string p1, "pref_awb_hdre"		# AI AWB for HDR+E
+
+	invoke-static {p1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result p1
+
+	goto :goto_2
 
     :cond_5
     iget-object p1, p0, Ldqj;->j:Ldrf;
@@ -516,13 +550,27 @@
 
     if-ne p1, p3, :cond_7
 
+	const-string p1, "pref_awb_ns"		# AI AWB for Night Sight
+
+	invoke-static {p1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result p1
+
+	goto :goto_2
+
     :cond_6
     const/4 p1, 0x1
 
     goto :goto_2
 
     :cond_7
-    nop
+	const-string p1, "pref_awb_zsl"		# AI AWB for ZSL
+
+	invoke-static {p1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result p1
+
+	goto :goto_2
 
     :cond_8
     const/4 p1, 0x0
@@ -649,6 +697,17 @@
 
     invoke-interface {p3}, Lcin;->b()Z
 
+	const-string p3, "pref_forcesabre_key"		# Super Res Zoom always ON
+
+	invoke-static {p3}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result p3
+	
+	if-eqz p3, :cond_defsabre
+	
+	const p1, 0x1
+
+	:cond_defsabre
     invoke-virtual {v0, p1}, Lcom/google/googlex/gcam/ShotParams;->setAllow_sabre(Z)V
 
     invoke-virtual {v0}, Lcom/google/googlex/gcam/ShotParams;->getNonzsl_frame_count_override()I
@@ -748,6 +807,34 @@
     move p3, p1
 
     :goto_9
+	const-string p1, "pref_nonzsl_frames"		# Night Sight custom frame count
+
+	invoke-static {p1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result p1
+	
+	if-eqz p1, :cond_default
+
+	move p3, p1
+
+	:cond_default	
+	const-string p1, "pref_align_key"		# Night Sight light trail
+
+	invoke-static {p1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result p1
+
+	if-eqz p1, :cond_pass
+
+	sget p1, Lcom/toggle/align/AlignZ2;->AlignZ2S:I
+
+	invoke-virtual {v0, p1}, Lcom/google/googlex/gcam/ShotParams;->setDisable_align(Z)V
+
+	invoke-virtual {v0, p1}, Lcom/google/googlex/gcam/ShotParams;->setMerge_method_override(I)V
+	
+	:cond_pass
+	sput p3, Lcom/custom/extras;->NON_ZSL_FRAMES:I
+
     iget-object p1, p0, Ldqj;->g:Ldop;
 
     invoke-virtual {p1}, Ldop;->a()Z
@@ -859,6 +946,26 @@
     const/high16 p2, 0x7f800000    # Float.POSITIVE_INFINITY
 
     invoke-virtual {v0, p2}, Lcom/google/googlex/gcam/ShotParams;->setTripod_max_total_capture_time_ms(F)V
+
+	const-string p1, "pref_maxexpo_key"			# Maximum exposure
+
+	invoke-static {p1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result p1
+	
+	sput p1, Lcom/custom/extras;->MAX_EXPOSURE:I
+	
+	int-to-float p1, p1
+	
+	const/high16 p2, 0x447a0000    # 1000.0f
+
+	mul-float p1, p1, p2
+
+	invoke-virtual {v0, p1}, Lcom/google/googlex/gcam/ShotParams;->setTripod_max_exposure_time_ms(F)V
+
+	const/high16 p1, 0x447a0000    # 1000.0f
+	
+	goto :goto_b
 
     :goto_a
     iget-object p2, p0, Ldqj;->h:Lcin;
