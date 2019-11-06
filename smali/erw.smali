@@ -422,6 +422,8 @@
 
     move-result v0
 
+	const v0, 0x1		# show "Social media depth features" toggle
+
     if-nez v0, :cond_a
 
     iget-object v0, p0, Lerw;->l:Lcin;
@@ -442,6 +444,8 @@
     invoke-interface {v0, v1}, Lcin;->c(Lcio;)Z
 
     move-result v0
+
+	const v0, 0x1		# show "Frequent faces" toggle
 
     if-nez v0, :cond_b
 
