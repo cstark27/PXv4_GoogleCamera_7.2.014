@@ -1822,9 +1822,9 @@
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcit;->ap:Lcio;
+    sget-object v1, Lcit;->ap:Lcio;		# "use_immersive_rounded_corners"
 
-    invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
+    invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
     sget-object v1, Lcit;->ab:Lcio;
 
@@ -1838,17 +1838,21 @@
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcim;->d:Lcio;
+    sget-object v1, Lcim;->d:Lcio;		# "camera.manual_focus_enabled"
 
-    invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
+    invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcig;->n:Lcio;
+    sget-object v1, Lcim;->f:Lcio;		# "camera.artemis_portrait"
 
-    invoke-virtual {v0, v1, v7}, Lcjy;->a(Lcio;Z)V
+    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcig;->j:Lcio;
+    sget-object v1, Lcig;->n:Lcio;		# "camcorder.stereo"
 
-    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
+    invoke-virtual {v0, v1, v5}, Lcjy;->a(Lcio;Z)V
+
+    sget-object v1, Lcig;->j:Lcio;		# "enable_hevc_setting"
+
+    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
     sget-object v1, Lcig;->o:Lcio;
 
@@ -1868,11 +1872,43 @@
 
     sget-object v1, Lciu;->n:Lcio;
 
+    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
+
+    sget-object v1, Lciu;->m:Lcio;		# "camera.cuttle.motion_ef"
+
+    invoke-interface {v0, v1}, Lcis;->i(Lcio;)V
+
+    sget-object v1, Lciu;->o:Lcio;		# "camera.cuttle.sky"
+
+    invoke-interface {v0, v1, v5}, Lcis;->b(Lcio;Z)V
+
+    sget-object v1, Lciu;->q:Lcio;		# "camera.cuttle.extended_iterable_burst"
+
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
+
+    sget-object v1, Lciu;->w:Lcio;		# "SABRE_ALLOWED"
+
+    invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
+
+    sget-object v1, Lciu;->y:Lcio;		# "SABRE_UNZOOMED_NIGHTMODE"
+
+    invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
     sget-object v1, Lcix;->d:Lcio;
 
-    invoke-virtual {v0, v1, v5}, Lcjy;->a(Lcio;Z)V
+    invoke-virtual {v0, v1, v7}, Lcjy;->a(Lcio;Z)V
+
+    sget-object v1, Lcix;->f:Lcio;		# "camera.lenslite.enable_document_scanning"
+
+    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
+
+    sget-object v1, Lcix;->g:Lcio;		# "camera.lenslite.enable_foreign_language_detection"
+
+    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
+
+    sget-object v1, Lcix;->h:Lcio;		# "camera.lenslite.enable_copy_text"
+
+    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
     sget-object v1, Lciw;->c:Lcio;
 
@@ -1890,13 +1926,25 @@
 
     invoke-virtual {v0, v1, v4}, Lcjy;->a(Lcio;F)V
 
+    sget-object v1, Lciy;->e:Lcio;		# "camera.cuttle.glpreview"
+
+    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
+
     sget-object v1, Lcja;->f:Lcio;
 
-    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
+    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcjb;->h:Lcio;
+    sget-object v1, Lcja;->a:Lcio;		# "camera.mts_aesthetic"
 
-    invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
+    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
+
+    sget-object v1, Lcja;->l:Lcio;		# "camera.mts_max_alt_1"
+
+    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
+
+    sget-object v1, Lcjb;->h:Lcio;		# "face_detect_mode_use_extended"
+
+    invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
     sget-object v1, Lcjb;->a:Lciq;
 
@@ -1953,7 +2001,7 @@
     :goto_3
     invoke-virtual {v0, v1, v4}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcit;->ag:Lcio;
+    sget-object v1, Lcit;->ag:Lcio;		# "camera.auto_timer_enabled"
 
     sget-object v4, Lcjn;->a:Lcjn;
 
@@ -1963,7 +2011,7 @@
 
     if-eq v3, v4, :cond_7
 
-    const/4 v3, 0x0
+    const/4 v3, 0x1
 
     goto :goto_4
 
@@ -2020,17 +2068,17 @@
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcjh;->b:Lcio;
+    sget-object v1, Lcjh;->b:Lcio;		# "rectiface_supported"
 
-    invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
+    invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
     sget-object v1, Lcjm;->b:Lcio;
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjm;->c:Lcio;
+    sget-object v1, Lcjm;->c:Lcio;		# "high_res_camcorder_video_resolution_enabled"
 
-    invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
+    invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
     goto/16 :goto_7
 
