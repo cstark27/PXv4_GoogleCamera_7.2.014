@@ -118,7 +118,7 @@
 
     check-cast v5, Lmbb;
 
-    invoke-virtual {v3}, Lndb;->e()Z
+    invoke-virtual {v3}, Lndb;->e()Z #isPixel3a
 
     move-result v3
 

@@ -415,7 +415,7 @@
 
     iget-object v5, p1, Ljga;->v:Lndb;
 
-    invoke-virtual {v5}, Lndb;->f()Z
+    invoke-virtual {v5}, Lndb;->f()Z #isPixel4
 
     move-result v5
 

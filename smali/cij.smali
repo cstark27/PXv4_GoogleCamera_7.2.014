@@ -89,7 +89,7 @@
 .method public static a(Lndb;Lcis;)V
     .locals 3
 
-    invoke-virtual {p0}, Lndb;->d()Z
+    invoke-virtual {p0}, Lndb;->d()Z #isPixel3
 
     move-result v0
 
@@ -103,7 +103,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {p0}, Lndb;->f()Z
+    invoke-virtual {p0}, Lndb;->f()Z #isPixel4
 
     move-result p0
 

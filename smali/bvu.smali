@@ -70,7 +70,7 @@
 
     iget-object p1, v0, Lbvw;->a:Lndb;
 
-    invoke-virtual {p1}, Lndb;->b()Z
+    invoke-virtual {p1}, Lndb;->b()Z #isPixel1
 
     move-result p1
 

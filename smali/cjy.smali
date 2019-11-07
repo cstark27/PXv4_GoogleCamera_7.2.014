@@ -976,7 +976,7 @@
 
     sget-object v4, Lcjb;->k:Lcio;
 
-    invoke-virtual/range {p1 .. p1}, Lndb;->b()Z
+    invoke-virtual/range {p1 .. p1}, Lndb;->b()Z #isPixel1
 
     move-result v6
 
@@ -984,7 +984,7 @@
 
     sget-object v4, Lcjb;->l:Lcio;
 
-    invoke-virtual/range {p1 .. p1}, Lndb;->c()Z
+    invoke-virtual/range {p1 .. p1}, Lndb;->c()Z #isPixel2
 
     move-result v6
 
@@ -992,7 +992,7 @@
 
     sget-object v4, Lcjb;->m:Lcio;
 
-    invoke-virtual/range {p1 .. p1}, Lndb;->d()Z
+    invoke-virtual/range {p1 .. p1}, Lndb;->d()Z #isPixel3
 
     move-result v6
 
@@ -1000,7 +1000,7 @@
 
     sget-object v4, Lcjb;->o:Lcio;
 
-    invoke-virtual/range {p1 .. p1}, Lndb;->e()Z
+    invoke-virtual/range {p1 .. p1}, Lndb;->e()Z #isPixel3a
 
     move-result v6
 
@@ -1008,7 +1008,7 @@
 
     sget-object v4, Lcjb;->n:Lcio;
 
-    invoke-virtual/range {p1 .. p1}, Lndb;->f()Z
+    invoke-virtual/range {p1 .. p1}, Lndb;->f()Z #isPixel4
 
     move-result v6
 
@@ -1344,7 +1344,7 @@
 
     invoke-interface {v0, v4, v7}, Lcis;->c(Lcio;Z)V
 
-    invoke-virtual/range {p1 .. p1}, Lndb;->e()Z
+    invoke-virtual/range {p1 .. p1}, Lndb;->e()Z #isPixel3a
 
     move-result v4
 
@@ -1358,25 +1358,25 @@
 
     if-nez v4, :cond_b
 
-    invoke-virtual/range {p1 .. p1}, Lndb;->b()Z
+    invoke-virtual/range {p1 .. p1}, Lndb;->b()Z #isPixel1
 
     move-result v4
 
     if-nez v4, :cond_a
 
-    invoke-virtual/range {p1 .. p1}, Lndb;->c()Z
+    invoke-virtual/range {p1 .. p1}, Lndb;->c()Z #isPixel2
 
     move-result v4
 
     if-nez v4, :cond_4
 
-    invoke-virtual/range {p1 .. p1}, Lndb;->d()Z
+    invoke-virtual/range {p1 .. p1}, Lndb;->d()Z #isPixel3
 
     move-result v3
 
     if-nez v3, :cond_2
 
-    invoke-virtual/range {p1 .. p1}, Lndb;->f()Z
+    invoke-virtual/range {p1 .. p1}, Lndb;->f()Z #isPixel4
 
     move-result v3
 

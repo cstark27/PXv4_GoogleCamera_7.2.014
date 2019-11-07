@@ -122,7 +122,7 @@
 
     if-ne p1, v2, :cond_6
 
-    invoke-virtual {v1}, Lndb;->f()Z
+    invoke-virtual {v1}, Lndb;->f()Z #isPixel4
 
     move-result p1
 

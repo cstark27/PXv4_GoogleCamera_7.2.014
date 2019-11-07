@@ -228,7 +228,7 @@
 
     invoke-virtual {v3, v12}, Lcom/google/googlex/gcam/StaticMetadataVector;->add(Lcom/google/googlex/gcam/StaticMetadata;)V
 
-    invoke-virtual/range {p4 .. p4}, Lndb;->f()Z
+    invoke-virtual/range {p4 .. p4}, Lndb;->f()Z #isPixel4
 
     move-result v13
 

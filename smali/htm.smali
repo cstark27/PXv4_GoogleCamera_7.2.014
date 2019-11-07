@@ -457,7 +457,7 @@
 
     invoke-interface {v13, v0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {v12}, Lndb;->f()Z
+    invoke-virtual {v12}, Lndb;->f()Z #isPixel4
 
     move-result v0
 

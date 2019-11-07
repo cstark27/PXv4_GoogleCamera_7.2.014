@@ -73,7 +73,7 @@
 
     sget-object p2, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
 
-    invoke-virtual {p2}, Lndb;->d()Z
+    invoke-virtual {p2}, Lndb;->d()Z #isPixel3
 
     move-result p2
 
@@ -85,7 +85,7 @@
     :cond_1
     sget-object p2, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
 
-    invoke-virtual {p2}, Lndb;->e()Z
+    invoke-virtual {p2}, Lndb;->e()Z #isPixel3a
 
     move-result p2
 
@@ -1432,7 +1432,7 @@
 
     sget-object v0, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
 
-    invoke-virtual {v0}, Lndb;->f()Z
+    invoke-virtual {v0}, Lndb;->f()Z #isPixel4
 
     move-result v0
 
@@ -1973,7 +1973,7 @@
 
     sget-object v0, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
 
-    invoke-virtual {v0}, Lndb;->b()Z
+    invoke-virtual {v0}, Lndb;->b()Z #isPixel1
 
     move-result v0
 
@@ -1981,7 +1981,7 @@
 
     sget-object v0, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
 
-    invoke-virtual {v0}, Lndb;->f()Z
+    invoke-virtual {v0}, Lndb;->f()Z #isPixel4
 
     move-result v0
 
@@ -4021,7 +4021,7 @@
 
     sget-object p2, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
 
-    invoke-virtual {p2}, Lndb;->d()Z
+    invoke-virtual {p2}, Lndb;->d()Z #isPixel3
 
     move-result p2
 
@@ -4029,7 +4029,7 @@
 
     sget-object p2, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
 
-    invoke-virtual {p2}, Lndb;->e()Z
+    invoke-virtual {p2}, Lndb;->e()Z #isPixel3a
 
     move-result p2
 
@@ -4997,7 +4997,7 @@
 
     sget-object v0, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
 
-    invoke-virtual {v0}, Lndb;->d()Z
+    invoke-virtual {v0}, Lndb;->d()Z #isPixel3
 
     move-result v0
 
@@ -5007,7 +5007,7 @@
 
     sget-object v0, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
 
-    invoke-virtual {v0}, Lndb;->f()Z
+    invoke-virtual {v0}, Lndb;->f()Z #isPixel4
 
     move-result v0
 

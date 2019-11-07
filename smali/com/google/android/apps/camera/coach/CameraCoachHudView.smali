@@ -376,7 +376,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lndb;->f()Z
+    invoke-virtual {v3}, Lndb;->f()Z #isPixel4
 
     move-result v3
 

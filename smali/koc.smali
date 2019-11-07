@@ -53,7 +53,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lndb;->b()Z
+    invoke-virtual {v0}, Lndb;->b()Z #isPixel1
 
     move-result v0
 

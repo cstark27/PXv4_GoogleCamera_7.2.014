@@ -218,7 +218,7 @@
 
     iget-object v5, v3, Lbxw;->n:Lndb;
 
-    invoke-virtual {v5}, Lndb;->d()Z
+    invoke-virtual {v5}, Lndb;->d()Z #isPixel3
 
     move-result v5
 

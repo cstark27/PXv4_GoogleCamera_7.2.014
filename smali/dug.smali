@@ -72,7 +72,7 @@
     :try_start_0
     sget-object v0, Ldug;->a:Lndb;
 
-    invoke-virtual {v0}, Lndb;->b()Z
+    invoke-virtual {v0}, Lndb;->b()Z #isPixel1
 
     move-result v0
 
@@ -132,7 +132,7 @@
 
     sget-object v2, Ldug;->a:Lndb;
 
-    invoke-virtual {v2}, Lndb;->b()Z
+    invoke-virtual {v2}, Lndb;->b()Z #isPixel1
 
     move-result v2
 
