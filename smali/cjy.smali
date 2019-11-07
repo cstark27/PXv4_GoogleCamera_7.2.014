@@ -624,7 +624,7 @@
 
     sget-object v4, Lciu;->w:Lcio;
 
-    invoke-interface {v0, v4, v7}, Lcis;->c(Lcio;Z)V
+    invoke-interface {v0, v4, v5}, Lcis;->c(Lcio;Z)V	# "SABRE_ALLOWED" (default on)
 
     sget-object v4, Lciu;->x:Lcio;
 
@@ -2448,7 +2448,7 @@
 
     sget-object v1, Lciu;->y:Lcio;
 
-    invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
+    invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V	# SABRE_UNZOOMED_NIGHTMODE
 
     sget-object v1, Lciu;->A:Lcio;
 
