@@ -119,7 +119,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcjh;->e:Lcio;
+    sput-object v0, Lcjh;->e:Lcio; #disable_sff_in_regular_mode
 
     new-instance v0, Lcip;
 

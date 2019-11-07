@@ -355,7 +355,7 @@
 	:cond_on
     iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lcin;
 
-    sget-object v1, Lcjh;->e:Lcio;
+    sget-object v1, Lcjh;->e:Lcio; #disable_sff_in_regular_mode
 
     invoke-interface {v0, v1}, Lcin;->c(Lcio;)Z
 

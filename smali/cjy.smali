@@ -1204,7 +1204,7 @@
 
     invoke-interface {v0, v4, v7}, Lcis;->b(Lcio;Z)V
 
-    sget-object v4, Lcjh;->e:Lcio;
+    sget-object v4, Lcjh;->e:Lcio; #disable_sff_in_regular_mode
 
     invoke-interface {v0, v4, v7}, Lcis;->b(Lcio;Z)V
 
@@ -1775,9 +1775,9 @@
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;I)V
 
-    sget-object v1, Lcjh;->e:Lcio;
+    sget-object v1, Lcjh;->e:Lcio; #disable_sff_in_regular_mode
 
-    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
+    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
     goto/16 :goto_7
 
@@ -2570,9 +2570,9 @@
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;I)V
 
-    sget-object v1, Lcjh;->e:Lcio;
+    sget-object v1, Lcjh;->e:Lcio; #disable_sff_in_regular_mode
 
-    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
+    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
     :cond_d
     :goto_7
