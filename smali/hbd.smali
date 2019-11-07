@@ -52,8 +52,6 @@
 
     move-result v1
 
-	const v1, 0x0
-
     if-eqz v1, :cond_0
 
     sget-object v0, Lmzg;->a:Lmzg;

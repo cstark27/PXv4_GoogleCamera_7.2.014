@@ -1944,7 +1944,7 @@
 
     sget-object v1, Lcjb;->h:Lcio;		# "face_detect_mode_use_extended"
 
-    invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
+    invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
     sget-object v1, Lcjb;->a:Lciq;
 
