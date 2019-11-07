@@ -2493,29 +2493,29 @@
 
     invoke-virtual {v1, v2}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    new-instance v2, Lerp;
+#    new-instance v2, Lerp;
 
-    invoke-direct {v2, p0}, Lerp;-><init>(Leru;)V
+#    invoke-direct {v2, p0}, Lerp;-><init>(Leru;)V
 
-    invoke-virtual {v1, v2}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+#    invoke-virtual {v1, v2}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    const-string v1, "pref_launch_help"
+#    const-string v1, "pref_launch_help"
 
-    invoke-virtual {p0, v1}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+#    invoke-virtual {p0, v1}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-result-object v1
+#    move-result-object v1
 
-    new-instance v2, Lerq;
+#    new-instance v2, Lerq;
 
-    invoke-direct {v2, v0}, Lerq;-><init>(Landroid/app/Activity;)V
+#    invoke-direct {v2, v0}, Lerq;-><init>(Landroid/app/Activity;)V
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+#    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
-    const-string v1, "pref_launch_feedback"
+#    const-string v1, "pref_launch_feedback"
 
-    invoke-virtual {p0, v1}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+#    invoke-virtual {p0, v1}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-result-object v1
+#    move-result-object v1
 
     new-instance v2, Lerr;
 
