@@ -295,6 +295,10 @@
     invoke-interface {v9}, Lger;->N()Lmzh;
 
     move-result-object v0
+	
+	sget v1, Lcom/custom/extras;->isPixel1:I	#no pd for portrait
+
+    if-nez v1, :cond_4
 
     sget-object v1, Lmzh;->b:Lmzh;
 
@@ -327,6 +331,10 @@
     invoke-interface {v9}, Lger;->N()Lmzh;
 
     move-result-object v0
+	
+	sget v1, Lcom/custom/extras;->isPixel1:I
+
+    if-nez v1, :cond_5
 
     sget-object v1, Lmzh;->b:Lmzh;
 
@@ -542,6 +550,10 @@
     invoke-interface {v9}, Lger;->N()Lmzh;
 
     move-result-object v0
+	
+	sget v1, Lcom/custom/extras;->isPixel1:I
+
+    if-nez v1, :cond_c
 
     sget-object v1, Lmzh;->b:Lmzh;
 
@@ -557,7 +569,7 @@
 
     invoke-interface {v13, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lcim;->f:Lcio;
+    sget-object v0, Lcim;->f:Lcio; #camera.artemis_portrait
 
     invoke-interface {v10, v0}, Lcin;->c(Lcio;)Z
 

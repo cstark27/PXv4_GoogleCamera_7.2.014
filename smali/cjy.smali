@@ -1122,7 +1122,7 @@
 
     invoke-interface {v0, v4, v8}, Lcis;->b(Lciq;Ljava/lang/Integer;)V
 
-    sget-object v4, Lcjf;->e:Lcio;
+    sget-object v4, Lcjf;->e:Lcio; #portrait_availability
 
     invoke-interface {v0, v4, v5}, Lcis;->c(Lcio;Z)V
 
@@ -2042,7 +2042,7 @@
 
     invoke-interface {v0, v1, v11}, Lcir;->a(Lciq;Ljava/lang/Integer;)V
 
-    sget-object v1, Lcjf;->e:Lcio;
+    sget-object v1, Lcjf;->e:Lcio; #portrait_availability
 
     sget-object v3, Llao;->b:Landroid/hardware/camera2/CaptureRequest$Key;
 
@@ -2329,9 +2329,9 @@
 
     invoke-interface {v0, v1, v11}, Lcir;->a(Lciq;Ljava/lang/Integer;)V
 
-    sget-object v1, Lcjf;->e:Lcio;
+    sget-object v1, Lcjf;->e:Lcio; #portrait_availability
 
-    invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
+    invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
     sget-object v1, Lcjf;->m:Lcio;
 

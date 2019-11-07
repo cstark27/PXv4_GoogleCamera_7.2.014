@@ -115,7 +115,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcjf;->e:Lcio;
+    sput-object v0, Lcjf;->e:Lcio; #portrait_availability
 
     new-instance v0, Lcip;
 

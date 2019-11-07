@@ -67,7 +67,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object v3, Lcjf;->e:Lcio;
+    sget-object v3, Lcjf;->e:Lcio; #portrait_availability
 
     invoke-interface {v0, v3}, Lcin;->d(Lcio;)Z
 

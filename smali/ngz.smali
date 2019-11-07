@@ -63,7 +63,7 @@
 .method public static a(Lcin;)Z
     .locals 1
 
-    sget-object v0, Lcjf;->e:Lcio;
+    sget-object v0, Lcjf;->e:Lcio; #portrait_availability
 
     invoke-interface {p0, v0}, Lcin;->d(Lcio;)Z
 
