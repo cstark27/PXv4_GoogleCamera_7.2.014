@@ -869,7 +869,7 @@
 
     iget-object p1, p1, Ldop;->a:Lcin;
 
-    sget-object p5, Lciu;->n:Lcio;
+    sget-object p5, Lciu;->n:Lcio; #camera.cuttle.extended astro mode
 
     invoke-interface {p1, p5}, Lcin;->c(Lcio;)Z
 

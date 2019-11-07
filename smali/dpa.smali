@@ -152,7 +152,7 @@
     :try_start_0
     iget-object v0, p0, Ldpa;->a:Lcin;
 
-    sget-object v1, Lciu;->n:Lcio;
+    sget-object v1, Lciu;->n:Lcio; #camera.cuttle.extended astro mode
 
     invoke-interface {v0, v1}, Lcin;->c(Lcio;)Z
 
@@ -280,7 +280,7 @@
     :try_start_0
     iget-object v0, p0, Ldpa;->a:Lcin;
 
-    sget-object v1, Lciu;->n:Lcio;
+    sget-object v1, Lciu;->n:Lcio; #camera.cuttle.extended astro mode
 
     invoke-interface {v0, v1}, Lcin;->c(Lcio;)Z
 

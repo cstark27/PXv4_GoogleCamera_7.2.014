@@ -151,7 +151,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lciu;->n:Lcio;
+    sput-object v0, Lciu;->n:Lcio; #camera.cuttle.extended astro mode
 
     new-instance v0, Lcip;
 

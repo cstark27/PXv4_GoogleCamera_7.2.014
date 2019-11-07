@@ -536,7 +536,7 @@
 
     invoke-interface {v0, v4}, Lcis;->i(Lcio;)V
 
-    sget-object v4, Lciu;->n:Lcio;
+    sget-object v4, Lciu;->n:Lcio; #camera.cuttle.extended astro mode
 
     invoke-interface {v0, v4, v5}, Lcis;->b(Lcio;Z)V
 
@@ -1870,7 +1870,7 @@
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lciu;->n:Lcio;
+    sget-object v1, Lciu;->n:Lcio; #camera.cuttle.extended astro mode
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
@@ -2163,9 +2163,9 @@
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcim;->d:Lcio;
+    sget-object v1, Lcim;->d:Lcio;	# "camera.manual_focus_enabled"
 
-    invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
+    invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
     sget-object v1, Lcig;->i:Lcio;
 
@@ -2211,7 +2211,11 @@
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lciu;->n:Lcio;
+    sget-object v1, Lciu;->n:Lcio; #camera.cuttle.extended astro mode
+
+    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
+	
+	sget-object v1, Lciu;->q:Lcio;		# "camera.cuttle.extended_iterable_burst"
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
