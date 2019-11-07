@@ -193,6 +193,15 @@
 
     add-long v3, p2, v1
 
+	# countdown fix for P1 and P2
+	long-to-float v3, v3
+	
+	invoke-static {v3}, Lcom/custom/extras;->setTotal_Astro(F)F
+	
+	move-result v3
+
+	float-to-long v3, v3
+
     sget-object p2, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0x1
