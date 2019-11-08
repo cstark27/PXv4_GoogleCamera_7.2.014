@@ -1042,4 +1042,11 @@ Move device slowly"</string>
     <item type="string" name="APKTOOL_DUMMY_3f3">false</item>
     <item type="string" name="APKTOOL_DUMMY_3f9">false</item>
     <item type="string" name="APKTOOL_DUMMY_3fa">false</item>
+	<string name="pref_frame_summary">"Increases frames captured to reduce noise.
+Will increase processing time.
+Zero to minimal change in dynamic range.
+SELECTED: %s"</string>
+	<string name="pref_maxmag_summary">"Overrides the maximum zoom amount.
+This may cause instability on certain devices at high zoom levels.
+SELECTED: %s"</string>
 </resources>
