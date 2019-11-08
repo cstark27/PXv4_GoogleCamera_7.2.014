@@ -36,7 +36,7 @@
 
 .field public static NON_ZSL_FRAMES:I
 
-.field public static getMaxISO:F
+.field public static HDRE_for_frames:I
 
 
 # direct methods

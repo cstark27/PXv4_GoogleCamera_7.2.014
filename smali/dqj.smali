@@ -525,6 +525,9 @@
 
     move-result p1
 
+	# puts "2" if HDR+E
+	sput p1, Lcom/custom/extras;->HDRE_for_frames:I
+
     if-ne p1, p6, :cond_5
 
     iget-object p1, p0, Ldqj;->h:Lcin;
@@ -1083,7 +1086,21 @@
     goto :goto_c
 
     :cond_19
-    nop
+	sget p1,Lcom/custom/extras;->HDRE_for_frames:I
+	
+	const p2, 0x2
+	
+	if-ne p1, p2, :cond_1a
+	
+	const-string p1, "pref_nonzsl_frames"
+
+	invoke-static {p1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result p1
+	
+	if-eqz p1, :cond_1a
+
+	move p3, p1
 
     :cond_1a
     :goto_c
