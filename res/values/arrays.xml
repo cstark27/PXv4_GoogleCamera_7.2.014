@@ -176,16 +176,18 @@
     </string-array>
     <string-array name="pref_maxmag_entries">
         <item>Default</item>
-        <item>2x higher</item>
-        <item>3x higher</item>
-        <item>4x higher</item>
-        <item>5x higher</item>
+        <item>12x</item>
+        <item>16x</item>
+        <item>24x</item>
+        <item>32x</item>
+        <item>50x</item>
     </string-array>
     <string-array name="pref_maxmag_entryvalues">
         <item>0</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
+        <item>12</item>
+        <item>16</item>
+        <item>24</item>
+        <item>32</item>
+        <item>50</item>
     </string-array>
 </resources>

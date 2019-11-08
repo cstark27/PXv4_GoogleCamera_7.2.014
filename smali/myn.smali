@@ -1249,13 +1249,11 @@
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_DefMaxMag
 
-    int-to-float v1, v1
+    int-to-float v0, v1
 
-    mul-float/2addr v0, v1
-
-    :cond_0
+    :cond_DefMaxMag
     return v0
 .end method
 

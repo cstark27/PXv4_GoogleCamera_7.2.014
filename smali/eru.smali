@@ -2638,6 +2638,14 @@
     move-result v0
 
     if-nez v0, :cond_1
+	
+	const-string v0, "pref_maxmag_key"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_maxmag
 
     const-string v0, "pref_iso_key"
 
@@ -2712,4 +2720,15 @@
     invoke-virtual {v2, v1}, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->setEnabled(Z)V
 
     goto :goto_0
+	
+	:cond_maxmag
+	sget v1, Lcom/custom/extras;->isPixel4:I
+
+    if-eqz v1, :cond_2
+	
+	const-string v0, "To use the Telephoto Lens past 8x, you need the Pixel4TeleExtender Magisk Module."
+
+    invoke-static {v0}, Lcom/custom/extras;->ShowToastLong(Ljava/lang/String;)V
+	
+	return-void
 .end method
