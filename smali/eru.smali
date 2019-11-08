@@ -2583,14 +2583,6 @@
 
     if-nez v0, :cond_1
 
-    const-string v0, "pref_maxmag_key"
-
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
     const-string v0, "pref_p4awb_key"
 
     invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2623,14 +2615,6 @@
 
     if-nez v0, :cond_1
 
-    const-string v0, "pref_enable_sff"
-
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
     const-string v0, "pref_startrail"
 
     invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2656,14 +2640,6 @@
     if-nez v0, :cond_1
 
     const-string v0, "pref_iso_key"
-
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    const-string v0, "pref_disable_facewarping"
 
     invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
