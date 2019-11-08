@@ -153,6 +153,7 @@
 		<item>30</item>
     </string-array>
     <string-array name="pref_maxexpo_entries">
+        <item>Default</item>
         <item>2s</item>
         <item>4s</item>
         <item>8s</item>
@@ -164,6 +165,7 @@
 		<item>60s</item>
     </string-array>
     <string-array name="pref_maxexpo_entryvalues">
+        <item>0</item>
         <item>2</item>
         <item>4</item>
         <item>8</item>

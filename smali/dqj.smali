@@ -950,11 +950,15 @@
 
     invoke-virtual {v0, p2}, Lcom/google/googlex/gcam/ShotParams;->setTripod_max_total_capture_time_ms(F)V
 
-	const-string p1, "pref_maxexpo_key"			# Maximum exposure
+	const-string v2, "pref_maxexpo_key"			# Maximum exposure
 
-	invoke-static {p1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+	invoke-static {v2}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
-	move-result p1
+	move-result v2
+	
+	if-eqz v2, :cond_DefMaxExpSec
+	
+	move p1, v2
 	
 	sput p1, Lcom/custom/extras;->MAX_EXPOSURE:I
 	
@@ -971,6 +975,7 @@
 	goto :goto_b
 
     :goto_a
+	:cond_DefMaxExpSec
     iget-object p2, p0, Ldqj;->h:Lcin;
 
     sget-object p4, Lciu;->p:Lcio;
