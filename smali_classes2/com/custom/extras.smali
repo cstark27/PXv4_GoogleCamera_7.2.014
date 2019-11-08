@@ -408,7 +408,11 @@
 
 	move-result v0
 	
-	if-eqz v0, :goto_more10
+	if-eqz v0, :goto_nofix
+	
+	sget v0, Lcom/custom/extras;->isPixel1:I
+	
+	if-nez v0, :cond_Pixel1
 	
 	invoke-static {p0}, Lcom/custom/extras;->TESTCAT_F(F)V
 	
@@ -440,11 +444,7 @@
 	
 	goto :goto_final
 	
-	:cond_non2
-	const v4, 0xa
-
-	#if-gt v3, v4, :goto_more10
-	
+	:cond_non2	
 	const v3, 0x3f800000	# 1.0f
 	
 	sub-float v4, v1, v3	# no. of frames - 1
@@ -456,13 +456,43 @@
 	
 	add-float v0, v0, v2
 	
-	#const v1, 0x447a0000	# 1000.0f
-	
-	#add-float v0, v0, v1
-	
+	:goto_end
 	return v0
+
+	:cond_Pixel1
+	invoke-static {p0}, Lcom/custom/extras;->TESTCAT_F(F)V
 	
-	:goto_more10
+	const v0, 0x3f800000	# 1.0f
+	
+	add-float v0, v0, p0
+	
+	sget v1, Lcom/custom/extras;->NON_ZSL_FRAMES:I
+	
+	int-to-float v1, v1
+	
+	div-float v2, v0, v1	# ms per frame
+	
+	const v3, 0x43c80000	# 400f
+	
+	add-float v0, v2, v3	# ms per frame + 400
+	
+	const v3, 0x3f800000	# 1.0f
+	
+	sub-float v4, v1, v3	# no. of frames - 1
+	
+	mul-float v0, v0, v4	# (ms per frame + 400) x (no. of frames - 1)
+
+	add-float v0, v0, v2
+	
+	add-float v0, v0, v2
+	
+	const v1, 0x40000000	# 2.0f
+	
+	add-float v0, v0, v1	# total count + 2s
+	
+	goto :goto_end
+	
+	:goto_nofix
 	return p0
 .end method
 

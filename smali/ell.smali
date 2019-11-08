@@ -194,6 +194,17 @@
     add-long v3, p2, v1
 
 	# countdown fix for P1 and P2
+	sget p2, Lcom/custom/extras;->isPixel1:I
+	
+	if-nez p2, :cond_astrofix
+	
+	sget p2, Lcom/custom/extras;->isPixel2:I
+	
+	if-nez p2, :cond_astrofix
+	
+	goto :cond_default
+	
+	:cond_astrofix
 	long-to-float v3, v3
 	
 	invoke-static {v3}, Lcom/custom/extras;->setTotal_Astro(F)F
@@ -202,6 +213,7 @@
 
 	float-to-long v3, v3
 
+	:cond_default
     sget-object p2, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0x1
