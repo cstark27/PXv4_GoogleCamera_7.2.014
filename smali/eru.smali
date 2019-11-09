@@ -2639,6 +2639,14 @@
 
     if-nez v0, :cond_1
 	
+	const-string v0, "pref_maxexpo_key"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+	
 	const-string v0, "pref_maxmag_key"
 
     invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z

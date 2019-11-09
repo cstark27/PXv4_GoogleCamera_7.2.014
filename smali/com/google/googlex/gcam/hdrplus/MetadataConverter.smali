@@ -912,13 +912,35 @@
     move-result v2
 
     aput v2, v5, v3
+	
+	const-string v2, "pref_maxexpo_key"			# Maximum exposure
 
+	invoke-static {v2}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v2
+	
+	if-eqz v2, :cond_DefMaxExpSec
+	
+	int-to-float v2, v2
+	
+	const/high16 v7, 0x447a0000    # 1000.0f
+
+	mul-float v2, v2, v7
+	
+	invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v2
+	
+	goto :goto_SetMaxExpSec
+	
+	:cond_DefMaxExpSec
     invoke-static {p0}, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->getMaxExposureTimeMsForRawCapture(Lmyp;)Ljava/lang/Float;
 
     move-result-object v2
 
     if-eqz v2, :cond_7
 
+	:goto_SetMaxExpSec
     invoke-virtual {v2}, Ljava/lang/Float;->floatValue()F
 
     move-result v2
@@ -1971,13 +1993,29 @@
 
     if-ne v0, v1, :cond_5
 
-    sget-object v0, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
+    #sget-object v0, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
 
-    invoke-virtual {v0}, Lndb;->b()Z #isPixel1
+    #invoke-virtual {v0}, Lndb;->b()Z #isPixel1
+
+    #move-result v0
+
+    #if-nez v0, :cond_4
+	
+	sget-object v0, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
+
+    invoke-virtual {v0}, Lndb;->d()Z #isPixel3
+
+    move-result v0
+	
+    if-nez v0, :cond_Pixel3
+	
+	sget-object v0, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
+
+    invoke-virtual {v0}, Lndb;->e()Z #isPixel3a
 
     move-result v0
 
-    if-nez v0, :cond_4
+    if-nez v0, :cond_Pixel3
 
     sget-object v0, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
 
@@ -2031,6 +2069,15 @@
 
     :cond_4
     const/high16 p0, 0x44fa0000    # 2000.0f
+
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object p0
+
+    return-object p0
+	
+	:cond_Pixel3
+    const p0, 0x463b8000    # 12000.0f
 
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
