@@ -410,8 +410,6 @@
 
 	if-eqz v0, :goto_nofix
 	
-	invoke-static {p0}, Lcom/custom/extras;->TESTCAT_F(F)V
-	
 	const v0, 0x3f800000	# 1.0f
 	
 	add-float v0, v0, p0
@@ -455,9 +453,7 @@
 	:goto_end
 	return v0
 
-	:cond_Pixel1
-	invoke-static {p0}, Lcom/custom/extras;->TESTCAT_F(F)V
-	
+	:cond_Pixel1	
 	const v0, 0x3f800000	# 1.0f
 	
 	add-float v0, v0, p0
