@@ -402,17 +402,13 @@
 .method public static setTotal_Astro(F)F
 	.locals 5
 	
-	const-string v0, "pref_countdownfix_key"
-
-	invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
-
-	move-result v0
-	
-	if-eqz v0, :goto_nofix
-	
 	sget v0, Lcom/custom/extras;->isPixel1:I
 	
 	if-nez v0, :cond_Pixel1
+	
+	sget v0, Lcom/custom/extras;->isPixel2:I
+
+	if-eqz v0, :goto_nofix
 	
 	invoke-static {p0}, Lcom/custom/extras;->TESTCAT_F(F)V
 	
