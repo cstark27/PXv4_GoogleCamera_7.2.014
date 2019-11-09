@@ -1993,13 +1993,13 @@
 
     if-ne v0, v1, :cond_5
 
-    #sget-object v0, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
+    sget-object v0, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
 
-    #invoke-virtual {v0}, Lndb;->b()Z #isPixel1
+    invoke-virtual {v0}, Lndb;->b()Z #isPixel1
 
-    #move-result v0
+    move-result v0
 
-    #if-nez v0, :cond_4
+    if-nez v0, :cond_4
 	
 	sget-object v0, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->deviceProperties:Lndb;
 
