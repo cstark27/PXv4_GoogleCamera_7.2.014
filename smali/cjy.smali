@@ -136,9 +136,15 @@
 
     invoke-interface {v0, v4, v7}, Lcis;->c(Lcio;Z)V
 
-    sget-object v4, Lcit;->E:Lcio;
+    sget-object v4, Lcit;->E:Lcio;		# camera.artemis
 
-    iget-boolean v9, v2, Lnda;->e:Z
+    #iget-boolean v9, v2, Lnda;->e:Z
+	
+	const-string v9, "pref_track_focus"			# Tracking Focus
+
+	invoke-static {v9}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v9
 
     invoke-interface {v0, v4, v9}, Lcis;->a(Lcio;Z)V
 
@@ -521,8 +527,14 @@
     invoke-interface {v0, v4, v7}, Lcis;->b(Lcio;Z)V
 
     sget-object v4, Lcim;->f:Lcio;	# "camera.artemis_portrait"
+	
+	const-string v15, "pref_track_focus"			# Tracking Focus
 
-    invoke-interface {v0, v4, v5}, Lcis;->b(Lcio;Z)V
+	invoke-static {v15}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v15
+
+    invoke-interface {v0, v4, v15}, Lcis;->b(Lcio;Z)V
 
     sget-object v4, Lciu;->l:Lcio;
 
@@ -1806,10 +1818,6 @@
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcit;->E:Lcio;
-
-    invoke-virtual {v0, v1, v7}, Lcjy;->a(Lcio;Z)V
-
     sget-object v1, Lcit;->F:Lcio;
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
@@ -1845,10 +1853,6 @@
     sget-object v1, Lcim;->d:Lcio;		# "camera.manual_focus_enabled"
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
-
-    sget-object v1, Lcim;->f:Lcio;		# "camera.artemis_portrait"
-
-    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
     sget-object v1, Lcig;->n:Lcio;		# "camcorder.stereo"
 
@@ -2118,10 +2122,6 @@
     sget-object v1, Lcit;->y:Lcio;
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
-
-    sget-object v1, Lcit;->E:Lcio;
-
-    invoke-virtual {v0, v1, v7}, Lcjy;->a(Lcio;Z)V
 
     sget-object v1, Lcit;->F:Lcio;
 
