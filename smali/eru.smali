@@ -2645,7 +2645,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_maxexpo
 	
 	const-string v0, "pref_maxmag_key"
 
@@ -2739,4 +2739,9 @@
     invoke-static {v0}, Lcom/custom/extras;->ShowToastLong(Ljava/lang/String;)V
 	
 	return-void
+	
+	:cond_maxexpo
+	invoke-static {}, Lcom/custom/extras;->getMaxExpo_toast()V
+	
+	goto :cond_1
 .end method

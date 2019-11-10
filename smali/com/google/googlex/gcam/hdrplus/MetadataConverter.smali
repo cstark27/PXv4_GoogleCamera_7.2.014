@@ -893,6 +893,13 @@
 
     move-result-wide v5
 
+	# get device max expo
+	long-to-float v5, v5
+
+	invoke-static {v5}, Lcom/custom/extras;->getMaxExpo(F)V
+
+	float-to-long v5, v5
+
     aput-wide v5, v2, v3
 
     new-array v5, v1, [F

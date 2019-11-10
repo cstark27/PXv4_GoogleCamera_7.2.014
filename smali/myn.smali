@@ -613,6 +613,8 @@
 
     move-result v0
 
+	sput v0, Lcom/custom/extras;->LensFacing:I		# Lens facing: 1 = rear
+
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0

@@ -38,6 +38,8 @@
 
 .field public static HDRE_for_frames:I
 
+.field public static getMaxExpo_ms:F
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -486,6 +488,107 @@
 	
 	:goto_nofix
 	return p0
+.end method
+
+.method public static getMaxExpo(F)V
+	.locals 3
+	
+	sget v0, Lcom/custom/extras;->LensFacing:I
+	
+	if-eqz v0, :goto_done
+	
+	const v0, 0x447a0000	# 1000.0f
+	
+	div-float v1, p0, v0
+	
+	div-float v2, v1, v0
+	
+	sput v2, Lcom/custom/extras;->getMaxExpo_ms:F
+	
+	:goto_done	
+	return-void
+.end method
+
+.method public static getMaxExpo_toast()V
+	.locals 4
+
+	const-string v0, "pref_maxexpo_key"			# Maximum exposure
+
+	invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+	
+	move-result v0
+	
+	int-to-float v0, v0
+	
+	const v1, 0x447a0000	# 1000.0f
+	
+	mul-float v0, v0, v1
+
+	sget v1, Lcom/custom/extras;->getMaxExpo_ms:F
+
+	const v3, 0x1
+	
+	cmpl-float v2, v0, v1		# if -1, no toast
+
+	if-ne v2, v3, :goto_done
+	
+	sget v1, Lcom/custom/extras;->isPixel1:I
+	
+	if-nez v1, :cond_P1
+	
+	sget v1, Lcom/custom/extras;->isPixel2:I
+	
+	if-nez v1, :cond_P2
+	
+	sget v1, Lcom/custom/extras;->isPixel3:I
+	
+	if-nez v1, :cond_P3
+
+	sget v1, Lcom/custom/extras;->isPixel3a:I
+	
+	if-nez v1, :cond_P3a
+	
+	sget v1, Lcom/custom/extras;->isPixel4:I
+	
+	if-nez v1, :cond_P4
+
+	:cond_P1
+	const-string v0, "Stock Pixel/XL only supports max exposure of 2s."
+
+    invoke-static {v0}, Lcom/custom/extras;->ShowToastLong(Ljava/lang/String;)V
+
+	goto :goto_done
+
+	:cond_P2
+	const-string v0, "Stock Pixel 2/XL only supports max exposure of 4s."
+
+    invoke-static {v0}, Lcom/custom/extras;->ShowToastLong(Ljava/lang/String;)V
+
+	goto :goto_done
+
+	:cond_P3
+	const-string v0, "Stock Pixel 3/XL only supports max exposure of 12.5s."
+
+    invoke-static {v0}, Lcom/custom/extras;->ShowToastLong(Ljava/lang/String;)V
+
+	goto :goto_done
+
+	:cond_P3a
+	const-string v0, "Stock Pixel 3a/XL only supports max exposure of 12.5s."
+
+    invoke-static {v0}, Lcom/custom/extras;->ShowToastLong(Ljava/lang/String;)V
+
+	goto :goto_done
+
+	:cond_P4
+	const-string v0, "Stock Pixel 4/XL only supports max exposure of 16s."
+
+    invoke-static {v0}, Lcom/custom/extras;->ShowToastLong(Ljava/lang/String;)V
+
+	goto :goto_done
+
+	:goto_done
+	return-void
 .end method
 
 .method public static setManual_Astro()F
