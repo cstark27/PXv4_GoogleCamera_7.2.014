@@ -959,7 +959,24 @@
     invoke-virtual {v5, v4}, Lcqw;->a(Landroid/preference/PreferenceScreen;)V
 
     :cond_6
-    nop
+    # show status if LE module is installed
+	const-string v4, "pref_isLE_key"
+	
+    invoke-virtual {v0, v4}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+	
+	move-result-object v4
+
+    check-cast v4, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;
+
+	const v5, 0x0
+
+    invoke-virtual {v4, v5}, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->setEnabled(Z)V
+	
+	invoke-static {}, Lcom/custom/extras;->isLE_installed()I
+	
+	move-result v5
+	
+	invoke-virtual {v4, v5}, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->setChecked(Z)V
 
     const-string v4, "pref_category_social_share"
 

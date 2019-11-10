@@ -490,6 +490,81 @@
 	return p0
 .end method
 
+.method public static isLE_installed()I
+	.locals 4
+
+	sget v1, Lcom/custom/extras;->getMaxExpo_ms:F
+	
+	const v2, 0x1
+
+	sget v0, Lcom/custom/extras;->isPixel1:I
+	
+	if-nez v0, :cond_P1
+	
+	sget v0, Lcom/custom/extras;->isPixel2:I
+	
+	if-nez v0, :cond_P2
+	
+	sget v0, Lcom/custom/extras;->isPixel3:I
+	
+	if-nez v0, :cond_P3
+
+	sget v0, Lcom/custom/extras;->isPixel3a:I
+	
+	if-nez v0, :cond_P3
+	
+	sget v0, Lcom/custom/extras;->isPixel4:I
+	
+	if-nez v0, :cond_P4
+
+	:cond_P1
+	const v0, 0x453b8000	# 3000.0f
+	
+	cmpl-float v3, v0, v1		# if -1, yes
+	
+	if-ne v2, v3, :cond_yes
+
+	goto :cond_no
+
+	:cond_P2
+	const v0, 0x459c4000	# 5000.0f
+	
+	cmpl-float v3, v0, v1		# if -1, yes
+	
+	if-ne v2, v3, :cond_yes
+
+	goto :cond_no
+
+	:cond_P3
+	const v0, 0x466a6000	# 15000.0f
+	
+	cmpl-float v3, v0, v1		# if -1, yes
+	
+	if-ne v2, v3, :cond_yes
+
+	goto :cond_no
+
+	:cond_P4
+	const v0, 0x4700e800	# 33000.0f
+	
+	cmpl-float v3, v0, v1		# if -1, yes
+	
+	if-ne v2, v3, :cond_yes
+
+	goto :cond_no
+
+	:cond_yes
+	const v0, 0x1
+	
+	goto :goto_done
+	
+	:cond_no
+	const v0, 0x0
+
+	:goto_done
+	return v0
+.end method
+
 .method public static getMaxExpo(F)V
 	.locals 3
 	
