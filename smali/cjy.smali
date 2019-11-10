@@ -520,9 +520,9 @@
 
     invoke-interface {v0, v4, v7}, Lcis;->b(Lcio;Z)V
 
-    sget-object v4, Lcim;->f:Lcio;
+    sget-object v4, Lcim;->f:Lcio;	# "camera.artemis_portrait"
 
-    invoke-interface {v0, v4, v7}, Lcis;->b(Lcio;Z)V
+    invoke-interface {v0, v4, v5}, Lcis;->b(Lcio;Z)V
 
     sget-object v4, Lciu;->l:Lcio;
 
