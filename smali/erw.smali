@@ -386,6 +386,8 @@
     invoke-interface {v0}, Lgcp;->d()Z
 
     move-result v0
+	
+	const v0, 0x1	# enable camera sound setting
 
     if-nez v0, :cond_9
 

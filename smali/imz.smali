@@ -36,7 +36,7 @@
 
     const-string v1, "pref_camera_sounds_key"
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0		#camera sounds off by default
 
     invoke-virtual {v0, v1, v2}, Limb;->a(Ljava/lang/String;Z)Lmdm;
 
