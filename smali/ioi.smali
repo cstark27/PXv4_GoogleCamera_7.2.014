@@ -115,6 +115,8 @@
     invoke-interface {v5, v0}, Lcin;->d(Lcio;)Z
 
     move-result v0
+	
+	const v0, 0x0	# Pixel 1 HDR+ reset fix
 
     if-eqz v0, :cond_0
 
