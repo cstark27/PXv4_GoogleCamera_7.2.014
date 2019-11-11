@@ -439,6 +439,20 @@
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_a
+	# Link appears only when LE module is not found
+	invoke-static {}, Lcom/custom/extras;->isLE_installed()I
+	
+	move-result v0
+	
+	if-eqz v0, :cond_LEdone
+	
+	iget-object v0, p0, Lerw;->t:Ljava/util/List;
+
+    const-string v1, "pref_LE_link"
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+	
+	:cond_LEdone
     iget-object v0, p0, Lerw;->l:Lcin;
 
     sget-object v1, Lcik;->a:Lcio;

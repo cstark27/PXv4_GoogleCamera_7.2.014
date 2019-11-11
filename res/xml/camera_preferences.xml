@@ -21,7 +21,10 @@
 				<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/ics_awb_ns" android:layout="@layout/preference_with_margin" android:title="AI AWB for Night Sight" android:key="pref_awb_ns" android:defaultValue="false" />
 			</PreferenceCategory>
 			<PreferenceCategory android:title="Astrophotography Settings" android:key="pref_category_advanced2_astro" >	
-				<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/ics_blank" android:layout="@layout/preference_with_margin_LEcheck" android:key="pref_isLE_key" android:summaryOn="Long exposure module: Installed" android:summaryOff="Long exposure module: Not installed" />
+				<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/ics_blank" android:layout="@layout/preference_with_margin_LEcheck" android:key="pref_isLE_key" android:summaryOn="Long Exposure Magisk module: Installed" android:summaryOff="Long Exposure Magisk module: Not installed" />
+				<Preference android:icon="@drawable/ics_blank" android:layout="@layout/preference_with_margin_LElink" android:enabled="true" android:summary="Tap here to install" android:key="pref_LE_link" >
+					<intent android:action="android.intent.action.VIEW" android:data="http://bit.ly/2Q6v17k" />
+				</Preference>
 				<ListPreference android:icon="@drawable/ics_maxexpo" android:layout="@layout/preference_with_margin" android:title="Maximum Exposure Time" android:key="pref_maxexpo_key" android:summary="%s" android:defaultValue="0" android:entries="@array/pref_maxexpo_entries" android:entryValues="@array/pref_maxexpo_entryvalues" />
 				<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/ics_align" android:layout="@layout/preference_with_margin" android:title="Show Light Trail Button" android:key="pref_align_key" android:defaultValue="false" android:summary="Adds a switch to the viewfinder to quickly enable or disable Light Trail effect when used with HDR+ Enhanced or Night Sight. You may need a tripod."/>
 			</PreferenceCategory>
