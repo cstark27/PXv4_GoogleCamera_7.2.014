@@ -656,7 +656,7 @@
 	goto :goto_done
 
 	:cond_P4
-	const-string v0, "Stock Pixel 4/XL only supports max exposure of 16s."
+	const-string v0, "Stock Pixel 4/XL only supports max exposure of 32s."
 
     invoke-static {v0}, Lcom/custom/extras;->ShowToastLong(Ljava/lang/String;)V
 
