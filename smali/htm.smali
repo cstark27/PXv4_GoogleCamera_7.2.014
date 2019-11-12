@@ -298,7 +298,7 @@
 	
 	sget v1, Lcom/custom/extras;->isPixel1:I	#no pd for portrait
 
-    if-nez v1, :cond_4
+    if-nez v1, :cond_3
 
     sget-object v1, Lmzh;->b:Lmzh;
 
