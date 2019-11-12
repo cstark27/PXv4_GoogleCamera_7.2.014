@@ -453,6 +453,18 @@
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 	
 	:cond_LEdone
+	# Link appears only when LE module is not found
+	sget v0, Lcom/custom/extras;->isPixel1:I
+	
+	if-eqz v0, :cond_longpressdone
+	
+	iget-object v0, p0, Lerw;->t:Ljava/util/List;
+
+    const-string v1, "pref_longpress_key"
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+	
+	:cond_longpressdone
     iget-object v0, p0, Lerw;->l:Lcin;
 
     sget-object v1, Lcik;->a:Lcio;

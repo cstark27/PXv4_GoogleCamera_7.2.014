@@ -526,7 +526,7 @@
 
     invoke-interface {v0, v4, v7}, Lcis;->b(Lcio;Z)V
 
-    sget-object v4, Lcim;->f:Lcio;	# "camera.artemis_portrait"
+    sget-object v4, Lcim;->f:Lcio;		# "camera.artemis_portrait"
 	
 	const-string v15, "pref_track_focus"			# Tracking Focus
 
@@ -1524,6 +1524,20 @@
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;F)V
 
+	# Longpress-video toggle
+	const-string v1, "pref_longpress_key"
+
+	invoke-static {v1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v1
+	
+	if-eqz v1, :cond_deflongpP4
+	
+    sget-object v1, Lciz;->a:Lcio;		# camera.micro_longp
+
+    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
+	
+	:cond_deflongpP4
     sget-object v1, Lciy;->e:Lcio;
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
@@ -1715,6 +1729,20 @@
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;F)V
 
+	# Longpress-video toggle
+	const-string v1, "pref_longpress_key"
+
+	invoke-static {v1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v1
+	
+	if-eqz v1, :cond_deflongpP3
+	
+    sget-object v1, Lciz;->a:Lcio;		# camera.micro_longp
+
+    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
+	
+	:cond_deflongpP3
     sget-object v1, Lcja;->f:Lcio;
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
@@ -1938,6 +1966,20 @@
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
+	# Longpress-video toggle
+	const-string v1, "pref_longpress_key"
+
+	invoke-static {v1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v1
+	
+	if-eqz v1, :cond_deflongpP2
+	
+    sget-object v1, Lciz;->a:Lcio;		# camera.micro_longp
+
+    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
+	
+	:cond_deflongpP2
     sget-object v1, Lcja;->f:Lcio;		# camera.mts_4k
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
@@ -2347,7 +2389,7 @@
 
     sget-object v1, Lcjh;->b:Lcio;		# rectiface_supported
 
-    invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
+    invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
     sget-object v1, Lcjm;->b:Lcio;		# upper_bound_timeout_us_enabled
 
@@ -2490,6 +2532,20 @@
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;F)V
 
+	# Longpress-video toggle
+	const-string v1, "pref_longpress_key"
+
+	invoke-static {v1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v1
+	
+	if-eqz v1, :cond_deflongpP3a
+	
+    sget-object v1, Lciz;->a:Lcio;		# camera.micro_longp
+
+    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
+	
+	:cond_deflongpP3a
     sget-object v1, Lcja;->f:Lcio;
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
@@ -2574,7 +2630,7 @@
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;I)V
 
-    sget-object v1, Lcjh;->e:Lcio; #disable_sff_in_regular_mode
+    sget-object v1, Lcjh;->e:Lcio;		#disable_sff_in_regular_mode
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
