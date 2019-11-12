@@ -2584,7 +2584,7 @@
 
     if-nez v0, :cond_3
 
-    const-string v0, "pref_custlib_key"
+    const-string v0, "pref_track_focus"
 
     invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
