@@ -2223,7 +2223,7 @@
 
     sget-object v1, Lcig;->j:Lcio;		# enable_hevc_setting
 
-    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
+    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
     sget-object v1, Lcig;->m:Lcio;		# camcorder.ois
 
