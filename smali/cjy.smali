@@ -1798,39 +1798,39 @@
     goto/16 :goto_7
 
     :cond_4
-    sget-object v1, Lcif;->e:Lcio;
+    sget-object v1, Lcif;->e:Lcio;		# advice_total_exposure_threshhold_front
 
     const v4, 0x4ba5003c    # 2.1627E7f
 
     invoke-virtual {v0, v1, v4}, Lcjy;->a(Lcio;F)V
 
-    sget-object v1, Lcif;->f:Lcio;
+    sget-object v1, Lcif;->f:Lcio;		# advice_total_exposure_threshhold_rear
 
     const v4, 0x4bb7b1a0    # 2.407712E7f
 
     invoke-virtual {v0, v1, v4}, Lcjy;->a(Lcio;F)V
 
-    sget-object v1, Lcit;->p:Lcio;
+    sget-object v1, Lcit;->p:Lcio;		# camera.auto_fps
 
     invoke-virtual {v0, v1, v7}, Lcjy;->a(Lcio;Z)V
 
-    sget-object v1, Lcit;->r:Lcio;
+    sget-object v1, Lcit;->r:Lcio;		# back_flash_off_by_default
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcit;->F:Lcio;
+    sget-object v1, Lcit;->F:Lcio;		# exif_model_make_sanitization_enabled
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcit;->L:Lcio;
+    sget-object v1, Lcit;->L:Lcio;		# hybrid_ae_only_ois_jitter_for_back_camera_enabled
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcit;->R:Lcio;
+    sget-object v1, Lcit;->R:Lcio;		# ois_api_supported
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcit;->Z:Lcio;
+    sget-object v1, Lcit;->Z:Lcio;		# pd_calibration_data_supported
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
@@ -1838,15 +1838,15 @@
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcit;->ab:Lcio;
+    sget-object v1, Lcit;->ab:Lcio;		# unflipped_selfie_default
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcim;->a:Lcio;
+    sget-object v1, Lcim;->a:Lcio;		# camera.ae.hdrplus_region_weight
 
     invoke-virtual {v0, v1, v12}, Lcjy;->a(Lcio;F)V
 
-    sget-object v1, Lcim;->c:Lcio;
+    sget-object v1, Lcim;->c:Lcio;		# camera.enable_hound
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
@@ -1862,23 +1862,23 @@
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcig;->o:Lcio;
+    sget-object v1, Lcig;->o:Lcio;		# fps_video_setting_writeable
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcig;->q:Lcio;
+    sget-object v1, Lcig;->q:Lcio;		# google_llv_auto_fps_non_4k
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lciu;->l:Lcio;
+    sget-object v1, Lciu;->l:Lcio;		# AWB_FOR_HDR_PLUS_ENHANCED
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lciu;->A:Lcio;
+    sget-object v1, Lciu;->A:Lcio;		# gcam.zsl_ns
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lciu;->n:Lcio; #camera.cuttle.extended astro mode
+    sget-object v1, Lciu;->n:Lcio;		#camera.cuttle.extended astro mode
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
@@ -1902,7 +1902,7 @@
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcix;->d:Lcio;
+    sget-object v1, Lcix;->d:Lcio;		# camera.lenslite.legacy_pixel
 
     invoke-virtual {v0, v1, v7}, Lcjy;->a(Lcio;Z)V
 
@@ -1918,17 +1918,17 @@
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lciw;->c:Lcio;
+    sget-object v1, Lciw;->c:Lcio;		# camera.iris_ocr
 
     invoke-virtual {v0, v1, v7}, Lcjy;->a(Lcio;Z)V
 
-    sget-object v1, Lciy;->b:Lcio;
+    sget-object v1, Lciy;->b:Lcio;		# total_exposure_threshold_front
 
     const v4, 0x4bb75598    # 2.403E7f
 
     invoke-virtual {v0, v1, v4}, Lcjy;->a(Lcio;F)V
 
-    sget-object v1, Lciy;->c:Lcio;
+    sget-object v1, Lciy;->c:Lcio;		# total_exposure_threshold_rear
 
     const v4, 0x4be59e08    # 3.00964E7f
 
@@ -1938,7 +1938,7 @@
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcja;->f:Lcio;
+    sget-object v1, Lcja;->f:Lcio;		# camera.mts_4k
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
@@ -1954,9 +1954,9 @@
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjb;->a:Lciq;
+    sget-object v1, Lcjb;->a:Lciq;		# max_hdr_plus_imagereader_image_count
 
-    sget-object v4, Lcjb;->b:Lciq;
+    sget-object v4, Lcjb;->b:Lciq;		# max_hdr_plus_burst_frame_count
 
     invoke-interface {v0, v4}, Lcin;->a(Lciq;)Lpka;
 
@@ -1980,11 +1980,11 @@
 
     invoke-interface {v0, v1, v4}, Lcir;->a(Lciq;Ljava/lang/Integer;)V
 
-    sget-object v1, Lcjb;->i:Lcio;
+    sget-object v1, Lcjb;->i:Lcio;		# pd_image_format_is_raw_depth
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjd;->a:Lcio;
+    sget-object v1, Lcjd;->a:Lcio;		# camera.enable_pbooth
 
     sget-object v4, Lcjn;->a:Lcjn;
 
@@ -2034,23 +2034,23 @@
     :goto_4
     invoke-virtual {v0, v1, v3}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcjf;->q:Lcio;
+    sget-object v1, Lcjf;->q:Lcio;		# camera.gouda.allow_raw_blur_front
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcjf;->r:Lcio;
+    sget-object v1, Lcjf;->r:Lcio;		# camera.gouda.allow_raw_blur_rear
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcjf;->p:Lcio;
+    sget-object v1, Lcjf;->p:Lcio;		# camera.gouda.primary_raw
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcjf;->a:Lciq;
+    sget-object v1, Lcjf;->a:Lciq;		# max_gouda_inflight_shots
 
     invoke-interface {v0, v1, v11}, Lcir;->a(Lciq;Ljava/lang/Integer;)V
 
-    sget-object v1, Lcjf;->e:Lcio; #portrait_availability
+    sget-object v1, Lcjf;->e:Lcio;		#portrait_availability
 
     sget-object v3, Llao;->b:Landroid/hardware/camera2/CaptureRequest$Key;
 
@@ -2068,11 +2068,11 @@
     :goto_5
     invoke-virtual {v0, v1, v3}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjf;->j:Lcio;
+    sget-object v1, Lcjf;->j:Lcio;		# segmenter_force_cpu_inference
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjf;->m:Lcio;
+    sget-object v1, Lcjf;->m:Lcio;		# camera.gouda.cl_seg
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
@@ -2080,7 +2080,7 @@
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjm;->b:Lcio;
+    sget-object v1, Lcjm;->b:Lcio;		# upper_bound_timeout_us_enabled
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
@@ -2103,7 +2103,7 @@
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;F)V
 
-    sget-object v1, Lcif;->c:Lcio;
+    sget-object v1, Lcif;->c:Lcio;		# camera.advice.dirtylens
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
@@ -2159,63 +2159,63 @@
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcim;->a:Lcio;
+    sget-object v1, Lcim;->a:Lcio;		# camera.ae.hdrplus_region_weight
 
     invoke-virtual {v0, v1, v12}, Lcjy;->a(Lcio;F)V
 
-    sget-object v1, Lcim;->c:Lcio;
+    sget-object v1, Lcim;->c:Lcio;		# camera.enable_hound
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcim;->d:Lcio;	# "camera.manual_focus_enabled"
+    sget-object v1, Lcim;->d:Lcio;		# "camera.manual_focus_enabled"
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcig;->i:Lcio;
+    sget-object v1, Lcig;->i:Lcio;		# detect_face_on_non_front_camera
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcig;->n:Lcio;
+    sget-object v1, Lcig;->n:Lcio;		# camcorder.stereo
 
     invoke-virtual {v0, v1, v7}, Lcjy;->a(Lcio;Z)V
 
-    sget-object v1, Lcig;->j:Lcio;
+    sget-object v1, Lcig;->j:Lcio;		# enable_hevc_setting
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcig;->m:Lcio;
+    sget-object v1, Lcig;->m:Lcio;		# camcorder.ois
 
     invoke-virtual {v0, v1, v7}, Lcjy;->a(Lcio;Z)V
 
-    sget-object v1, Lcig;->o:Lcio;
+    sget-object v1, Lcig;->o:Lcio;		# fps_video_setting_writeable
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcig;->p:Lcio;
+    sget-object v1, Lcig;->p:Lcio;		# google_llv_30_fps_non_4k
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcig;->q:Lcio;
+    sget-object v1, Lcig;->q:Lcio;		# google_llv_auto_fps_non_4k
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcig;->s:Lcio;
+    sget-object v1, Lcig;->s:Lcio;		# zoom_override_enabled
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lciu;->l:Lcio;
+    sget-object v1, Lciu;->l:Lcio;		# AWB_FOR_HDR_PLUS_ENHANCED
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lciu;->z:Lcio;
+    sget-object v1, Lciu;->z:Lcio;		# POST_CAPTURE_TEMPORAL_BINNING
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lciu;->A:Lcio;
+    sget-object v1, Lciu;->A:Lcio;		# gcam.zsl_ns
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lciu;->n:Lcio; #camera.cuttle.extended astro mode
+    sget-object v1, Lciu;->n:Lcio;		#camera.cuttle.extended astro mode
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 	
@@ -2223,53 +2223,53 @@
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lciw;->c:Lcio;
+    sget-object v1, Lciw;->c:Lcio;		# camera.iris_ocr
 
     invoke-virtual {v0, v1, v7}, Lcjy;->a(Lcio;Z)V
 
-    sget-object v1, Lcix;->d:Lcio;
+    sget-object v1, Lcix;->d:Lcio;		# camera.lenslite.legacy_pixel
 
     invoke-virtual {v0, v1, v5}, Lcjy;->a(Lcio;Z)V
 
-    sget-object v1, Lciy;->b:Lcio;
+    sget-object v1, Lciy;->b:Lcio;		# total_exposure_threshold_front
 
     const v3, 0x4bb6fdb4    # 2.3985E7f
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;F)V
 
-    sget-object v1, Lciy;->c:Lcio;
+    sget-object v1, Lciy;->c:Lcio;		# total_exposure_threshold_rear
 
     const v3, 0x4be6ff5a    # 3.02773E7f
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;F)V
 
-    sget-object v1, Lciz;->h:Lcio;
+    sget-object v1, Lciz;->h:Lcio;		# micro_video_supported
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lciz;->g:Lcio;
+    sget-object v1, Lciz;->g:Lcio;		# camera.enable_micro
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lciz;->k:Lcio;
+    sget-object v1, Lciz;->k:Lcio;		# synced_gyro_supported
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lciz;->a:Lcio;
+    sget-object v1, Lciz;->a:Lcio;		# camera.micro_longp
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcja;->f:Lcio;
+    sget-object v1, Lcja;->f:Lcio;		# camera.mts_4k
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcjb;->h:Lcio;
+    sget-object v1, Lcjb;->h:Lcio;		# face_detect_mode_use_extended
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjb;->a:Lciq;
+    sget-object v1, Lcjb;->a:Lciq;		# max_hdr_plus_imagereader_image_count
 
-    sget-object v3, Lcjb;->b:Lciq;
+    sget-object v3, Lcjb;->b:Lciq;		# max_hdr_plus_burst_frame_count
 
     invoke-interface {v0, v3}, Lcin;->a(Lciq;)Lpka;
 
@@ -2293,71 +2293,71 @@
 
     invoke-interface {v0, v1, v3}, Lcir;->a(Lciq;Ljava/lang/Integer;)V
 
-    sget-object v1, Lcjb;->i:Lcio;
+    sget-object v1, Lcjb;->i:Lcio;		# pd_image_format_is_raw_depth
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjb;->u:Lcio;
+    sget-object v1, Lcjb;->u:Lcio;		# portrait_use_pd
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjb;->w:Lcio;
+    sget-object v1, Lcjb;->w:Lcio;		# portrait_use_ml
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjc;->a:Lcio;
+    sget-object v1, Lcjc;->a:Lcio;		# has_pixel_2017_option_bar_specs
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjc;->b:Lcio;
+    sget-object v1, Lcjc;->b:Lcio;		# hdr_plus_always_shown_in_options_bar
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjd;->a:Lcio;
+    sget-object v1, Lcjd;->a:Lcio;		# camera.enable_pbooth
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcit;->ag:Lcio;
+    sget-object v1, Lcit;->ag:Lcio;		# camera.auto_timer_enabled
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcjf;->q:Lcio;
+    sget-object v1, Lcjf;->q:Lcio;		# camera.gouda.allow_raw_blur_front
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcjf;->r:Lcio;
+    sget-object v1, Lcjf;->r:Lcio;		# camera.gouda.allow_raw_blur_rear
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcjf;->p:Lcio;
+    sget-object v1, Lcjf;->p:Lcio;		# camera.gouda.primary_raw
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcjf;->a:Lciq;
+    sget-object v1, Lcjf;->a:Lciq;		# max_gouda_inflight_shots
 
     invoke-interface {v0, v1, v11}, Lcir;->a(Lciq;Ljava/lang/Integer;)V
 
-    sget-object v1, Lcjf;->e:Lcio; #portrait_availability
+    sget-object v1, Lcjf;->e:Lcio;		#portrait_availability
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjf;->m:Lcio;
+    sget-object v1, Lcjf;->m:Lcio;		# camera.gouda.cl_seg
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcjh;->b:Lcio;
+    sget-object v1, Lcjh;->b:Lcio;		# rectiface_supported
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjm;->b:Lcio;
+    sget-object v1, Lcjm;->b:Lcio;		# upper_bound_timeout_us_enabled
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjm;->c:Lcio;
+    sget-object v1, Lcjm;->c:Lcio;		# high_res_camcorder_video_resolution_enabled
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
-    sget-object v1, Lcjm;->d:Lcio;
+    sget-object v1, Lcjm;->d:Lcio;		# manual_fps_lite_enabled
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
 
