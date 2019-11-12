@@ -32,18 +32,20 @@
 
     sget-object v1, Lcjm;->c:Lcio;
 
-    invoke-interface {v0, v1}, Lcin;->d(Lcio;)Z
+    const-string v0, "pref_4k_timelapse"
+
+    invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lmes;->f:Lmes;
+    sget-object v0, Lmes;->g:Lmes;		# 1080p
 
     goto :goto_0
 
     :cond_0
-    sget-object v0, Lmes;->g:Lmes;
+    sget-object v0, Lmes;->h:Lmes;		# 4K
 
     :goto_0
     nop
