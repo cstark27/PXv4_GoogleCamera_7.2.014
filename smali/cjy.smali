@@ -2317,7 +2317,7 @@
 
     sget-object v1, Lcit;->ag:Lcio;		# camera.auto_timer_enabled
 
-    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
+    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
     sget-object v1, Lcjf;->q:Lcio;		# camera.gouda.allow_raw_blur_front
 
