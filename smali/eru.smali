@@ -2587,6 +2587,14 @@
     sget v0, Lcom/custom/extras;->sHdr_process:I
 
     if-nez v0, :cond_3
+	
+	const-string v0, "pref_motion_photos"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
 
     const-string v0, "pref_track_focus"
 

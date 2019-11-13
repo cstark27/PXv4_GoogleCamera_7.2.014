@@ -849,14 +849,20 @@
     sget-object v4, Lciz;->f:Lcio;
 
     invoke-interface {v0, v4}, Lcis;->i(Lcio;)V
+	
+	const-string v10, "pref_motion_photos"			# Motion Photos
 
-    sget-object v4, Lciz;->h:Lcio;
+	invoke-static {v10}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
-    invoke-interface {v0, v4, v5}, Lcis;->c(Lcio;Z)V
+	move-result v10
 
-    sget-object v4, Lciz;->g:Lcio;
+    sget-object v4, Lciz;->h:Lcio;	# micro_video_supported (Motion Photos)
 
-    invoke-interface {v0, v4, v5}, Lcis;->b(Lcio;Z)V
+    invoke-interface {v0, v4, v10}, Lcis;->c(Lcio;Z)V
+
+    sget-object v4, Lciz;->g:Lcio;	# camera.enable_micro (Motion Photos 2)
+
+    invoke-interface {v0, v4, v10}, Lcis;->b(Lcio;Z)V
 
     sget-object v4, Lciz;->k:Lcio;
 
@@ -882,9 +888,9 @@
 
     invoke-interface {v0, v4, v7}, Lcis;->b(Lcio;Z)V
 
-    sget-object v4, Lcja;->f:Lcio;
+    sget-object v4, Lcja;->f:Lcio;	# camera.mts_4k (Top Shot)
 
-    invoke-interface {v0, v4, v7}, Lcis;->b(Lcio;Z)V
+    invoke-interface {v0, v4, v10}, Lcis;->b(Lcio;Z)V
 
     sget-object v4, Lcja;->d:Lcio;
 
@@ -1560,10 +1566,6 @@
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
-    sget-object v1, Lcja;->f:Lcio;
-
-    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
-
     sget-object v1, Lcja;->j:Lcio;
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
@@ -1734,10 +1736,6 @@
     const v3, 0x4c359140    # 4.75968E7f
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;F)V
-
-    sget-object v1, Lcja;->f:Lcio;
-
-    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
     sget-object v1, Lcja;->k:Lcio;
 
@@ -1955,10 +1953,6 @@
     invoke-virtual {v0, v1, v4}, Lcjy;->a(Lcio;F)V
 
     sget-object v1, Lciy;->e:Lcio;		# "camera.cuttle.glpreview"
-
-    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
-
-    sget-object v1, Lcja;->f:Lcio;		# camera.mts_4k
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
@@ -2263,23 +2257,11 @@
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;F)V
 
-    sget-object v1, Lciz;->h:Lcio;		# micro_video_supported
-
-    invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
-
-    sget-object v1, Lciz;->g:Lcio;		# camera.enable_micro
-
-    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
-
     sget-object v1, Lciz;->k:Lcio;		# synced_gyro_supported
 
     invoke-virtual {v0, v1, v7}, Lcjy;->c(Lcio;Z)V
 
     sget-object v1, Lciz;->a:Lcio;		# camera.micro_longp
-
-    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
-
-    sget-object v1, Lcja;->f:Lcio;		# camera.mts_4k
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
 
@@ -2509,10 +2491,6 @@
     const v3, 0x4c4622aa    # 5.1940008E7f
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;F)V
-
-    sget-object v1, Lcja;->f:Lcio;
-
-    invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
     sget-object v1, Lcja;->j:Lcio;
 

@@ -34,6 +34,12 @@
 
     move-result-object v0
 	
+	const-string v1, "pref_motion_photos"
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Limb;->a(Ljava/lang/String;Z)Lmdm;
+	
 	const-string v1, "pref_enable_sff"
 
     const/4 v2, 0x1
