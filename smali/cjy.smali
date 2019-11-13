@@ -316,7 +316,7 @@
 
     invoke-interface {v0, v4, v5}, Lcis;->b(Lcio;Z)V
 
-    sget-object v4, Lcit;->aa:Lcio;
+    sget-object v4, Lcit;->aa:Lcio; # camera.60fps (show 60 fps)
 
     invoke-interface {v0, v4, v5}, Lcis;->a(Lcio;Z)V
 
@@ -1664,10 +1664,6 @@
     sget-object v1, Lcit;->R:Lcio;
 
     invoke-virtual {v0, v1, v5}, Lcjy;->c(Lcio;Z)V
-
-    sget-object v1, Lcit;->aa:Lcio;
-
-    invoke-virtual {v0, v1, v7}, Lcjy;->a(Lcio;Z)V
 
     sget-object v1, Lcit;->an:Lcio;
 

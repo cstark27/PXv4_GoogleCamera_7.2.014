@@ -708,7 +708,7 @@
 
     move-result v32
 
-    sget-object v2, Lcit;->aa:Lcio;
+    sget-object v2, Lcit;->aa:Lcio; # camera.60fps (show 60 fps)
 
     invoke-interface {v8, v2}, Lcin;->b(Lcio;)Z
 

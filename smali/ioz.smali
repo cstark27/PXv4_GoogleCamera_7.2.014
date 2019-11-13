@@ -68,7 +68,7 @@
 
     invoke-direct {v3, v4}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
-    sget-object v4, Lcit;->aa:Lcio;
+    sget-object v4, Lcit;->aa:Lcio; # camera.60fps (show 60 fps)
 
     invoke-interface {v1, v4}, Lcin;->b(Lcio;)Z
 

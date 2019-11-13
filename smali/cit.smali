@@ -1101,7 +1101,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcit;->aa:Lcio;
+    sput-object v0, Lcit;->aa:Lcio; # camera.60fps (show 60 fps)
 
     new-instance v0, Lcip;
 
