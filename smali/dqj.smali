@@ -3972,11 +3972,29 @@
 
     move-result-object p1
 
+	# Button for forced astro mode
+	const-string v0, "pref_align_key"
+
+	invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v0
+
+	if-eqz v0, :cond_defastro
+
+	sget v0, Lcom/toggle/align/AlignZ;->AlignZS:I
+
+	if-eqz v0, :cond_defastro
+
+    invoke-virtual {p1, v0}, Lcom/google/googlex/gcam/ViewfinderResults;->setIs_on_tripod(Z)V
+
+	return v0
+
+	:cond_defastro
     invoke-virtual {p1}, Lcom/google/googlex/gcam/ViewfinderResults;->getIs_on_tripod()Z
 
-    move-result p1
+    move-result v0
 
-    return p1
+    return v0
 .end method
 
 .method public final c(Ldse;)Z

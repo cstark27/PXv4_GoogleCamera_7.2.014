@@ -159,7 +159,23 @@
     move-result v0
 
     if-eqz v0, :cond_1
+	
+	# Button for forced astro mode
+	const-string v0, "pref_align_key"
 
+	invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v0
+
+	if-eqz v0, :cond_defastro
+
+	sget v0, Lcom/toggle/align/AlignZ;->AlignZS:I
+
+	if-eqz v0, :cond_defastro
+
+	move p1, v0
+
+	:cond_defastro
     iput-boolean p1, p0, Ldpa;->c:Z
 
     sget-object p1, Lmzh;->a:Lmzh;
@@ -273,7 +289,7 @@
 .end method
 
 .method public final declared-synchronized b(ZLmzh;)V
-    .locals 2
+    .locals 3
 
     monitor-enter p0
 
@@ -306,7 +322,23 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-boolean p1, p0, Ldpa;->d:Z
+	# Button for forced astro mode
+	const-string v2, "pref_align_key"
+
+	invoke-static {v2}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v2
+
+	if-eqz v2, :cond_defastro
+
+	sget v2, Lcom/toggle/align/AlignZ;->AlignZS:I
+
+	if-eqz v2, :cond_defastro
+
+	move p1, v2
+
+	:cond_defastro
+	iput-boolean p1, p0, Ldpa;->d:Z
 
     iget-object p1, p0, Ldpa;->e:Ljava/util/List;
 

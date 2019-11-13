@@ -26,6 +26,8 @@
 
     if-eqz p2, :cond_0
 
+	invoke-static {}, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;->ReInit()V
+
     const/4 v0, 0x1
 
     :goto_0
@@ -59,6 +61,8 @@
     return-void
 
     :cond_0
+	invoke-static {}, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;->ReInit()V
+
     const/4 v0, 0x0
 
     goto :goto_0
