@@ -806,9 +806,29 @@
 
     invoke-interface {v0, v4, v5}, Lcis;->b(Lcio;Z)V
 
-    sget-object v4, Lciz;->a:Lcio;
+	# Longpress shutter toggle
+    sget-object v4, Lciz;->a:Lcio;		# camera.micro_longp
 
+	const-string v5, "pref_longpress_key"
+
+	invoke-static {v5}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v5
+	
+	if-eqz v5, :cond_video
+	
+	:cond_smartburst
+	const v5, 0x0
+	
+	goto :goto_longp_done
+	
+	:cond_video
+	const v5, 0x1
+
+	:goto_longp_done
     invoke-interface {v0, v4, v5}, Lcis;->b(Lcio;Z)V
+
+	const v5, 0x1
 
     sget-object v4, Lciz;->b:Lcio;
 
@@ -1524,20 +1544,6 @@
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;F)V
 
-	# Longpress-video toggle
-	const-string v1, "pref_longpress_key"
-
-	invoke-static {v1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
-
-	move-result v1
-	
-	if-eqz v1, :cond_deflongpP4
-	
-    sget-object v1, Lciz;->a:Lcio;		# camera.micro_longp
-
-    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
-	
-	:cond_deflongpP4
     sget-object v1, Lciy;->e:Lcio;
 
     invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
@@ -1729,20 +1735,6 @@
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;F)V
 
-	# Longpress-video toggle
-	const-string v1, "pref_longpress_key"
-
-	invoke-static {v1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
-
-	move-result v1
-	
-	if-eqz v1, :cond_deflongpP3
-	
-    sget-object v1, Lciz;->a:Lcio;		# camera.micro_longp
-
-    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
-	
-	:cond_deflongpP3
     sget-object v1, Lcja;->f:Lcio;
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
@@ -1966,20 +1958,6 @@
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
 
-	# Longpress-video toggle
-	const-string v1, "pref_longpress_key"
-
-	invoke-static {v1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
-
-	move-result v1
-	
-	if-eqz v1, :cond_deflongpP2
-	
-    sget-object v1, Lciz;->a:Lcio;		# camera.micro_longp
-
-    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
-	
-	:cond_deflongpP2
     sget-object v1, Lcja;->f:Lcio;		# camera.mts_4k
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
@@ -2532,20 +2510,6 @@
 
     invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;F)V
 
-	# Longpress-video toggle
-	const-string v1, "pref_longpress_key"
-
-	invoke-static {v1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
-
-	move-result v1
-	
-	if-eqz v1, :cond_deflongpP3a
-	
-    sget-object v1, Lciz;->a:Lcio;		# camera.micro_longp
-
-    invoke-virtual {v0, v1, v7}, Lcjy;->b(Lcio;Z)V
-	
-	:cond_deflongpP3a
     sget-object v1, Lcja;->f:Lcio;
 
     invoke-virtual {v0, v1, v5}, Lcjy;->b(Lcio;Z)V
