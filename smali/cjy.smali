@@ -542,7 +542,7 @@
 
     sget-object v4, Lcim;->e:Lcio;		# camera.manual_focus_infinity
 
-    invoke-interface {v0, v4, v5}, Lcis;->b(Lcio;Z)V
+    invoke-interface {v0, v4, v7}, Lcis;->b(Lcio;Z)V
 
     sget-object v4, Lciu;->l:Lcio;
 
