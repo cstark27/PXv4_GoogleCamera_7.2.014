@@ -71,6 +71,9 @@
 
     const/4 v2, 0x1
 
+	# Enter Night Sight mode
+	sput v2, Lcom/custom/extras;->NightSight:I
+
     iput-boolean v2, v1, Lcom/google/android/apps/camera/ui/wirers/PreviewOverlay;->e:Z
 
     invoke-virtual {v0}, Ljsj;->N()V
@@ -110,6 +113,10 @@
 
 .method public final d()V
     .locals 1
+	const v0, 0x0
+
+	# Exit Night Sight mode
+	sput v0, Lcom/custom/extras;->NightSight:I
 
     sget-object v0, Ljsj;->a:Ljava/lang/String;
 
