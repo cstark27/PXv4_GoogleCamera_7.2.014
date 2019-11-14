@@ -140,13 +140,31 @@
 
     #iget-boolean v9, v2, Lnda;->e:Z
 	
-	const-string v9, "pref_track_focus"			# Tracking Focus
+	const-string v10, "pref_track_focus"			# Tracking Focus
 
-	invoke-static {v9}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+	invoke-static {v10}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
-	move-result v9
+	move-result v10
+	
+	if-eqz v10, :cond_TFon
+	
+	if-nez v10, :cond_TFoff
+	
+	:cond_TFon
+	const v10, 0x1
+	
+	goto :goto_setTrackFocus
+	
+	:cond_TFoff
+	const v10, 0x0
 
-    invoke-interface {v0, v4, v9}, Lcis;->a(Lcio;Z)V
+	:goto_setTrackFocus
+
+    invoke-interface {v0, v4, v10}, Lcis;->a(Lcio;Z)V
+	
+	sget-object v4, Lcim;->f:Lcio;		# "camera.artemis_portrait"
+
+    invoke-interface {v0, v4, v10}, Lcis;->b(Lcio;Z)V
 
     sget-object v4, Lcit;->F:Lcio;
 
@@ -526,16 +544,6 @@
 
     invoke-interface {v0, v4, v5}, Lcis;->b(Lcio;Z)V
 
-    sget-object v4, Lcim;->f:Lcio;		# "camera.artemis_portrait"
-	
-	const-string v15, "pref_track_focus"			# Tracking Focus
-
-	invoke-static {v15}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
-
-	move-result v15
-
-    invoke-interface {v0, v4, v15}, Lcis;->b(Lcio;Z)V
-
     sget-object v4, Lciu;->l:Lcio;
 
     invoke-interface {v0, v4, v5}, Lcis;->c(Lcio;Z)V
@@ -855,7 +863,20 @@
 	invoke-static {v10}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
 	move-result v10
+	
+	if-eqz v10, :cond_on
+	
+	if-nez v10, :cond_off
+	
+	:cond_on
+	const v10, 0x1
+	
+	goto :goto_setMotionPhotos
+	
+	:cond_off
+	const v10, 0x0
 
+	:goto_setMotionPhotos
     sget-object v4, Lciz;->h:Lcio;	# micro_video_supported (Motion Photos)
 
     invoke-interface {v0, v4, v10}, Lcis;->c(Lcio;Z)V
