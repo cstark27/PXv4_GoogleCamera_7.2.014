@@ -11,11 +11,11 @@
 			<PreferenceScreen android:icon="@drawable/ic_about_24" android:layout="@layout/preference_with_margin_blue" android:title="About" android:key="pref_category_about">
 				<Preference android:icon="@drawable/ics_about" android:enabled="false" android:layout="@layout/preference_about" android:key="pref_about_info" />
 				<Preference android:enabled="false" android:layout="@layout/preference_about_info" android:title="PX Mod" android:key="pref_category_about_icon" android:summary="v4.0" />
-				<Preference android:layout="@layout/preference_updates" android:title="A cstark27, back.rider555, johngalt1 collaboration." android:key="pref_category_about_dev" android:summary="We would like to extend our appreciation and greetings to Marc Levoy and his team, Arnova8G2, BSG, Charles_L, eszdman, fu24, KoopahTManiac, marcello, miniuser123, namok, san1ty, savitar, scrubber, SerJo87, Tolyan009, Urnyx05, xtrme">
+				<Preference android:layout="@layout/preference_updates" android:title="A back.rider555, cstark27, johngalt1 collaboration." android:key="pref_category_about_dev" android:summary="We would like to extend our appreciation and greetings to Marc Levoy and his team, Arnova8G2, BSG, Charles_L, eszdman, fu24, KoopahTManiac, marcello, miniuser123, namok, san1ty, savitar, scrubber, SerJo87, Tolyan009, Urnyx05, xtrme">
 					<intent android:action="android.intent.action.VIEW" android:data="https://www.celsoazevedo.com/files/android/google-camera/developers/" />
 				</Preference>
 				<Preference android:layout="@layout/preference_updates" android:title="Check for Updates" android:key="pref_category_about_updates" android:summary="Updates/Changelog">
-					<intent android:action="android.intent.action.VIEW" android:data="https://www.celsoazevedo.com/files/android/google-camera/dev-cstark27/" />
+					<intent android:action="android.intent.action.VIEW" android:data="https://forum.xda-developers.com/apps/google-camera-mods/gcam-google-pixel-1-2-3-t3875663" />
 				</Preference>
 				<Preference android:layout="@layout/preference_updates" android:title="Magisk Modules" android:key="pref_category_about_magisk" android:summary="Magisk modules may provide more functionality and/or more efficient processing.">
 					<intent android:action="android.intent.action.VIEW" android:data="https://forum.xda-developers.com/showthread.php?p=79951569#post79951569" />
