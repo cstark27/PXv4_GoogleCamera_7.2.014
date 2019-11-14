@@ -10,6 +10,8 @@
 # static fields
 .field private static final l:Ljava/lang/String;
 
+.field private static final sCameraActivity:Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;
+
 
 # instance fields
 .field public i:Ljbn;
@@ -160,6 +162,8 @@
     .locals 0
 
     invoke-direct {p0}, Lebu;-><init>()V
+
+    sput-object p0, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;->sCameraActivity:Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;
 
     return-void
 .end method
@@ -759,3 +763,21 @@
     :cond_0
     return-void
 .end method
+
+# ReInit from Fu24
+.method public static ReInit()V
+    .locals 1
+
+    sget-object v0, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;->sCameraActivity:Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;
+
+    invoke-super {v0}, Lezc;->onPause()V
+
+    invoke-super {v0}, Lezc;->onStop()V
+
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;->onStart()V
+
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;->onResume()V
+
+    return-void
+.end method
+
