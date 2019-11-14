@@ -43,7 +43,9 @@
 
     invoke-super {p0, v0}, Lcom/google/android/apps/camera/bottombar/ScalableButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const/4 v0, 0x0
+	invoke-static {p0}, Lcom/custom/switch;->setLongClickListener(Landroid/view/View;)V
+	
+	const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/bottombar/CameraSwitchButton;->setFocusable(Z)V
 
