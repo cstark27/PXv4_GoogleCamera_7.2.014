@@ -2182,6 +2182,10 @@
 
     invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
 
+	const-string v1, "pref_category_about"			# smooth About settings transition
+
+    invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
+
     const-string v1, "pref_category_gestures"
 
     invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
