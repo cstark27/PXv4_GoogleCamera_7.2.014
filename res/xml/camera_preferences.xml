@@ -8,6 +8,22 @@
         <com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/quantum_ic_aspect_ratio_grey600_24" android:layout="@layout/preference_with_margin" android:title="@string/pref_camera_coach_title" android:key="pref_camera_coach_key" android:summary="@string/pref_camera_coach_summary" android:order="3" android:defaultValue="true" />
         <com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/quantum_gm_ic_camera_front_black_24" android:layout="@layout/preference_with_margin" android:title="@string/pref_camera_mirror_image_title" android:key="pref_camera_selfie_mirror_key" android:summary="@string/pref_camera_selfie_mirror_image_summary" android:order="4" android:defaultValue="false" />
 		<PreferenceScreen android:icon="@drawable/hamburger" android:layout="@layout/preference_with_margin_blue" android:title="PX Mod Settings" android:key="pref_category_advanced2" android:order="5">
+			<PreferenceScreen android:icon="@drawable/ic_about_24" android:layout="@layout/preference_with_margin_blue" android:title="About" android:key="pref_category_about">
+				<Preference android:icon="@drawable/ics_about" android:enabled="false" android:layout="@layout/preference_about" android:key="pref_about_info" />
+				<Preference android:enabled="false" android:layout="@layout/preference_about_info" android:title="PX Mod" android:key="pref_category_about_icon" android:summary="v4.0" />
+				<Preference android:layout="@layout/preference_updates" android:title="A cstark27, back.rider555, johngalt1 collaboration." android:key="pref_category_about_dev" android:summary="We would like to extend our appreciation and greetings to Marc Levoy and his team, Arnova8G2, BSG, Charles_L, eszdman, fu24, KoopahTManiac, marcello, miniuser123, namok, san1ty, savitar, scrubber, SerJo87, Tolyan009, Urnyx05, xtrme">
+					<intent android:action="android.intent.action.VIEW" android:data="https://www.celsoazevedo.com/files/android/google-camera/developers/" />
+				</Preference>
+				<Preference android:layout="@layout/preference_updates" android:title="Check for Updates" android:key="pref_category_about_updates" android:summary="Updates/Changelog">
+					<intent android:action="android.intent.action.VIEW" android:data="https://www.celsoazevedo.com/files/android/google-camera/dev-cstark27/" />
+				</Preference>
+				<Preference android:layout="@layout/preference_updates" android:title="Magisk Modules" android:key="pref_category_about_magisk" android:summary="Magisk modules may provide more functionality and/or more efficient processing.">
+					<intent android:action="android.intent.action.VIEW" android:data="https://forum.xda-developers.com/showthread.php?p=79951569#post79951569" />
+				</Preference>
+				<Preference android:layout="@layout/preference_updates" android:title="Based on Google Camera" android:key="pref_category_about_based" android:summary="7.2.014">
+					<intent android:action="android.intent.action.VIEW" android:data="https://play.google.com/store/apps/details?id=com.google.android.GoogleCamera" />
+				</Preference>
+			</PreferenceScreen>
 			<PreferenceScreen android:icon="@drawable/quantum_gm_ic_more_horiz_vd_theme_24" android:layout="@layout/preference_with_margin" android:title="Stock Features" android:summary="Enable/disable features like Motion Photos, Synthetic Fill Flash, etc." android:key="pref_category_stockfeats" android:order="0">
 				<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/account_multiple_outline" android:layout="@layout/preference_with_margin" android:title="Synthetic Fill Flash" android:key="pref_enable_sff" android:summary="Brightens faces when there is a strong backlight." android:defaultValue="false" />
 				<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/image_filter_center_focus_weak" android:layout="@layout/preference_with_margin" android:title="Disable Focus Tracking" android:key="pref_track_focus" android:summary="Follows the subject you tap to focus on." android:defaultValue="false" />
