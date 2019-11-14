@@ -1169,12 +1169,6 @@
 
     invoke-interface {v0, v4, v5}, Lcis;->b(Lcio;Z)V
 
-    sget-object v4, Lcjf;->c:Lcio;
-
-    const/high16 v12, 0x3fc00000    # 1.5f
-
-    invoke-interface {v0, v4, v12}, Lcis;->a(Lcio;F)V
-
     sget-object v4, Lcjf;->d:Lcio;
 
     const/high16 v12, 0x40000000    # 2.0f
@@ -2550,12 +2544,6 @@
     move-result-object v3
 
     invoke-interface {v0, v1, v3}, Lcir;->a(Lciq;Ljava/lang/Integer;)V
-
-    sget-object v1, Lcjf;->c:Lcio;
-
-    const/high16 v3, 0x40000000    # 2.0f
-
-    invoke-virtual {v0, v1, v3}, Lcjy;->a(Lcio;F)V
 
     sget-object v1, Lcjf;->d:Lcio;
 

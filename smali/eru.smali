@@ -2700,6 +2700,11 @@
 
     :cond_2
     return-void
+	
+	:cond_reinit
+	invoke-static {}, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;->ReInit()V
+	
+	return-void
 
     :cond_3
     const-string v0, "HDR+ Processing. Force close app to update settings."

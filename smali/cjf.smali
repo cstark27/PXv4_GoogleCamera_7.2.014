@@ -73,7 +73,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcjf;->c:Lcio;
+    sput-object v0, Lcjf;->c:Lcio; # gouda_default_zoom_factor_back
 
     new-instance v0, Lcip;
 

@@ -714,13 +714,29 @@
     if-ne v2, v3, :cond_0
 
     iget-object v0, p0, Lkut;->r:Lcin;
+	
+	const-string v2, "pref_pzoom_key"			# Portrait Zoom
 
-    sget-object v2, Lcjf;->c:Lcio;
+	invoke-static {v2}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
-    invoke-interface {v0, v2}, Lcin;->f(Lcio;)F
+	move-result v2
+	
+	if-eqz v2, :cond_15zoom
+	
+	const/high16 v0, 0x40000000	# 2.0f
+	
+	goto :goto_setPZoom
+	
+	:cond_15zoom
+	const/high16 v0, 0x3fc00000	# 1.5f
 
-    move-result v0
+    #sget-object v2, Lcjf;->c:Lcio; # gouda_default_zoom_factor_back
 
+    #invoke-interface {v0, v2}, Lcin;->f(Lcio;)F
+
+    #move-result v0
+
+	:goto_setPZoom
     mul-float v0, v0, v1
 
     goto :goto_0

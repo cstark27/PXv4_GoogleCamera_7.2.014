@@ -194,4 +194,12 @@
         <item>32</item>
         <item>50</item>
     </string-array>
+	<string-array name="pref_pzoom_entries">
+        <item>"Pixel 2 &amp; 3 Default (1.5x)"</item>
+        <item>"Pixel 3a Default (2.0x)"</item>
+    </string-array>
+    <string-array name="pref_pzoom_entryvalues">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
 </resources>
