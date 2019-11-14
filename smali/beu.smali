@@ -11,7 +11,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
     const-string v0, "IntentHelper"
 
@@ -20,12 +20,42 @@
     move-result-object v0
 
     sput-object v0, Lbeu;->a:Ljava/lang/String;
+	
+	const-string v0, "pref_defmode_key"		#p3mod - default mode
 
+    invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+    move-result v0
+	
+	const v1, 0x0
+	
+	if-eq v0, v1, :cond_camera
+	
+	const v1, 0x1
+	
+	if-eq v0, v1, :cond_portrait
+	
+	const v1, 0x2
+	
+	if-eq v0, v1, :cond_night
+
+	:cond_camera
     sget-object v0, Lklx;->b:Lklx;
 
+	:goto_setMode
     sput-object v0, Lbeu;->b:Lklx;
+	
+	return-void
+	
+	:cond_portrait
+	sget-object v0, Lklx;->h:Lklx;
 
-    return-void
+	goto :goto_setMode
+
+	:cond_night
+	sget-object v0, Lklx;->o:Lklx;
+
+	goto :goto_setMode
 .end method
 
 .method public static a(Landroid/net/Uri;)Landroid/content/Intent;

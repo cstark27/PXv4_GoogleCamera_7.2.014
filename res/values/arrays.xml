@@ -202,4 +202,14 @@
         <item>0</item>
         <item>2</item>
     </string-array>
+	<string-array name="pref_defmode_entries">
+        <item>"Camera"</item>
+        <item>"Portrait"</item>
+		<item>"Night Sight"</item>
+    </string-array>
+    <string-array name="pref_defmode_entryvalues">
+        <item>0</item>
+        <item>1</item>
+		<item>2</item>
+    </string-array>
 </resources>
