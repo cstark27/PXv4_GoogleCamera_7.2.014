@@ -131,7 +131,7 @@
     <item type="array" name="APKTOOL_DUMMY_21">false</item>
     <item type="array" name="APKTOOL_DUMMY_22">false</item>
     <string-array name="pref_nonzsl_entries">
-        <item>Auto</item>
+        <item>Default</item>
 		<item>1</item>
 		<item>3</item>
         <item>5</item>
