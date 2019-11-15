@@ -554,6 +554,10 @@
 	sget v1, Lcom/custom/extras;->isPixel1:I
 
     if-nez v1, :cond_c
+	
+	sget v1, Lcom/custom/extras;->isPixel3a:I
+
+    if-nez v1, :cond_c
 
     sget-object v1, Lmzh;->b:Lmzh;
 
