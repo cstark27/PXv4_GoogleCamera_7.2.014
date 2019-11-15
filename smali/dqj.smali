@@ -699,7 +699,22 @@
     iget-object p3, p0, Ldqj;->h:Lcin;
 
     invoke-interface {p3}, Lcin;->b()Z
+	
+	const-string p3, "pref_forcesabre2_key"		# Force Sabre Merge Method
 
+	invoke-static {p3}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result p3
+	
+	if-eqz p3, :cond_NotForceSabreMerge
+	
+	const p3, 0x2	#kSabre
+	
+	const p1, 0x1	#setAllow_sabre TRUE
+	
+	invoke-virtual {v0, p3}, Lcom/google/googlex/gcam/ShotParams;->setMerge_method_override(I)V
+
+	:cond_NotForceSabreMerge
 	const-string p3, "pref_forcesabre_key"		# Super Res Zoom always ON
 
 	invoke-static {p3}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
