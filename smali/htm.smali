@@ -208,12 +208,26 @@
 
     if-eq v0, v7, :cond_6
 
-    sget-object v0, Lcit;->an:Lcio;
+	sget v0, Lcom/custom/extras;->isPixel4:I
+
+    if-eqz v0, :cond_SkipPixel4SmartBurstFix
+	
+	const-string v0, "pref_longpress_key"
+
+	invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v0
+
+	goto :goto_SkipGetPckLargeYuvValue
+	
+	:cond_SkipPixel4SmartBurstFix
+    sget-object v0, Lcit;->an:Lcio; #camera.pck_large_yuv
 
     invoke-interface {v10, v0}, Lcin;->c(Lcio;)Z
 
     move-result v0
-
+	
+	:goto_SkipGetPckLargeYuvValue
     if-eqz v0, :cond_0
 
     sget-object v0, Lhtd;->f:Lhtd;
@@ -233,7 +247,7 @@
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcit;->am:Lcio;
+    sget-object v0, Lcit;->am:Lcio; #use_physical_raw
 
     invoke-interface {v10, v0}, Lcin;->c(Lcio;)Z
 
@@ -370,7 +384,7 @@
 
     if-eqz v0, :cond_7
 
-    sget-object v0, Lcit;->am:Lcio;
+    sget-object v0, Lcit;->am:Lcio; #use_physical_raw
 
     invoke-interface {v10, v0}, Lcin;->c(Lcio;)Z
 
@@ -482,7 +496,7 @@
 
     if-eqz v0, :cond_b
 
-    sget-object v0, Lcit;->am:Lcio;
+    sget-object v0, Lcit;->am:Lcio; #use_physical_raw
 
     invoke-interface {v10, v0}, Lcin;->c(Lcio;)Z
 

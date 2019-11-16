@@ -56,7 +56,7 @@
 
     iget-object v2, p0, Lgqo;->c:Lrhe;
 
-    sget-object v3, Lcit;->an:Lcio;
+    sget-object v3, Lcit;->an:Lcio; #camera.pck_large_yuv
 
     invoke-interface {v0, v3}, Lcin;->c(Lcio;)Z
 
