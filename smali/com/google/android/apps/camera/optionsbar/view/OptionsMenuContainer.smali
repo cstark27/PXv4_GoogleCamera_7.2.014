@@ -596,7 +596,7 @@
     return-object v0
 .end method
 
-.method public final toggle_astro()Landroid/widget/FrameLayout;
+.method public final toggle_astro()Landroid/widget/FrameLayout;		# get astro buttons layout
     .locals 1
 
     const v0, 0x7f0b02a0
@@ -658,6 +658,7 @@
     :goto_1
     invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->setEnabled(Z)V
 
+	# astro buttons only in Night Sight
     invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->toggle_astro()Landroid/widget/FrameLayout;
 
     move-result-object v0
