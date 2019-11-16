@@ -715,17 +715,6 @@
 	invoke-virtual {v0, p3}, Lcom/google/googlex/gcam/ShotParams;->setMerge_method_override(I)V
 
 	:cond_NotForceSabreMerge
-	const-string p3, "pref_forcesabre_key"		# Super Res Zoom always ON
-
-	invoke-static {p3}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
-
-	move-result p3
-	
-	if-eqz p3, :cond_defsabre
-	
-	const p1, 0x1
-
-	:cond_defsabre
     invoke-virtual {v0, p1}, Lcom/google/googlex/gcam/ShotParams;->setAllow_sabre(Z)V
 
     invoke-virtual {v0}, Lcom/google/googlex/gcam/ShotParams;->getNonzsl_frame_count_override()I
