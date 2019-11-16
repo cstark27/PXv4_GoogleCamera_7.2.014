@@ -142,7 +142,7 @@
 
     check-cast v8, Lhpe;
 
-    sget-object v9, Lcit;->an:Lcio; #camera.pck_large_yuv
+    sget-object v9, Lcit;->an:Lcio;
 
     invoke-interface {v0, v9}, Lcin;->c(Lcio;)Z
 
