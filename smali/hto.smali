@@ -92,7 +92,7 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Ldjy;->a:Lmjt;
+    sget-object v0, Ldjy;->a:Lmjt;	# if changed, this one breaks Dual EV on Pixel 4
 
     goto :goto_0
 

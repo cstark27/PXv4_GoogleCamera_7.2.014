@@ -70,7 +70,7 @@
 
     invoke-static {v0}, Lqdv;->c(Z)V
 
-    sget-object v0, Ldjy;->a:Lmjt;
+    sget-object v0, Ldjy;->c:Lmjt;
 
     goto :goto_0
 

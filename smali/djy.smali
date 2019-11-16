@@ -21,9 +21,9 @@
 .method static constructor <clinit>()V		# 3 MP Motion Photos/Top Shot resolution
     .locals 6
 
-    const/16 v0, 0x800
+    const/16 v0, 0x400
 
-    const/16 v1, 0x600
+    const/16 v1, 0x300
 
     invoke-static {v0, v1}, Lmjt;->a(II)Lmjt;
 
