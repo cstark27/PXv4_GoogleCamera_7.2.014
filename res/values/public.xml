@@ -4461,7 +4461,7 @@
     <public type="id" name="APKTOOL_DUMMY_29d" id="0x7f0b029d" />
     <public type="id" name="APKTOOL_DUMMY_29e" id="0x7f0b029e" />
     <public type="id" name="APKTOOL_DUMMY_29f" id="0x7f0b029f" />
-    <public type="id" name="APKTOOL_DUMMY_2a0" id="0x7f0b02a0" />
+    <public type="id" name="toggle_astro" id="0x7f0b02a0" />
     <public type="integer" name="abc_config_activityDefaultDur" id="0x7f0c0000" />
     <public type="integer" name="abc_config_activityShortDur" id="0x7f0c0001" />
     <public type="integer" name="app_bar_elevation_anim_duration" id="0x7f0c0006" />
