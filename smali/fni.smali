@@ -46,7 +46,7 @@
 
     check-cast v1, Lgtc;
 
-    sget-object v2, Ldjy;->c:Lmjt;
+    sget-object v2, Ldjy;->a:Lmjt;
 
     iget-object v1, v1, Lgtc;->b:Lmjt;
 

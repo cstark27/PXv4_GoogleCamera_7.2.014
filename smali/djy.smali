@@ -21,10 +21,22 @@
 .method static constructor <clinit>()V		# 3 MP Motion Photos/Top Shot resolution
     .locals 6
 
+	sget v0, Lcom/custom/extras;->isPixel4:I
+	
+	if-eqz v0, :cond_high4x3
+
     const/16 v0, 0x400
 
     const/16 v1, 0x300
+	
+	goto :goto_end4x3
 
+	:cond_high4x3
+    const/16 v0, 0x800
+
+    const/16 v1, 0x600
+
+	:goto_end4x3
     invoke-static {v0, v1}, Lmjt;->a(II)Lmjt;
 
     move-result-object v0

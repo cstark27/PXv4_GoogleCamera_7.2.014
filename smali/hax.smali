@@ -173,7 +173,7 @@
 
     invoke-static {v4}, Lqdv;->c(Z)V
 
-    sget-object v4, Ldjy;->c:Lmjt;
+    sget-object v4, Ldjy;->a:Lmjt;
 
     move-object v13, v4
 
