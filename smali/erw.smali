@@ -453,10 +453,18 @@
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 	
 	:cond_LEdone
-	# Link appears only when LE module is not found
-	sget v0, Lcom/custom/extras;->isPixel1:I
+	# Hide longpress key for Pixel 1 and 4
+	sget v0, Lcom/custom/extras;->isPixel2:I
 	
-	if-eqz v0, :cond_longpressdone
+	if-nez v0, :cond_longpressdone
+	
+	sget v0, Lcom/custom/extras;->isPixel3:I
+	
+	if-nez v0, :cond_longpressdone
+	
+	sget v0, Lcom/custom/extras;->isPixel3a:I
+	
+	if-nez v0, :cond_longpressdone
 	
 	iget-object v0, p0, Lerw;->t:Ljava/util/List;
 
