@@ -9,7 +9,9 @@
         </FrameLayout>
     </RelativeLayout>
 	<FrameLayout android:id="@id/toggle_astro" android:layout_width="fill_parent" android:layout_height="fill_parent">
-		<com.toggle.align.AlignZ android:layout_gravity="bottom|center|right" android:id="@id/toggle" android:background="@drawable/tog_align" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="57.0dip" android:textOn="" android:textOff="" android:text="" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+		<com.toggle.align.AlignZ android:layout_gravity="bottom|center|right" android:id="@id/toggle" android:background="@drawable/tog_trail" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="15.0dip" android:textOn="" android:textOff="" android:text="" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+	</FrameLayout>
+	<FrameLayout android:id="@id/toggle_trail" android:layout_width="fill_parent" android:layout_height="fill_parent">
 		<com.toggle.align.AlignZ2 android:layout_gravity="bottom|center|right" android:id="@id/toggle2" android:background="@drawable/tog_trail" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="15.0dip" android:textOn="" android:textOff="" android:text="" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
 	</FrameLayout>
 	<RelativeLayout android:id="@id/options_menu_view" android:background="@drawable/options_menu_background" android:focusable="true" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/options_side_padding" android:layout_centerInParent="true" android:contentDescription="@string/options_menu_title" android:layoutDirection="locale">

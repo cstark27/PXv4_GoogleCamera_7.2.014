@@ -37,13 +37,13 @@
 
     new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v0, "Light Trail is : "
+    const-string v0, "Light Painting Mode is : "
 
     invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     if-eqz p2, :cond_1
 
-    const-string v0, "Astrophotography ALWAYS ON"
+    const-string v0, "Light Painting Mode ON"
 
     invoke-static {v0}, Lcom/custom/extras;->ShowToast(Ljava/lang/String;)V
 
@@ -68,7 +68,7 @@
     goto :goto_0
 
     :cond_1
-    const-string v0, "Astrophotography AUTO"
+    const-string v0, "Light Painting Mode OFF"
 
     invoke-static {v0}, Lcom/custom/extras;->ShowToast(Ljava/lang/String;)V
 

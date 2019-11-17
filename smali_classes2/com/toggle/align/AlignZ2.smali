@@ -174,15 +174,6 @@
 .method protected onAttachedToWindow()V
     .locals 11
 
-    .prologue
-    const-string v0, "pref_align_key"
-
-    invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
     const/16 v0, 0x8
 
     invoke-virtual {p0, v0}, Lcom/toggle/align/AlignZ2;->setVisibility(I)V

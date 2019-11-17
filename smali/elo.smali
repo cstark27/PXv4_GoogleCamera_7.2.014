@@ -32,8 +32,19 @@
 
     iget-object v0, v0, Lely;->K:Lfbc;
 
+	# Light Painting Mode toast
+	sget v1, Lcom/toggle/align/AlignZ;->AlignZS:I
+
+	if-eqz v1, :cond_def
+	
+	iget-object v1, v0, Lfbc;->lightpaint:Lgbr;
+	
+	goto :goto_done
+
+	:cond_def
     iget-object v1, v0, Lfbc;->c:Lgbr;
 
+	:goto_done
     invoke-virtual {v0, v1}, Lfbc;->a(Lgbr;)V
 
     return-void

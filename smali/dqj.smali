@@ -373,25 +373,26 @@
 
 	move-result p6
 	
-	if-eqz p6, :cond_defenh
+	#if-eqz p6, :cond_defenh
+	if-eqz p6, :cond_defalign
 
 	invoke-virtual {v0, p6}, Lcom/google/googlex/gcam/ShotParams;->setNonzsl_frame_count_override(I)V
 
 	# HDR+E Light Trail
-	:cond_defenh
-	const-string p6, "pref_align_key"
+	#:cond_defenh
+	#const-string p6, "pref_align_key"
 
-	invoke-static {p6}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+	#invoke-static {p6}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
-	move-result p6
+	#move-result p6
 
-	if-eqz p6, :cond_defalign
+	#if-eqz p6, :cond_defalign
 
-	sget p6, Lcom/toggle/align/AlignZ2;->AlignZ2S:I
+	#sget p6, Lcom/toggle/align/AlignZ2;->AlignZ2S:I
 
-	invoke-virtual {v0, p6}, Lcom/google/googlex/gcam/ShotParams;->setDisable_align(Z)V
+	#invoke-virtual {v0, p6}, Lcom/google/googlex/gcam/ShotParams;->setDisable_align(Z)V
 
-	invoke-virtual {v0, p6}, Lcom/google/googlex/gcam/ShotParams;->setMerge_method_override(I)V
+	#invoke-virtual {v0, p6}, Lcom/google/googlex/gcam/ShotParams;->setMerge_method_override(I)V
 
 	:cond_defalign
     invoke-direct {p0, p1, p3}, Ldqj;->a(FLgrk;)Lcom/google/googlex/gcam/AeShotParams;
@@ -833,7 +834,7 @@
 
 	if-eqz p1, :cond_pass
 
-	sget p1, Lcom/toggle/align/AlignZ2;->AlignZ2S:I
+	sget p1, Lcom/toggle/align/AlignZ;->AlignZS:I
 
 	invoke-virtual {v0, p1}, Lcom/google/googlex/gcam/ShotParams;->setDisable_align(Z)V
 

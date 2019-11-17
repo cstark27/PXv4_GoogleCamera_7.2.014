@@ -31,6 +31,8 @@
 
 .field private l:Z
 
+.field public final lightpaint:Lgbr;
+
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lmbf;Lgbs;Lcvw;Lgcd;Lqpq;)V
@@ -111,6 +113,15 @@
     move-result-object p2
 
     iput-object p2, p0, Lfbc;->c:Lgbr;
+
+	# Light Painting Mode toast
+    const-string p2, "Light Painting Mode on"
+	
+	invoke-static {p3, p2, p4}, Lfbc;->a(Lgbs;Ljava/lang/String;I)Lgbr;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lfbc;->lightpaint:Lgbr;
 
     const p2, 0x7f1300f9
 
