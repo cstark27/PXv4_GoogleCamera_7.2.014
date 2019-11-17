@@ -70,6 +70,9 @@
     iget-object v1, v0, Ljsj;->c:Lcom/google/android/apps/camera/ui/wirers/PreviewOverlay;
 
     const/4 v2, 0x1
+	
+	# Value for PortraitMode:I
+	sput v2, Lcom/custom/extras;->PortraitMode:I
 
     iput-boolean v2, v1, Lcom/google/android/apps/camera/ui/wirers/PreviewOverlay;->e:Z
 
@@ -124,6 +127,9 @@
     iget-object v1, v0, Ljsj;->c:Lcom/google/android/apps/camera/ui/wirers/PreviewOverlay;
 
     const/4 v2, 0x0
+	
+	# Value for PortraitMode:I
+	sput v2, Lcom/custom/extras;->PortraitMode:I
 
     iput-boolean v2, v1, Lcom/google/android/apps/camera/ui/wirers/PreviewOverlay;->e:Z
 

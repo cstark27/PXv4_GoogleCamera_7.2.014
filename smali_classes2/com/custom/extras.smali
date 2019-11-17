@@ -14,6 +14,8 @@
 
 .field public static PortraitMode:I
 
+.field public static CameraMode:I
+
 .field static app_context:Landroid/content/Context;
 
 .field public static sHdr_process:I

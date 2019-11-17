@@ -98,6 +98,11 @@
 
 .method public final c()V
     .locals 3
+	
+	# Value for CameraMode:I
+	const v0, 0x1
+
+	sput v0, Lcom/custom/extras;->CameraMode:I
 
     sget-object v0, Ljsj;->a:Ljava/lang/String;
 
@@ -173,6 +178,11 @@
 
 .method public final d()V
     .locals 2
+
+	# Value for CameraMode:I
+	const v0, 0x0
+
+	sput v0, Lcom/custom/extras;->CameraMode:I
 
     sget-object v0, Ljsj;->a:Ljava/lang/String;
 
