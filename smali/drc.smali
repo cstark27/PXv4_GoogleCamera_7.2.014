@@ -190,6 +190,10 @@
     invoke-virtual {v0, p1}, Lcom/google/googlex/gcam/InitParams;->setMax_payload_frames(I)V
 
     invoke-virtual {v0, v2}, Lcom/google/googlex/gcam/InitParams;->setExecute_finish_on(I)V
+	
+	sget p1, Lcom/custom/extras;->isGoogle:I
+
+	if-eqz p1, :cond_2	#p3mod if not Google device, dont use Hexagon
 
     iget-object p1, p3, Ldop;->a:Lcin;
 

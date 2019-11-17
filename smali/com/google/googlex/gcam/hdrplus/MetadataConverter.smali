@@ -584,6 +584,16 @@
     invoke-direct {v0}, Lcom/google/googlex/gcam/StaticMetadata;-><init>()V
 
     sget-object v1, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
+	
+	const-string v3, "Google"
+	
+	invoke-virtual {v3, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v3
+	
+	sput v3, Lcom/custom/extras;->isGoogle:I
+
+    if-eqz v3, :cond_NotGoogle	#if not Google device
 
     invoke-virtual {v0, v1}, Lcom/google/googlex/gcam/StaticMetadata;->setMake(Ljava/lang/String;)V
 
@@ -595,6 +605,22 @@
 
     invoke-virtual {v0, v1}, Lcom/google/googlex/gcam/StaticMetadata;->setDevice(Ljava/lang/String;)V
 
+	goto :goto_continue
+	
+	:cond_NotGoogle	#basic support for non-Pixel
+	const-string v1, "Google"
+	
+	invoke-virtual {v0, v1}, Lcom/google/googlex/gcam/StaticMetadata;->setMake(Ljava/lang/String;)V
+	
+	sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
+	
+	invoke-virtual {v0, v1}, Lcom/google/googlex/gcam/StaticMetadata;->setModel(Ljava/lang/String;)V
+	
+	const-string v1, "bonito"
+	
+	invoke-virtual {v0, v1}, Lcom/google/googlex/gcam/StaticMetadata;->setDevice(Ljava/lang/String;)V
+		
+	:goto_continue
     sget-object v1, Lndc;->a:Lndd;
 
     const-string v2, "ro.revision"

@@ -328,9 +328,21 @@
 	move-result v1
 	
 	sput v1, Lcom/custom/extras;->isGoogle:I
+	
+	if-nez v1, :cond_NotForcePixel1
+	
+	const v1, 0x1
+	
+	sput v1, Lcom/custom/extras;->isPixel1:I
+	
+	const-string v1, "sailfish"
+	
+	goto :goto_skipDeviceGet
 
+	:cond_NotForcePixel1
     sget-object v1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
+	:goto_skipDeviceGet
     sget-object v2, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
 
     invoke-static {v0}, Lndb;->a(Ljava/lang/String;)Ljava/lang/String;

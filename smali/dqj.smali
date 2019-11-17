@@ -660,6 +660,10 @@
     const/4 p4, 0x0
 
     :goto_4
+	sget p6, Lcom/custom/extras;->isGoogle:I	#p3mod disable sabre if not Google device
+
+    if-eqz p6, :cond_f
+	
     iget-object p6, p0, Ldqj;->h:Lcin;
 
     invoke-static {p6}, Ldop;->a(Lcin;)Z

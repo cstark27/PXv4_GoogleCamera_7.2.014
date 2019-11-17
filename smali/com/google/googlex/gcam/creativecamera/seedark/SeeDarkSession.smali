@@ -418,7 +418,26 @@
     move-object/from16 v0, p3
 
     iget v0, v0, Lmjp;->e:I
+	
+	sget-object v5, Landroid/os/Build;->DEVICE:Ljava/lang/String;	#p3mod - fix ns upside down viewfinder for n6p
+	
+	const-string v4, "angler"
+	
+	invoke-virtual {v4, v5}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
+    move-result v5
+	
+	if-eqz v5, :cond_DontFlip
+	
+	sget v5, Lcom/custom/extras;->LensFacing:I
+	
+	const v4, 0x1
+	
+	if-eq v4, v5, :cond_DontFlip
+
+	const/16 v0, 0xb4
+	
+	:cond_DontFlip
     invoke-static {v0}, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->getImageRotation(I)I
 
     move-result v15

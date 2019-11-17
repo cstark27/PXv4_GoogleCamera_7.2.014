@@ -52,6 +52,17 @@
 
     invoke-virtual {v0, v1, v2}, Limb;->a(Ljava/lang/String;Z)Lmdm;
 	
+	sget v1, Lcom/custom/extras;->isGoogle:I
+	
+	if-eqz v1, :cond_DontEnableSabreAlwaysByDefault
+	
+	const-string v1, "pref_forcesabre2_key"
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Limb;->a(Ljava/lang/String;Z)Lmdm;
+	
+	:cond_DontEnableSabreAlwaysByDefault
 	const-string v1, "pref_camera_enable_iris"
 
     const/4 v2, 0x0
