@@ -4325,6 +4325,9 @@
     goto :goto_1
 
     :cond_2
+	# Value for HDRenh:I
+	sput v0, Lcom/custom/extras;->HDRenh:I
+	
     iget-object v0, p0, Lguo;->aw:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;
 
     sget-object v1, Lguw;->i:Lguw;
@@ -4335,6 +4338,9 @@
 
     :cond_3
     :goto_1
+	# Value for HDRenh:I
+	sput v0, Lcom/custom/extras;->HDRenh:I
+	
     iget-object v0, p0, Lguo;->aw:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;
 
     sget-object v1, Lguw;->i:Lguw;
