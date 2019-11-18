@@ -16,6 +16,14 @@
 
 .field private _Luma:J
 
+.field private _LumaL1:J
+
+.field private _LumaL2:J
+
+.field private _LumaL3:J
+
+.field private _LumaL4:J
+
 .field private _Saturation:J
 
 .field private _Sharpness:J
@@ -63,6 +71,22 @@
     const-wide/32 v0, 0x12708a8
 
     iput-wide v0, p0, LlibPatcher;->_Luma:J
+
+    const-wide/32 v0, 0x1273650
+
+    iput-wide v0, p0, LlibPatcher;->_LumaL1:J
+
+    const-wide/32 v0, 0x127366c
+
+    iput-wide v0, p0, LlibPatcher;->_LumaL2:J
+
+    const-wide/32 v0, 0x1273688
+
+    iput-wide v0, p0, LlibPatcher;->_LumaL3:J
+
+    const-wide/32 v0, 0x12736a4
+
+    iput-wide v0, p0, LlibPatcher;->_LumaL4:J
 
     const-wide/32 v0, 0x127095c
 
@@ -699,6 +723,54 @@
     .locals 2
 
     iget-wide v0, p0, LlibPatcher;->_Luma:J
+
+    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setLumaL1(Ljava/lang/Integer;)Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, LlibPatcher;->_LumaL1:J
+
+    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setLumaL2(Ljava/lang/Integer;)Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, LlibPatcher;->_LumaL2:J
+
+    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setLumaL3(Ljava/lang/Integer;)Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, LlibPatcher;->_LumaL3:J
+
+    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setLumaL4(Ljava/lang/Integer;)Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, LlibPatcher;->_LumaL4:J
 
     invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
 

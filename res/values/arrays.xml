@@ -250,4 +250,23 @@
         <item>1875</item>
         <item>2000</item>
     </string-array>
+    <string-array name="finelib_hex_entryvalues">
+        <item>1</item>
+        <item>1251</item>
+        <item>2501</item>
+        <item>3751</item>
+        <item>5001</item>
+        <item>6251</item>
+        <item>7501</item>
+        <item>8751</item>
+        <item>10001</item>
+        <item>11251</item>
+        <item>12501</item>
+        <item>13751</item>
+        <item>15001</item>
+        <item>16251</item>
+        <item>17501</item>
+        <item>18751</item>
+        <item>20001</item>
+    </string-array>
 </resources>

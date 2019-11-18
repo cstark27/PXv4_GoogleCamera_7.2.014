@@ -35,6 +35,180 @@
 
     invoke-direct {p0}, Ljava/util/HashMap;-><init>()V
 
+    #Fine values
+
+    const/4 p1, 0x1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "E003271E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x4e3
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "0010281E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x9c5
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "00102A1E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0xea7
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "00102B1E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x1389
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "00102C1E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x186b
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "00902C1E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x1d4d
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "00102D1E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x222f
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "00902D1E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x2711
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "00102E1E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x2bf3
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "00502E1E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x30d5
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "00902E1E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x35b7
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "00D02E1E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x3a99
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "00102F1E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x3f7b
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "00502F1E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x445d
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "00902F1E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x493f
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "00D02F1E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x4e21
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "0010201E"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    # Global Values
+
     const/4 p1, 0x0
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
