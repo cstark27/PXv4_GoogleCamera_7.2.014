@@ -50,7 +50,7 @@
 				<Preference android:icon="@drawable/ics_blank" android:layout="@layout/preference_with_margin_LElink" android:enabled="true" android:summary="Tap here to install" android:key="pref_LE_link" >
 					<intent android:action="android.intent.action.VIEW" android:data="http://bit.ly/2Q6v17k" />
 				</Preference>
-				<ListPreference android:icon="@drawable/ics_maxexpo" android:layout="@layout/preference_with_margin" android:title="Maximum Exposure Time" android:key="pref_maxexpo_key" android:summary="%s" android:defaultValue="0" android:entries="@array/pref_maxexpo_entries" android:entryValues="@array/pref_maxexpo_entryvalues" />
+				<ListPreference android:icon="@drawable/ics_maxexpo" android:layout="@layout/preference_with_margin" android:title="Automatic Maximum Exposure Time" android:key="pref_maxexpo_key" android:summary="Overrides the potential maximum capture time in Astrophotography Mode. The scene dictates the time chosen.\nSELECTED: %s" android:defaultValue="0" android:entries="@array/pref_maxexpo_entries" android:entryValues="@array/pref_maxexpo_entryvalues" />
 				<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/ics_align" android:layout="@layout/preference_with_margin" android:title="Show Light Painting Mode Button" android:key="pref_align_key" android:defaultValue="false" android:summary="Adds a switch on the Night Sight viewfinder for toggling Light Painting mode. This can also be used for capturing star trails.\nNOTE: You must keep phone steady. Tripod is recommended."/>
 			</PreferenceCategory>
 		</PreferenceScreen>
