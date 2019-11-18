@@ -829,7 +829,7 @@
 
 	move p3, p1
 
-	:cond_default	
+	:cond_default
 	const-string p1, "pref_align_key"		# Night Sight light trail
 
 	invoke-static {p1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
@@ -845,6 +845,13 @@
 	invoke-virtual {v0, p1}, Lcom/google/googlex/gcam/ShotParams;->setMerge_method_override(I)V
 	
 	:cond_pass
+	sget p1, Lcom/toggle/align/AlignZ;->AlignZS:I
+	
+	if-eqz p1, :cond_frames_nonlightpainting
+	
+	const p3, 0x1e		# Force max 30 frames if Light Painting ON
+	
+	:cond_frames_nonlightpainting
 	sput p3, Lcom/custom/extras;->NON_ZSL_FRAMES:I
 
     iget-object p1, p0, Ldqj;->g:Ldop;
