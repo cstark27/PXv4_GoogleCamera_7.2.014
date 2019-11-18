@@ -12,6 +12,14 @@
 
 .field private _Chroma:J
 
+.field private _ChromaL1:J
+
+.field private _ChromaL2:J
+
+.field private _ChromaL3:J
+
+.field private _ChromaL4:J
+
 .field private _Contrast:J
 
 .field private _Luma:J
@@ -91,6 +99,22 @@
     const-wide/32 v0, 0x127095c
 
     iput-wide v0, p0, LlibPatcher;->_Chroma:J
+
+    const-wide/32 v0, 0x12736c8
+
+    iput-wide v0, p0, LlibPatcher;->_ChromaL1:J
+
+    const-wide/32 v0, 0x12736e4
+
+    iput-wide v0, p0, LlibPatcher;->_ChromaL2:J
+
+    const-wide/32 v0, 0x1273700
+
+    iput-wide v0, p0, LlibPatcher;->_ChromaL3:J
+
+    const-wide/32 v0, 0x127371c
+
+    iput-wide v0, p0, LlibPatcher;->_ChromaL4:J
 
     const-wide/32 v0, 0x1270a10
 
@@ -699,6 +723,53 @@
     .locals 2
 
     iget-wide v0, p0, LlibPatcher;->_Chroma:J
+
+    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setChromaL1(Ljava/lang/Integer;)Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, LlibPatcher;->_ChromaL1:J
+
+    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setChromaL2(Ljava/lang/Integer;)Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, LlibPatcher;->_ChromaL2:J
+
+    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+.method public setChromaL3(Ljava/lang/Integer;)Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, LlibPatcher;->_ChromaL3:J
+
+    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setChromaL4(Ljava/lang/Integer;)Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, LlibPatcher;->_ChromaL4:J
 
     invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
 

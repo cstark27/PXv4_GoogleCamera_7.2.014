@@ -1053,10 +1053,10 @@ SELECTED: %s"</string>
     <string name="pref_enable_patcher_summary">If disabled, it will use default values</string>
     <string name="lib_sharpness_title">Sharpness</string>
     <string name="lib_luma_title">Global Luma Denoise</string>
-    <string name="lib_luma_l1_title">Level 1 (Fine Details)</string>
-    <string name="lib_luma_l2_title">Level 2 (Rough Surfaces)</string>
-    <string name="lib_luma_l3_title">Level 3 (Edges)</string>
-    <string name="lib_luma_l4_title">Level 4 (Smooth Surfaces)</string>
+    <string name="lib_fine_l1_title">Level 1 (Fine Details)</string>
+    <string name="lib_fine_l2_title">Level 2 (Rough Surfaces)</string>
+    <string name="lib_fine_l3_title">Level 3 (Edges)</string>
+    <string name="lib_fine_l4_title">Level 4 (Smooth Surfaces)</string>
     <string name="lib_chroma_title">Global Chroma Denoise</string>
     <string name="lib_saturation_title">Saturation</string>
     <string name="lib_contrast_title">Contrast</string>
