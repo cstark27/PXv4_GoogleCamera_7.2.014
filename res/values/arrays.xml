@@ -210,6 +210,44 @@
     <string-array name="pref_defmode_entryvalues">
         <item>0</item>
         <item>1</item>
-		<item>2</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="lib_hex_entries">
+        <item>0</item>
+        <item>0.125</item>
+        <item>0.25</item>
+        <item>0.375</item>
+        <item>0.5</item>
+        <item>0.625</item>
+        <item>0.75</item>
+        <item>0.875</item>
+        <item>1.0 (Default)</item>
+        <item>1.125</item>
+        <item>1.25</item>
+        <item>1.375</item>
+        <item>1.5</item>
+        <item>1.625</item>
+        <item>1.75</item>
+        <item>1.875</item>
+        <item>2.0</item>
+    </string-array>
+    <string-array name="lib_hex_entryvalues">
+        <item>0</item>
+        <item>125</item>
+        <item>250</item>
+        <item>375</item>
+        <item>500</item>
+        <item>625</item>
+        <item>750</item>
+        <item>875</item>
+        <item>1000</item>
+        <item>1125</item>
+        <item>1250</item>
+        <item>1375</item>
+        <item>1500</item>
+        <item>1625</item>
+        <item>1750</item>
+        <item>1875</item>
+        <item>2000</item>
     </string-array>
 </resources>

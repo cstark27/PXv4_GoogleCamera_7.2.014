@@ -2174,15 +2174,19 @@
 
     invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
 
-    const-string v1, "pref_category_advanced2"		# smooth PX settings transition
-
-    invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
-	
-	const-string v1, "pref_category_stockfeats"		# smooth PX settings transition
+    const-string v1, "pref_category_advanced2"	  # smooth PX settings transition
 
     invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
 
-	const-string v1, "pref_category_about"			# smooth About settings transition
+    const-string v1, "pref_category_stockfeats"   # smooth PX settings transition
+
+    invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
+
+    const-string v1, "pref_category_about"        # smooth About settings transition
+
+    invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
+
+    const-string v1, "pref_category_libpatcher"   # smooth PX settings transition
 
     invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
 
