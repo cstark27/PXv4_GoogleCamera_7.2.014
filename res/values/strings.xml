@@ -1060,6 +1060,7 @@ SELECTED: %s"</string>
     <string name="lib_chroma_title">Global Chroma Denoise</string>
     <string name="lib_saturation_title">Saturation</string>
     <string name="lib_contrast_title">Contrast</string>
+    <string name="lib_darkensky_title">Darken Sky Strength</string>
     <string name="lib_group_title">Lib Patcher</string>
     <string name="lib_group_summary">Tune advanced processing options to your preference.</string>
 </resources>
