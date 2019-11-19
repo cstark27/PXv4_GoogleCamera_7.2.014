@@ -554,10 +554,6 @@
 	sget v1, Lcom/custom/extras;->isPixel1:I
 
     if-nez v1, :cond_c
-	
-	sget v1, Lcom/custom/extras;->isPixel3a:I
-
-    if-nez v1, :cond_c
 
     sget-object v1, Lmzh;->b:Lmzh;
 
@@ -572,6 +568,14 @@
     check-cast v1, Lmov;
 
     invoke-interface {v13, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+	
+	sget v1, Lcom/custom/extras;->isPixel3:I
+
+    if-nez v1, :cond_c
+	
+	sget v1, Lcom/custom/extras;->isPixel3a:I
+
+    if-nez v1, :cond_c
 
     sget-object v0, Lcim;->f:Lcio; #camera.artemis_portrait
 
