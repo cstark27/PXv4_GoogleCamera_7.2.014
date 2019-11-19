@@ -218,6 +218,18 @@
 
     invoke-virtual {v1, v2}, LlibPatcher;->setDarkenSky(Ljava/lang/Integer;)Ljava/lang/String;
 
+    const-string v2, "lib_darkenskydenoise_key"
+
+    invoke-static {v2}, Lmarcello;->MenuValue(Ljava/lang/String;)I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, LlibPatcher;->setDarkenSkyDenoise(Ljava/lang/Integer;)Ljava/lang/String;
+
     invoke-static {p0}, Lmjy;->loadCustomLib(Ljava/lang/String;)Z
 
     move-result p0
