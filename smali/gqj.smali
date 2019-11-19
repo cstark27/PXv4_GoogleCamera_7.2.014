@@ -23,6 +23,8 @@
 
 .field private final h:Lrhe;
 
+.field private final hdre_port:Lgor;
+
 
 # direct methods
 .method private constructor <init>(Lrhe;Lrhe;Lrhe;Lrhe;Lrhe;Lrhe;Lrhe;Lrhe;)V
@@ -170,7 +172,9 @@
 
     invoke-direct {v8, v5, v10, v9}, Lgoo;-><init>(Lgor;IZ)V
 
-    new-instance v10, Lgoo;
+	iput-object v5, p0, Lgqj;->hdre_port:Lgor;		# HDR+E for Portrait Mode
+    
+	new-instance v10, Lgoo;
 
     invoke-virtual {v2, v6, v4}, Lhos;->a(Lhkc;Lhke;)Lhor;
 
@@ -202,7 +206,7 @@
 
     move-object v5, v10
 
-    move-object v6, v11
+    iget-object v6, p0, Lgqj;->hdre_port:Lgor;		# HDR+E for Portrait Mode
 
     move-object v7, v10
 
