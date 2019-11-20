@@ -2194,6 +2194,10 @@
 
     invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
 
+    const-string v1, "pref_category_astro"   # smooth Astro Info transition
+
+    invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
+
     const-string v1, "pref_category_gestures"
 
     invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
