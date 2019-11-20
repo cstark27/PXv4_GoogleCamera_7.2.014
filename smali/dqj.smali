@@ -3999,8 +3999,15 @@
 
 	sget v0, Lcom/toggle/align/AlignZ;->AlignZS:I
 
-	if-eqz v0, :cond_defastro
+	if-nez v0, :cond_astroOn
 
+	sget v0, Lcom/toggle/align/AlignZ2;->AlignZ2S:I
+	
+	if-nez v0, :cond_astroOn
+	
+	goto :cond_defastro
+	
+	:cond_astroOn
     invoke-virtual {p1, v0}, Lcom/google/googlex/gcam/ViewfinderResults;->setIs_on_tripod(Z)V
 
 	return v0

@@ -570,9 +570,8 @@
     <item type="id" name="APKTOOL_DUMMY_29b" />
     <item type="id" name="APKTOOL_DUMMY_29c" />
     <item type="id" name="APKTOOL_DUMMY_29d" />
-    <item type="id" name="APKTOOL_DUMMY_29e" />
-    <item type="id" name="toggle_trail" />
+    <item type="id" name="toggle_lightpaint" />
     <item type="id" name="toggle_astro" />
-	<item type="id" name="toggle" />
-	<item type="id" name="toggle2" />
+	<item type="id" name="button_astro" />
+	<item type="id" name="button_lightpaint" />
 </resources>

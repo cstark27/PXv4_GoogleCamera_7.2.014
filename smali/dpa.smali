@@ -171,9 +171,16 @@
 
 	sget v0, Lcom/toggle/align/AlignZ;->AlignZS:I
 
-	if-eqz v0, :cond_defastro
+	if-nez v0, :cond_astroOn
+	
+	sget v0, Lcom/toggle/align/AlignZ2;->AlignZ2S:I
+	
+	if-nez v0, :cond_astroOn
+	
+	goto :cond_defastro
 
-	move p1, v0
+	:cond_astroOn
+	const p1, 0x1
 
 	:cond_defastro
     iput-boolean p1, p0, Ldpa;->c:Z
@@ -333,9 +340,16 @@
 
 	sget v2, Lcom/toggle/align/AlignZ;->AlignZS:I
 
-	if-eqz v2, :cond_defastro
+	if-nez v2, :cond_astroOn
+	
+	sget v2, Lcom/toggle/align/AlignZ2;->AlignZ2S:I
+	
+	if-nez v2, :cond_astroOn
+	
+	goto :cond_defastro
 
-	move p1, v2
+	:cond_astroOn
+	const p1, 0x1
 
 	:cond_defastro
 	iput-boolean p1, p0, Ldpa;->d:Z

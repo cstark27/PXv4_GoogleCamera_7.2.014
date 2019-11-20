@@ -6,23 +6,10 @@
 .implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
 
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/toggle/align/AlignZ2;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
-.end annotation
-
-
 # direct methods
 .method constructor <init>()V
     .locals 0
 
-    .prologue
-    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,34 +19,31 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
-    .param p1, "arg0"    # Landroid/widget/CompoundButton;
-    .param p2, "arg1"    # Z
 
-    .prologue
-    .line 21
     const v2, 0x4
 
     invoke-virtual {p1, v2}, Landroid/widget/CompoundButton;->performHapticFeedback(I)Z
 
     if-eqz p2, :cond_0
+	
+	invoke-static {}, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;->ReInit()V
 
     const/4 v0, 0x1
 
     :goto_0
     sput v0, Lcom/toggle/align/AlignZ2;->AlignZ2S:I
 
-    .line 26
     const-string v1, "Zoran Log: "
 
     new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v0, "Light Trail is : "
+    const-string v0, "Astrophotography is : "
 
     invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     if-eqz p2, :cond_1
 
-    const-string v0, "Light Trail ON"
+    const-string v0, "Astrophotography ALWAYS ON"
 
     invoke-static {v0}, Lcom/custom/extras;->ShowToast(Ljava/lang/String;)V
 
@@ -74,18 +58,17 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 33
     return-void
 
-    .line 21
     :cond_0
-    const/4 v0, 0x0
+    invoke-static {}, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;->ReInit()V
+	
+	const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 26
     :cond_1
-    const-string v0, "Light Trail OFF"
+    const-string v0, "Astrophotography AUTO"
 
     invoke-static {v0}, Lcom/custom/extras;->ShowToast(Ljava/lang/String;)V
 

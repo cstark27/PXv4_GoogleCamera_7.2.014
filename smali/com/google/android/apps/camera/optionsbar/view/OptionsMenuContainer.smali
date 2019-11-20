@@ -596,7 +596,21 @@
     return-object v0
 .end method
 
-.method public final toggle_astro()Landroid/widget/FrameLayout;		# get astro buttons layout
+.method public final toggle_lightpaint()Landroid/widget/FrameLayout;		# get lightpaint button layout
+    .locals 1
+
+    const v0, 0x7f0b029f
+
+    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/FrameLayout;
+
+    return-object v0
+.end method
+
+.method public final toggle_astro()Landroid/widget/FrameLayout;		# get astro button layout
     .locals 1
 
     const v0, 0x7f0b02a0
@@ -659,10 +673,10 @@
     invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->setEnabled(Z)V
 
 	# astro buttons only in Night Sight
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->toggle_astro()Landroid/widget/FrameLayout;
-
-    move-result-object v0
-
+	sget v1, Lcom/custom/extras;->CameraMode:I
+	
+	if-nez v1, :cond_astroNo
+	
 	sget v1, Lcom/custom/extras;->NightSight:I
 	
 	if-eqz v1, :cond_astroNo
@@ -672,10 +686,19 @@
 	goto :goto_astrodone
 	
 	:cond_astroNo
-	
 	const v1, 0x8
 	
 	:goto_astrodone
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->toggle_astro()Landroid/widget/FrameLayout;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->toggle_lightpaint()Landroid/widget/FrameLayout;
+
+    move-result-object v0
+
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     return-void

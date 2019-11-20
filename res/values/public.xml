@@ -4459,8 +4459,7 @@
     <public type="id" name="APKTOOL_DUMMY_29b" id="0x7f0b029b" />
     <public type="id" name="APKTOOL_DUMMY_29c" id="0x7f0b029c" />
     <public type="id" name="APKTOOL_DUMMY_29d" id="0x7f0b029d" />
-    <public type="id" name="APKTOOL_DUMMY_29e" id="0x7f0b029e" />
-    <public type="id" name="toggle_trail" id="0x7f0b029f" />
+    <public type="id" name="toggle_lightpaint" id="0x7f0b029f" />
     <public type="id" name="toggle_astro" id="0x7f0b02a0" />
     <public type="integer" name="abc_config_activityDefaultDur" id="0x7f0c0000" />
     <public type="integer" name="abc_config_activityShortDur" id="0x7f0c0001" />
