@@ -576,6 +576,26 @@
 	
 	const v0, 0x447a0000	# 1000.0f
 	
+	invoke-static {}, Lcom/custom/extras;->isLE_installed()I
+	
+	move-result v2
+	
+	if-nez v2, :cond_continue	#if LE module installed, use API key value
+	
+	sget v1, Lcom/custom/extras;->isPixel3:I
+	
+	if-nez v1, :cond_P3
+	
+	sget v1, Lcom/custom/extras;->isPixel3a:I
+	
+	if-nez v1, :cond_P3
+	
+	sget v1, Lcom/custom/extras;->isPixel4:I
+	
+	if-nez v1, :cond_P4
+	
+	:goto_continue
+	:cond_continue
 	div-float v1, p0, v0
 	
 	div-float v2, v1, v0
@@ -584,6 +604,20 @@
 	
 	:goto_done	
 	return-void
+	
+	:cond_P3
+	const p0, 0x4b3ebc20	# 12500000f		otherwise use this as the max value because stock API key value is ~4s
+	
+	mul-float p0, p0, v0
+		
+	goto :goto_continue
+	
+	:cond_P4
+	const p0, 0x4bf42400	# 32000000f		otherwise use this as the max value because stock API key value is ~10s
+	
+	mul-float p0, p0, v0
+		
+	goto :goto_continue
 .end method
 
 .method public static getMaxExpo_toast()V
