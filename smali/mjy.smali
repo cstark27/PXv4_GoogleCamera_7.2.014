@@ -368,7 +368,7 @@
 
     const-string v2, "pref_enable_patcher_key"
 
-    invoke-static {v2}, Lcom/FixBSG;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v2}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
     move-result v2
 
