@@ -2186,6 +2186,14 @@
 
     invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
 
+    const-string v1, "pref_category_libpatcher"   # smooth Lib Patcher transition
+
+    invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
+
+    const-string v1, "pref_libpatcher_moreinfo"   # smooth Lib Patcher More Info transition
+
+    invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
+
     const-string v1, "pref_category_gestures"
 
     invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
