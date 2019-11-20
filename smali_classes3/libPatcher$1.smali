@@ -203,7 +203,7 @@
 
     move-result-object p1
 
-    const-string v0, "0010201E"
+    const-string v0, "0040621E"
 
     invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
