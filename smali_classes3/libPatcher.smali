@@ -124,7 +124,7 @@
 
     iput-wide v0, p0, LlibPatcher;->_Contrast:J
 
-    const-wide/32 v0, 0x1270ac4
+    const-wide/32 v0, 0x1270b78
 
     iput-wide v0, p0, LlibPatcher;->_Saturation:J
 
