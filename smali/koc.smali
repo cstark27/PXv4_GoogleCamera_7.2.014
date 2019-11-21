@@ -58,9 +58,11 @@
     move-result v0
 
     if-nez v0, :cond_0
-
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
+	
+	sget v0, Lcom/custom/extras;->isQOrHigher:I
+	
+	if-eqz v0, :cond_0
+	
     const-string v0, "vibrator"
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;

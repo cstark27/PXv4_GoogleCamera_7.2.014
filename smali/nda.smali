@@ -105,7 +105,7 @@
     const/4 v3, 0x0
 
     :goto_4
-    iput-boolean v3, p0, Lnda;->e:Z
+    iput-boolean v3, p0, Lnda;->e:Z	# isPOrHigher:Z
 
     if-le p1, v2, :cond_6
 
@@ -149,7 +149,9 @@
     const/4 v1, 0x0
 
     :goto_5
-    iput-boolean v1, p0, Lnda;->f:Z
+	sput v1, Lcom/custom/extras;->isQOrHigher:I
+	
+    iput-boolean v1, p0, Lnda;->f:Z	# isQOrHigher:Z
 
     return-void
 .end method

@@ -39,13 +39,23 @@
     iget-object v1, p0, Ldjz;->b:Lnds;
 
     iget-object v2, p0, Ldjz;->c:Lmjp;
+	
+	sget v3, Lcom/custom/extras;->isQOrHigher:I
+	
+	if-nez v3, :cond_StockCode
 
+	const-string v3, ""
+	
+	goto :goto_continue
+	
+	:cond_StockCode
     sget-object v3, Landroid/hardware/camera2/CaptureResult;->LOGICAL_MULTI_CAMERA_ACTIVE_PHYSICAL_ID:Landroid/hardware/camera2/CaptureResult$Key;
 
     invoke-interface {v1, v3}, Lnds;->a(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
 
     move-result-object v3
 
+	:goto_continue
     check-cast v3, Ljava/lang/String;
 
     iget-object v4, v0, Ldka;->b:Lknp;

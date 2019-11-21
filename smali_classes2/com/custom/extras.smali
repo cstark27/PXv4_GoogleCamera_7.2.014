@@ -42,6 +42,8 @@
 
 .field public static getMaxExpo_ms:F
 
+.field public static isQOrHigher:I
+
 
 # direct methods
 .method static constructor <clinit>()V

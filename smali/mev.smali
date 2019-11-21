@@ -132,6 +132,10 @@
 
 .method public final a()Z
     .locals 2
+	
+	sget v0, Lcom/custom/extras;->isQOrHigher:I
+	
+	if-eqz v0, :cond_0
 
     iget-object v0, p0, Lmev;->a:Ljava/util/Map;
 

@@ -972,7 +972,7 @@
 .end method
 
 .method protected final onLayout(ZIIII)V
-    .locals 0
+    .locals 1
 
     invoke-super/range {p0 .. p5}, Landroid/widget/HorizontalScrollView;->onLayout(ZIIII)V
 
@@ -982,6 +982,10 @@
 
     :cond_0
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
+		
+	const v0, 0x1d	# SDK 29
+	
+	if-lt p1, v0, :cond_end
 
     iget-boolean p1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->f:Z
 
@@ -1007,6 +1011,7 @@
 
     invoke-virtual {p0, p1}, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->setSystemGestureExclusionRects(Ljava/util/List;)V
 
+	:cond_end
     return-void
 
     :cond_1

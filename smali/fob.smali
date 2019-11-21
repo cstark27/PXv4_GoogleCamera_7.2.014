@@ -38,13 +38,23 @@
     iget-boolean v0, p0, Lfob;->d:Z
 
     if-eqz v0, :cond_1
+	
+	sget v0, Lcom/custom/extras;->isQOrHigher:I
+	
+	if-nez v0, :cond_StockCode
 
+	const-string v0, ""
+	
+	goto :goto_continue
+	
+	:cond_StockCode
     sget-object v0, Landroid/hardware/camera2/CaptureResult;->LOGICAL_MULTI_CAMERA_ACTIVE_PHYSICAL_ID:Landroid/hardware/camera2/CaptureResult$Key;
 
     invoke-interface {p1, v0}, Lnds;->a(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
+	:goto_continue
     check-cast v0, Ljava/lang/String;
 
     invoke-static {v0, p1}, Lknk;->a(Ljava/lang/String;Lnds;)Lndo;

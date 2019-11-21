@@ -125,7 +125,7 @@ packageInfo:
   forcedPackageId: '127'
   renameManifestPackage: null
 sdkInfo:
-  minSdkVersion: '29'
+  minSdkVersion: '28'
   targetSdkVersion: '29'
 sharedLibrary: false
 sparseResources: false

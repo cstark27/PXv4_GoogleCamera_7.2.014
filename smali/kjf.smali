@@ -83,11 +83,14 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setSystemUiVisibility(I)V
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v1, Lcom/custom/extras;->isQOrHigher:I
+	
+	if-eqz v1, :cond_end
 
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Landroid/view/Window;->setNavigationBarContrastEnforced(Z)V
 
+	:cond_end
     return-void
 .end method
