@@ -624,6 +624,10 @@
 
 .method public static getMaxExpo_toast()V
 	.locals 4
+	
+	sget v0, Lcom/custom/extras;->isGoogle:I
+	
+	if-eqz v0, :cond_done
 
 	const-string v0, "pref_maxexpo_key"			# Maximum exposure
 
@@ -701,6 +705,7 @@
 	goto :goto_done
 
 	:goto_done
+	:cond_done
 	return-void
 .end method
 
