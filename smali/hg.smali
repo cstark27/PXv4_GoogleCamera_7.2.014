@@ -951,6 +951,8 @@
     move-exception v0
 
     move-object v7, v0
+	
+	goto :goto_11	# Android 9 font fix for some devices from Urnyx
 
     :try_start_7
     throw v7
