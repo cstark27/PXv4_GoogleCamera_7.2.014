@@ -423,15 +423,33 @@
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v12
-
+	
+	sget v15, Lcom/custom/extras;->isGoogle:I
+	
+	if-nez v15, :cond_MotionPhotosDefaultAuto
+	
+	sget-object v13, Lgux;->s:Lgux;	#motions photos off
+	
+	goto :goto_setMotionPhotos1
+	
+	:cond_MotionPhotosDefaultAuto
     sget-object v13, Lgux;->r:Lgux;
 
+	:goto_setMotionPhotos1
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v14
+	
+	if-nez v15, :cond_MotionPhotosOff
+	
+	sget-object v15, Lgux;->r:Lgux;
+	
+	goto :goto_setMotionPhotos2
 
+	:cond_MotionPhotosOff
     sget-object v15, Lgux;->s:Lgux;
 
+	:goto_setMotionPhotos2
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v16
