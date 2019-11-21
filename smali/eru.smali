@@ -978,6 +978,60 @@
 	
 	invoke-virtual {v4, v5}, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->setChecked(Z)V
 
+	# Set Astro button summary
+	const-string v4, "pref_category_astro"
+	
+    invoke-virtual {v0, v4}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+	
+	move-result-object v4
+
+    check-cast v4, Landroid/preference/PreferenceScreen;
+
+	const-string v5, "pref_align_key"
+
+	invoke-static {v5}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v5
+
+	if-eqz v5, :cond_astro_OFF
+
+	const-string v5, "On"
+	
+	goto :cond_astro_summary
+
+	:cond_astro_OFF
+	const-string v5, "Off"
+
+	:cond_astro_summary
+	invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
+
+	# Set lib patcher summary
+	const-string v4, "pref_category_libpatcher"
+	
+    invoke-virtual {v0, v4}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+	
+	move-result-object v4
+
+    check-cast v4, Landroid/preference/PreferenceScreen;
+
+	const-string v5, "pref_enable_patcher_key"
+
+	invoke-static {v5}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v5
+
+	if-eqz v5, :cond_libpatcher_OFF
+
+	const-string v5, "On"
+	
+	goto :cond_libpatcher_summary
+
+	:cond_libpatcher_OFF
+	const-string v5, "Off"
+
+	:cond_libpatcher_summary
+	invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
+
     const-string v4, "pref_category_social_share"
 
     invoke-interface {v1, v4}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
