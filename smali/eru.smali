@@ -2275,6 +2275,14 @@
 
     invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
 
+    const-string v1, "pref_category_libcurve"   # smooth Tone Curve transition
+
+    invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
+
+    const-string v1, "pref_libcurve_moreinfo"   # smooth Tone Curve More Info transition
+
+    invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
+
     const-string v1, "pref_category_astro"   # smooth Astro Info transition
 
     invoke-direct {p0, v1}, Leru;->b(Ljava/lang/String;)V
