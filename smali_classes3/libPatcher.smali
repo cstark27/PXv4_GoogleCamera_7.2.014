@@ -38,6 +38,8 @@
 
 .field private _DarkenSkyDenoise:J
 
+.field private _NRRR:J
+
 .field private _Tone:[J
 
 .field hashMap:Ljava/util/HashMap;
@@ -131,6 +133,10 @@
     const-wide/32 v0, 0x1279808
 
     iput-wide v0, p0, LlibPatcher;->_DarkenSkyDenoise:J
+
+    const-wide/32 v0, 0x15E50F8
+
+    iput-wide v0, p0, LlibPatcher;->_NRRR:J
 
     const-string v0, "0123456789ABCDEF"
 
@@ -1158,6 +1164,18 @@
     .locals 2
 
     iget-wide v0, p0, LlibPatcher;->_DarkenSkyDenoise:J
+
+    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setNRRR(Ljava/lang/Integer;)Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, LlibPatcher;->_NRRR:J
 
     invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
 

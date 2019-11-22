@@ -98,6 +98,7 @@
                     </PreferenceCategory>
                 </PreferenceScreen>
             </PreferenceCategory>
+            <ListPreference android:entries="@array/noplib_hex_entries" android:layout="@layout/hide" android:key="lib_nrrr_key" android:dependency="pref_enable_patcher_key" android:defaultValue="20002" android:entryValues="@array/noplib_hex_entryvalues" />
             <PreferenceCategory android:title="Astrophotography Multipliers" android:key="astro_libpatcher_settings" >
                 <ListPreference android:icon="@drawable/ics_cuttle_extended" android:entries="@array/lib_hex_entries" android:layout="@layout/preference_with_margin_dependent" android:title="@string/lib_darkensky_title" android:key="lib_darkensky_key" android:summary="%s" android:dependency="pref_enable_patcher_key" android:defaultValue="10001" android:entryValues="@array/finelib_hex_entryvalues" />
                 <ListPreference android:icon="@drawable/ics_cuttle_extended" android:entries="@array/lib_hex_entries" android:layout="@layout/preference_with_margin_dependent" android:title="@string/lib_darkenskydenoise_title" android:key="lib_darkenskydenoise_key" android:summary="%s" android:dependency="pref_enable_patcher_key" android:defaultValue="10001" android:entryValues="@array/finelib_hex_entryvalues" />

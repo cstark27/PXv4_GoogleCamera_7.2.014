@@ -399,5 +399,17 @@
 
     invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    # NOP
+
+    const/16 p1, 0x4e23
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "1F2003D5"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     return-void
 .end method
