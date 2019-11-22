@@ -1414,6 +1414,10 @@
     const/high16 v12, 0x42340000    # 45.0f
 
     if-nez v4, :cond_b
+	
+	sget v4, Lcom/custom/extras;->isGoogle:I
+	
+	if-eqz v4, :cond_a
 
     invoke-virtual/range {p1 .. p1}, Lndb;->b()Z #isPixel1
 
