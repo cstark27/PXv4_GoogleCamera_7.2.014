@@ -30,9 +30,9 @@
 
 .field private _LumaL4:J
 
-.field private _Sharpness:J
-
 .field private _Saturation:J
+
+.field private _Sharpness:J
 
 .field private _DarkenSky:J
 
@@ -874,7 +874,7 @@
 
 # virtual methods
 .method public moveLibToDir(Ljava/lang/String;)Ljava/lang/String;
-    .locals 7
+    .locals 4
 
     invoke-static {}, Lmarcello;->getAppContext()Landroid/content/Context;
 
@@ -893,25 +893,44 @@
     :cond_0
     new-instance v2, Ljava/io/File;
 
-    iget-object v3, p0, LlibPatcher;->libName:Ljava/lang/String;
+    const-string v3, "libpatched_jni.so"
 
     invoke-direct {v2, v1, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    move-result v1
 
+    if-eqz v1, :cond_1
+
+    invoke-virtual {v2}, Ljava/io/File;->delete()Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    const-string p1, "Error deleting patched lib"
+
+    return-object p1
+
+    :cond_1
     invoke-virtual {v0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
     move-result-object v0
 
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->nativeLibraryDir:Ljava/lang/String;
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    sget-object v0, Ljava/io/File;->separator:Ljava/lang/String;
+    move-result-object v0
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "/"
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -919,120 +938,61 @@
 
     move-result-object p1
 
+    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    move-result p1
-
-    if-nez p1, :cond_1
-
-    const-string p1, "nativeLib not exist"
-
-    return-object p1
-
-    :cond_1
-    invoke-virtual {v2}, Ljava/io/File;->exists()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_2
-
-    invoke-virtual {v2}, Ljava/io/File;->length()J
-
-    move-result-wide v3
-
-    invoke-virtual {v0}, Ljava/io/File;->length()J
-
-    move-result-wide v5
-
-    cmp-long p1, v3, v5
-
-    if-eqz p1, :cond_2
-
-    invoke-virtual {v2}, Ljava/io/File;->delete()Z
-
-    move-result p1
-
-    if-nez p1, :cond_2
-
-    const-string p1, "Size is different. Delete error"
-
-    return-object p1
-
-    :cond_2
     :try_start_0
-    new-instance p1, Ljava/io/BufferedInputStream;
+    new-instance v1, Ljava/io/BufferedInputStream;
 
-    new-instance v1, Ljava/io/FileInputStream;
+    new-instance v3, Ljava/io/FileInputStream;
 
-    invoke-direct {v1, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+    invoke-direct {v3, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
     const/16 v0, 0x7e00
 
-    invoke-direct {p1, v1, v0}, Ljava/io/BufferedInputStream;-><init>(Ljava/io/InputStream;I)V
+    invoke-direct {v1, v3, v0}, Ljava/io/BufferedInputStream;-><init>(Ljava/io/InputStream;I)V
 
-    invoke-direct {p0, p1, v2}, LlibPatcher;->streamToFile(Ljava/io/InputStream;Ljava/io/File;)Z
+    invoke-direct {p0, v1, v2}, LlibPatcher;->streamToFile(Ljava/io/InputStream;Ljava/io/File;)Z
 
-    move-result p1
+    move-result v0
 
-    if-nez p1, :cond_3
+    if-nez v0, :cond_2
 
-    const-string p1, "streamToFile error"
+    const-string v0, "streamToFile error"
 
-    return-object p1
+    goto :goto_0
 
-    :cond_3
-    const-string p1, "OK"
+    :cond_2
+    const-string v0, "OK"
     :try_end_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object p1
+    :goto_0
+    return-object v0
 
     :catch_0
     move-exception p1
 
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "moveLibToDir: IOException "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/io/IOException;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
+    const-string p1, "moveLibToDir: IOException"
 
     return-object p1
 
     :catch_1
-    move-exception p1
+    move-exception v0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const-string v0, "moveLibToDir: FileNotFoundException "
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    const-string v1, "moveLibToDir: FileNotFoundException "
+    move-result-object v0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/io/FileNotFoundException;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1074,7 +1034,6 @@
 
     return-object p1
 .end method
-
 .method public setChromaL3(Ljava/lang/Integer;)Ljava/lang/String;
     .locals 2
 
@@ -1115,18 +1074,6 @@
     .locals 2
 
     iget-wide v0, p0, LlibPatcher;->_LumaL1:J
-
-    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public setLumaL2(Ljava/lang/Integer;)Ljava/lang/String;
-    .locals 2
-
-    iget-wide v0, p0, LlibPatcher;->_LumaL2:J
 
     invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
 
