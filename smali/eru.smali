@@ -1032,6 +1032,33 @@
 	:cond_libpatcher_summary
 	invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
 
+	# Set lib tonecurve summary
+	const-string v4, "pref_category_libcurve"
+	
+    invoke-virtual {v0, v4}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+	
+	move-result-object v4
+
+    check-cast v4, Landroid/preference/PreferenceScreen;
+
+	const-string v5, "lib_curve_key"
+
+	invoke-static {v5}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v5
+
+	if-eqz v5, :cond_tonecurve_OFF
+
+	const-string v5, "On"
+	
+	goto :cond_tonecurve_summary
+
+	:cond_tonecurve_OFF
+	const-string v5, "Off"
+
+	:cond_tonecurve_summary
+	invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
+
     const-string v4, "pref_category_social_share"
 
     invoke-interface {v1, v4}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -2807,6 +2834,46 @@
     invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "lib_curve_key"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "lib_pdarks_key"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "lib_darks_key"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "lib_pwhites_key"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const-string v0, "lib_whites_key"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
 
     if-nez v0, :cond_1
 

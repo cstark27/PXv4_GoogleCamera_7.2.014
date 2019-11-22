@@ -71,6 +71,18 @@
     return v2
 .end method
 
+.method public static MenuValueFloat(Ljava/lang/String;)F
+    .locals 0
+
+    invoke-static {p0}, Lmarcello;->MenuValue(Ljava/lang/String;)I
+
+    move-result p0
+
+    int-to-float p0, p0
+
+    return p0
+.end method
+
 .method public static getAppContext()Landroid/content/Context;
     .locals 3
 
