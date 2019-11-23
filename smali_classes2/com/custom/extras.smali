@@ -44,6 +44,8 @@
 
 .field public static isQOrHigher:I
 
+.field public static ZoomLevel:F
+
 
 # direct methods
 .method static constructor <clinit>()V

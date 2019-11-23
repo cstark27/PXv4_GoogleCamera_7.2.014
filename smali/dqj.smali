@@ -598,6 +598,8 @@
 
     move-result p1
 
+	sput p1, Lcom/custom/extras;->ZoomLevel:F
+
     iget-object p3, p0, Ldqj;->j:Ldrf;
 
     sget-object p4, Ldrf;->c:Ldrf;
@@ -704,24 +706,62 @@
     iget-object p3, p0, Ldqj;->h:Lcin;
 
     invoke-interface {p3}, Lcin;->b()Z
-	
-	const-string p3, "pref_forcesabre2_key"		# Force Sabre Merge Method
+		
+	const-string p3, "pref_forcesabre2_key"		# Force Sabre Always
 
 	invoke-static {p3}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
 	move-result p3
 	
-	if-eqz p3, :cond_NotForceSabreMerge
-	
-	const p3, 0x2	#kSabre
+	if-eqz p3, :cond_DefaultAllowSabre
 	
 	const p1, 0x1	#setAllow_sabre TRUE
 	
-	invoke-virtual {v0, p3}, Lcom/google/googlex/gcam/ShotParams;->setMerge_method_override(I)V
-
-	:cond_NotForceSabreMerge
+	:cond_DefaultAllowSabre
     invoke-virtual {v0, p1}, Lcom/google/googlex/gcam/ShotParams;->setAllow_sabre(Z)V
+	
+	const-string p3, "pref_forcemerge_key"		# Force Sabre Merge Method
 
+	invoke-static {p3}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result p3
+	
+	if-eqz p3, :cond_SkipForceMerge
+
+	const p4, 0x1
+	
+	if-ne p3, p4, :cond_notAlwaysForceMerge
+	
+	const p6, 0x2	#kSabre
+	
+	goto :goto_setForceMerge
+	
+	:cond_notAlwaysForceMerge
+	sget p3, Lcom/custom/extras;->ZoomLevel:F
+	
+	const p6, 0x40000000    # 2.0f
+
+    cmpl-float p3, p3, p6
+
+    if-ltz p3, :cond_SkipForceMerge
+	
+	const p6, 0x2	#kSabre
+	
+	:goto_setForceMerge
+	const-string p4, "Sabre merge method ON"
+	
+	invoke-static {p4}, Lcom/log;->logMSG(Ljava/lang/String;)V
+	
+	invoke-virtual {v0, p6}, Lcom/google/googlex/gcam/ShotParams;->setMerge_method_override(I)V
+	
+	goto :goto_ContAfterForceMerge
+
+	:cond_SkipForceMerge
+	const-string p4, "Sabre merge method OFF"
+	
+	invoke-static {p4}, Lcom/log;->logMSG(Ljava/lang/String;)V
+	
+	:goto_ContAfterForceMerge
     invoke-virtual {v0}, Lcom/google/googlex/gcam/ShotParams;->getNonzsl_frame_count_override()I
 
     move-result p3
