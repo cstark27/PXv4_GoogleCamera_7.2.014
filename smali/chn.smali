@@ -121,6 +121,8 @@
     invoke-interface {v0, v8}, Lcin;->c(Lcio;)Z
 
     move-result v8
+	
+	const v8, 0x1		# Force horizon level coach (tip from @Mwp_011)
 
     if-eqz v8, :cond_0
 
