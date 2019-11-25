@@ -2875,6 +2875,8 @@
 
     move-result v0
 
+    if-nez v0, :cond_1
+
     const-string v0, "lib_whites_key"
 
     invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2882,6 +2884,20 @@
     move-result v0
 
     if-nez v0, :cond_1
+
+    const-string v0, "lib_dehazes0_key"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "lib_dehazes1_key"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
 
     if-nez v0, :cond_1
 

@@ -276,13 +276,15 @@
         <item>17501</item>
         <item>18751</item>
     </string-array>
-    <string-array name="noplib_hex_entries">
-        <item>NOP</item>
+    <string-array name="hiddenlib_hex_entries">
+        <item>NOP NRRR</item>
         <item>Stock Behavior</item>
+        <item>Tunable Dehaze Support</item>
     </string-array>
-    <string-array name="noplib_hex_entryvalues">
+    <string-array name="hiddenlib_hex_entryvalues">
         <item>20002</item>
         <item>20003</item>
+        <item>20004</item>
     </string-array>
     <string-array name="curve_srange_entries">
         <item>0.75</item>
