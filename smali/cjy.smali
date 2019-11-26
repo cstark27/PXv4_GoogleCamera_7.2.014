@@ -1797,6 +1797,21 @@
     invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
 
     move-result v3
+	
+	const-string v10, "pref_nonzsl_frames"
+
+    invoke-static {v10}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+    move-result v10
+	
+	const v7, 0x15
+	
+	if-gt v7, v10, :cond_DefFramesP3
+	
+	const v3, 0xd
+	
+	:cond_DefFramesP3
+	const v7, 0x0
 
     shl-int/2addr v3, v15
 
@@ -2000,9 +2015,24 @@
     invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
 
     move-result v4
+	
+	const-string v10, "pref_nonzsl_frames"
 
+    invoke-static {v10}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+    move-result v10
+	
+	const v7, 0x15
+	
+	if-gt v7, v10, :cond_DefFramesP2
+	
+	const v4, 0xd
+	
+	:cond_DefFramesP2
+	const v7, 0x0
+	
     shl-int/2addr v4, v15
-
+	
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -2301,6 +2331,21 @@
     invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
 
     move-result v3
+		
+	const-string v10, "pref_nonzsl_frames"
+
+    invoke-static {v10}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+    move-result v10
+	
+	const v7, 0x15
+	
+	if-gt v7, v10, :cond_DefFramesP1
+	
+	const v3, 0x9
+	
+	:cond_DefFramesP1
+	const v7, 0x0
 
     mul-int/lit8 v3, v3, 0x5
 
@@ -2540,6 +2585,21 @@
     invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
 
     move-result v3
+	
+	const-string v10, "pref_nonzsl_frames"
+
+    invoke-static {v10}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+    move-result v10
+	
+	const v7, 0x15
+	
+	if-gt v7, v10, :cond_DefFramesP3a
+	
+	const v4, 0xd
+	
+	:cond_DefFramesP3a
+	const v7, 0x0
 
     shl-int/2addr v3, v15
 

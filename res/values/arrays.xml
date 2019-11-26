@@ -139,7 +139,8 @@
         <item>10</item>
         <item>15</item>
 		<item>20</item>
-		<item>Up to 30</item>
+		<item>30</item>
+		<item>45</item>
     </string-array>
     <string-array name="pref_nonzsl_entryvalues">
         <item>0</item>
@@ -151,6 +152,7 @@
         <item>15</item>
 		<item>20</item>
 		<item>30</item>
+		<item>45</item>
     </string-array>
     <string-array name="pref_maxexpo_entries">
         <item>Default</item>
