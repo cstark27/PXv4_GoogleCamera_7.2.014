@@ -40,12 +40,6 @@
 
 .field private _NRRR:J
 
-.field private _DehazeSupport:J
-
-.field private _DehazeS0:J
-
-.field private _DehazeS1:J
-
 .field private _Tone:[J
 
 .field hashMap:Ljava/util/HashMap;
@@ -143,18 +137,6 @@
     const-wide/32 v0, 0x15E50F8
 
     iput-wide v0, p0, LlibPatcher;->_NRRR:J
-
-    const-wide/32 v0, 0xd7507c
-
-    iput-wide v0, p0, LlibPatcher;->_DehazeSupport:J
-
-    const-wide/32 v0, 0xd7506c
-
-    iput-wide v0, p0, LlibPatcher;->_DehazeS0:J
-
-    const-wide/32 v0, 0xd75070
-
-    iput-wide v0, p0, LlibPatcher;->_DehazeS1:J
 
     const-string v0, "0123456789ABCDEF"
 
@@ -1194,42 +1176,6 @@
     .locals 2
 
     iget-wide v0, p0, LlibPatcher;->_NRRR:J
-
-    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public setDehazeSupport(Ljava/lang/Integer;)Ljava/lang/String;
-    .locals 2
-
-    iget-wide v0, p0, LlibPatcher;->_DehazeSupport:J
-
-    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public setDehazeS0(Ljava/lang/Integer;)Ljava/lang/String;
-    .locals 2
-
-    iget-wide v0, p0, LlibPatcher;->_DehazeS0:J
-
-    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public setDehazeS1(Ljava/lang/Integer;)Ljava/lang/String;
-    .locals 2
-
-    iget-wide v0, p0, LlibPatcher;->_DehazeS1:J
 
     invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
 
