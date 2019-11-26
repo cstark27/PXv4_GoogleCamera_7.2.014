@@ -2591,13 +2591,13 @@
     invoke-static {v10}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
     move-result v10
-	
+
 	const v7, 0x15
-	
+
 	if-gt v7, v10, :cond_DefFramesP3a
-	
-	const v4, 0xd
-	
+
+	const v3, 0xd
+
 	:cond_DefFramesP3a
 	const v7, 0x0
 
