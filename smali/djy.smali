@@ -20,6 +20,10 @@
 # direct methods
 .method static constructor <clinit>()V		# 3 MP Motion Photos/Top Shot resolution
     .locals 6
+    
+        sget v0, Lcom/custom/extras;->isGoogle:I
+
+        if-eqz v0, :cond_100
 
 	sget v0, Lcom/custom/extras;->isPixel4:I
 	
@@ -35,6 +39,13 @@
     const/16 v0, 0x800
 
     const/16 v1, 0x600
+    
+    goto :goto_0
+
+    :cond_100
+    const/16 v0, 0x280   #fix motion photos for Mi9
+
+    const/16 v1, 0x1e0
 
 	:goto_end4x3
     invoke-static {v0, v1}, Lmjt;->a(II)Lmjt;
@@ -42,11 +53,23 @@
     move-result-object v0
 
     sput-object v0, Ldjy;->a:Lmjt;
+    
+    sget v0, Lcom/custom/extras;->isGoogle:I
+
+    if-eqz v0, :cond_101
 
     const/16 v0, 0x780
 
     const/16 v1, 0x438
+    
+    goto :goto_100
+    
+    :cond_101
+    const/16 v0, 0x500    #fix motion photos for Mi9
 
+    const/16 v1, 0x2d0
+    
+    :goto_100
     invoke-static {v0, v1}, Lmjt;->a(II)Lmjt;
 
     move-result-object v0
