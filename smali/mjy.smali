@@ -228,7 +228,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, LlibPatcher;->setDarkenSkyDenoise(Ljava/lang/Integer;)Ljava/lang/String;
+    invoke-virtual {v1, v2}, LlibPatcher;->setNRRR(Ljava/lang/Integer;)Ljava/lang/String;
 
     const-string v2, "lib_dhzsupport_key"
 
@@ -240,7 +240,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, LlibPatcher;->setNRRR(Ljava/lang/Integer;)Ljava/lang/String;
+    invoke-virtual {v1, v2}, LlibPatcher;->setDehazeSupport(Ljava/lang/Integer;)Ljava/lang/String;
 
     const-string v2, "lib_dehazes0_key"
 
