@@ -40,7 +40,7 @@
 
     const/16 v1, 0x600
     
-    goto :goto_0
+    goto :goto_end4x3
 
     :cond_100
     const/16 v0, 0x280   #fix motion photos for Mi9
