@@ -400,16 +400,24 @@
 
 .method private final b(Z)Z
     .locals 2
+	
+	const-string v0, "pref_disable_facewarping"		# Face warping
 
-    iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lcin;
+	invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
 
-    sget-object v1, Lcjh;->f:Lcio;
+	move-result v0
+	
+	if-eqz v0, :cond_1
 
-    invoke-interface {v0, v1}, Lcin;->c(Lcio;)Z
+    #iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lcin;
 
-    move-result v0
+    #sget-object v1, Lcjh;->f:Lcio;	# camera.acat_fsc_off
 
-    if-eqz v0, :cond_1
+    #invoke-interface {v0, v1}, Lcin;->c(Lcio;)Z
+
+    #move-result v0
+
+    #if-eqz v0, :cond_1
 
     :cond_0
     goto :goto_0
@@ -837,17 +845,12 @@
 
     move-result-object v1
 
-	const-string v6, "pref_disable_facewarping"		# Face warping
+    invoke-virtual {v1}, Lcom/google/googlex/gcam/StaticMetadata;->getLens_facing()I
 
-	invoke-static {v6}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+    move-result v1
 
-	move-result v6
-	
-	if-nez v6, :cond_off
+    if-ne v1, v11, :cond_5
 
-	goto :cond_5
-
-	:cond_off
     const/4 v1, 0x1
 
     goto :goto_3
@@ -1366,17 +1369,12 @@
 
     move-result-object v15
 
-	const-string v8, "pref_disable_facewarping"		# Face warping
+    invoke-virtual {v15}, Lcom/google/googlex/gcam/StaticMetadata;->getLens_facing()I
 
-	invoke-static {v8}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+    move-result v15
 
-	move-result v8
-	
-	if-nez v8, :cond_off2
+    if-ne v15, v8, :cond_2
 
-	goto :cond_2
-
-	:cond_off2
     const/4 v15, 0x1
 
     goto :goto_1
