@@ -1780,9 +1780,9 @@
 
     invoke-interface {v0, v1, v11}, Lcir;->a(Lciq;Ljava/lang/Integer;)V
 
-    sget-object v1, Lcjb;->a:Lciq;
+    sget-object v1, Lcjb;->a:Lciq;	# max_hdr_plus_imagereader_image_count
 
-    sget-object v3, Lcjb;->b:Lciq;
+    sget-object v3, Lcjb;->b:Lciq;	# max_hdr_plus_burst_frame_count
 
     invoke-interface {v0, v3}, Lcin;->a(Lciq;)Lpka;
 
@@ -1796,7 +1796,7 @@
 
     invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
 
-    move-result v3
+    move-result v3	# framecount: stock APK this is usually 7 = 7 frames
 	
 	const-string v10, "pref_nonzsl_frames"
 
@@ -1804,16 +1804,16 @@
 
     move-result v10
 	
-	const v7, 0x15
+	const v7, 0x15	#	framecount: =21
 	
-	if-gt v7, v10, :cond_DefFramesP3
+	if-gt v7, v10, :cond_DefFramesP3	# framecount: if v7(21) is greater than menu value, we don't need to override this value. I fear it may effect performance by having "too much buffer"?
 	
-	const v3, 0xd
+	const v3, 0xd	#	framecount: =13, when used with shl-int below, it becomes 52 = max 52 frames before frames are dropped
 	
 	:cond_DefFramesP3
-	const v7, 0x0
+	const v7, 0x0	#	framecount: reset v7 register back to 0 for rest of parameters that use it
 
-    shl-int/2addr v3, v15
+    shl-int/2addr v3, v15	# framecount: stock APK, this is usually 28 = max 28 frames before frames are dropped)
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

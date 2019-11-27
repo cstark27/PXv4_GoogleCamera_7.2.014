@@ -45,7 +45,7 @@
 
     new-instance p1, Lggi;
 
-    sget-object v0, Lcjb;->c:Lciq;
+    sget-object v0, Lcjb;->c:Lciq;	# max_imagereader_image_count
 
     invoke-interface {p0, v0}, Lcin;->a(Lciq;)Lpka;
 
@@ -61,7 +61,7 @@
 
     move-result v0
 
-    sget-object v1, Lcjb;->a:Lciq;
+    sget-object v1, Lcjb;->a:Lciq;	# max_hdr_plus_imagereader_image_count
 
     invoke-interface {p0, v1}, Lcin;->a(Lciq;)Lpka;
 
@@ -75,7 +75,7 @@
 
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
-    move-result p0
+    move-result p0	# framecount: you can manipulate this value a little, to extend frame count even higher...for example you can 'mul-int/lit8 p0, p0, 0x2' after this line
 
     invoke-direct {p1, v0, p0}, Lggi;-><init>(II)V
 
