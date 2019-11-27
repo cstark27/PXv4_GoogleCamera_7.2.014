@@ -880,18 +880,13 @@
 
 	sget p1, Lcom/toggle/align/AlignZ;->AlignZS:I
 
+	if-eqz p1, :cond_pass
+
 	invoke-virtual {v0, p1}, Lcom/google/googlex/gcam/ShotParams;->setDisable_align(Z)V
 
 	invoke-virtual {v0, p1}, Lcom/google/googlex/gcam/ShotParams;->setMerge_method_override(I)V
 	
 	:cond_pass
-	sget p1, Lcom/toggle/align/AlignZ;->AlignZS:I
-	
-	if-eqz p1, :cond_frames_nonlightpainting
-	
-	const p3, 0x1e		# Force max 30 frames if Light Painting ON
-	
-	:cond_frames_nonlightpainting
 	sput p3, Lcom/custom/extras;->NON_ZSL_FRAMES:I
 
     iget-object p1, p0, Ldqj;->g:Ldop;
@@ -1153,6 +1148,7 @@
 	
 	if-ne p1, p2, :cond_1a
 	
+	# HDR+E custom frames
 	const-string p1, "pref_nonzsl_frames"
 
 	invoke-static {p1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
