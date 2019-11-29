@@ -295,6 +295,10 @@
     invoke-interface {v9}, Lger;->N()Lmzh;
 
     move-result-object v0
+    
+    sget v1, Lcom/custom/extras;->isGoogle:I     #fix portrait on non-Pixel devices
+
+    if-eqz v1, :cond_3
 	
 	sget v1, Lcom/custom/extras;->isPixel1:I	#no pd for portrait
 
@@ -331,6 +335,10 @@
     invoke-interface {v9}, Lger;->N()Lmzh;
 
     move-result-object v0
+    
+    sget v1, Lcom/custom/extras;->isGoogle:I   #fix portrait for non-Pixel devices
+
+    if-eqz v1, :cond_5
 	
 	sget v1, Lcom/custom/extras;->isPixel1:I
 
@@ -550,6 +558,10 @@
     invoke-interface {v9}, Lger;->N()Lmzh;
 
     move-result-object v0
+    
+    sget v1, Lcom/custom/extras;->isGoogle:I  #fix portrait for non-Pixel devices
+
+    if-eqz v1, :cond_c
 	
 	sget v1, Lcom/custom/extras;->isPixel1:I
 
