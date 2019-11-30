@@ -863,3 +863,139 @@
 	
 	return v0
 .end method
+
+.method public static CheckGoogle()V
+	.locals 2
+	
+    sget-object v0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
+	
+	const-string v1, "Google"
+	
+	invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v1
+	
+	sput v1, Lcom/custom/extras;->isGoogle:I	# 1 = Google, 0 = not Google
+	
+	return-void
+.end method
+
+.method public static CheckPixel()V
+	.locals 5
+	
+	const v3, 0x1
+	
+	const v4, 0x0
+
+    sget-object v0, Landroid/os/Build;->BOARD:Ljava/lang/String;
+	
+	const-string v1, "sailfish"
+	
+	invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+	
+	move-result v2
+	
+	if-nez v2, :cond_isPixel1
+
+	const-string v1, "marlin"
+	
+	invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+	
+	move-result v2
+	
+	if-nez v2, :cond_isPixel1
+	
+	const-string v1, "walleye"
+	
+	invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+	
+	move-result v2
+	
+	if-nez v2, :cond_isPixel2
+	
+	const-string v1, "taimen"
+	
+	invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+	
+	move-result v2
+	
+	if-nez v2, :cond_isPixel2
+	
+	const-string v1, "blueline"
+	
+	invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+	
+	move-result v2
+	
+	if-nez v2, :cond_isPixel3
+	
+	const-string v1, "crosshatch"
+	
+	invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+	
+	move-result v2
+	
+	if-nez v2, :cond_isPixel3
+	
+	const-string v1, "sargo"
+	
+	invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+	
+	move-result v2
+	
+	if-nez v2, :cond_isPixel3a
+	
+	const-string v1, "bonito"
+	
+	invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+	
+	move-result v2
+	
+	if-nez v2, :cond_isPixel3a
+	
+	const-string v1, "flame"
+	
+	invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+	
+	move-result v2
+	
+	if-nez v2, :cond_isPixel4
+	
+	const-string v1, "coral"
+	
+	invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+	
+	move-result v2
+	
+	if-nez v2, :cond_isPixel4
+
+	if-eqz v2, :cond_isPixel1	# isPixel1 for non-Pixel device
+
+	:goto_0
+	return-void
+
+	:cond_isPixel1	
+	sput v3, Lcom/custom/extras;->isPixel1:I
+	
+	goto :goto_0
+	
+	:cond_isPixel2	
+	sput v3, Lcom/custom/extras;->isPixel2:I
+	
+	goto :goto_0
+	
+	:cond_isPixel3	
+	sput v3, Lcom/custom/extras;->isPixel3:I
+	
+	goto :goto_0
+	
+	:cond_isPixel3a	
+	sput v3, Lcom/custom/extras;->isPixel3a:I
+	
+	goto :goto_0
+	
+	:cond_isPixel4	
+	sput v3, Lcom/custom/extras;->isPixel4:I
+	
+	goto :goto_0
+.end method

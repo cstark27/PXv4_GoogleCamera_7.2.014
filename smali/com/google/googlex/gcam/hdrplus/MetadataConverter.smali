@@ -578,6 +578,10 @@
 
 .method public static convertToGcamStaticMetadata(Lmyp;)Lcom/google/googlex/gcam/StaticMetadata;
     .locals 10
+	
+	invoke-static {}, Lcom/custom/extras;->CheckGoogle()V
+	
+	invoke-static {}, Lcom/custom/extras;->CheckPixel()V
 
     new-instance v0, Lcom/google/googlex/gcam/StaticMetadata;
 
@@ -585,13 +589,7 @@
 
     sget-object v1, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
 	
-	const-string v3, "Google"
-	
-	invoke-virtual {v3, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v3
-	
-	sput v3, Lcom/custom/extras;->isGoogle:I
+	sget v3, Lcom/custom/extras;->isGoogle:I
 
     if-eqz v3, :cond_NotGoogle	#if not Google device
 

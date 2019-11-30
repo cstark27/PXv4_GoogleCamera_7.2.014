@@ -320,20 +320,10 @@
     .locals 6
 
     sget-object v0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
-
-	const-string v1, "Google"		# If device is Google
-
-	invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-	move-result v1
 	
-	sput v1, Lcom/custom/extras;->isGoogle:I
+	sget v1, Lcom/custom/extras;->isGoogle:I
 	
 	if-nez v1, :cond_NotForcePixel1
-	
-	const v1, 0x1
-	
-	sput v1, Lcom/custom/extras;->isPixel1:I
 	
 	const-string v1, "sailfish"
 	
@@ -487,8 +477,6 @@
     const/4 v0, 0x0
 
 	:goto_1
-	sput v0, Lcom/custom/extras;->isPixel1:I
-
     return v0
 
     :cond_1
@@ -515,8 +503,6 @@
     const/4 v0, 0x0
 
 	:goto_1
-	sput v0, Lcom/custom/extras;->isPixel2:I
-
     return v0
 
     :cond_1
@@ -543,8 +529,6 @@
     const/4 v0, 0x0
 
 	:goto_1
-	sput v0, Lcom/custom/extras;->isPixel3:I
-
     return v0
 
     :cond_1
@@ -571,8 +555,6 @@
     const/4 v0, 0x0
 
 	:goto_1
-	sput v0, Lcom/custom/extras;->isPixel3a:I
-
     return v0
 
     :cond_1
@@ -603,8 +585,6 @@
     const/4 v0, 0x0
 
 	:goto_1
-	sput v0, Lcom/custom/extras;->isPixel4:I
-
     return v0
 
     :cond_1
