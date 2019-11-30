@@ -318,6 +318,10 @@
 
 .method public static a()Lndb;
     .locals 6
+	
+	invoke-static {}, Lcom/custom/extras;->CheckGoogle()V
+	
+	invoke-static {}, Lcom/custom/extras;->CheckPixel()V
 
     sget-object v0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
 	
