@@ -11,7 +11,7 @@
 			<PreferenceCategory android:title="General Settings" android:key="pref_category_advanced2_general" >	
 				<PreferenceScreen android:icon="@drawable/ic_about_24" android:layout="@layout/preference_with_margin_blue" android:title="About" android:key="pref_category_about">
 					<Preference android:icon="@drawable/ics_about" android:enabled="false" android:layout="@layout/preference_about" android:key="pref_about_info" />
-					<Preference android:enabled="false" android:layout="@layout/preference_about_info" android:title="PX Mod" android:key="pref_category_about_icon" android:summary="v4.1" />
+					<Preference android:enabled="false" android:layout="@layout/preference_about_info" android:title="PX Mod" android:key="pref_category_about_icon" android:summary="v4.2" />
 					<Preference android:layout="@layout/preference_updates" android:title="A back.rider555, cstark27, johngalt1 collaboration." android:key="pref_category_about_dev" android:summary="We would like to extend our appreciation and greetings to Marc Levoy and his team, Arnova8G2, BSG, Charles_L, eszdman, fu24, KoopahTManiac, marcello, miniuser123, namok, san1ty, savitar, scrubber, SerJo87, Tolyan009, Urnyx05, xtrme">
 						<intent android:action="android.intent.action.VIEW" android:data="https://www.celsoazevedo.com/files/android/google-camera/developers/" />
 					</Preference>
