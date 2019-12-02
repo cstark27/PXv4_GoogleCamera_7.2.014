@@ -401,7 +401,7 @@
 
     # NOP
 
-    const/16 p1, 0x4e23
+    const/16 p1, 0x4e22
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
