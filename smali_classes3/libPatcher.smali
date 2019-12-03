@@ -10,8 +10,6 @@
 # instance fields
 .field private final HEX_ARRAY:[C
 
-.field private _Chroma:J
-
 .field private _ChromaL1:J
 
 .field private _ChromaL2:J
@@ -19,8 +17,6 @@
 .field private _ChromaL3:J
 
 .field private _ChromaL4:J
-
-.field private _Luma:J
 
 .field private _LumaL1:J
 
@@ -82,10 +78,6 @@
 
     iput-wide v0, p0, LlibPatcher;->_Sharpness:J
 
-    const-wide/32 v0, 0x12708a8
-
-    iput-wide v0, p0, LlibPatcher;->_Luma:J
-
     const-wide/32 v0, 0x1273650
 
     iput-wide v0, p0, LlibPatcher;->_LumaL1:J
@@ -101,10 +93,6 @@
     const-wide/32 v0, 0x12736a4
 
     iput-wide v0, p0, LlibPatcher;->_LumaL4:J
-
-    const-wide/32 v0, 0x127095c
-
-    iput-wide v0, p0, LlibPatcher;->_Chroma:J
 
     const-wide/32 v0, 0x12736c8
 
@@ -1005,18 +993,6 @@
     return-object p1
 .end method
 
-.method public setChroma(Ljava/lang/Integer;)Ljava/lang/String;
-    .locals 2
-
-    iget-wide v0, p0, LlibPatcher;->_Chroma:J
-
-    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
 .method public setChromaL1(Ljava/lang/Integer;)Ljava/lang/String;
     .locals 2
 
@@ -1056,18 +1032,6 @@
     .locals 2
 
     iget-wide v0, p0, LlibPatcher;->_ChromaL4:J
-
-    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public setLuma(Ljava/lang/Integer;)Ljava/lang/String;
-    .locals 2
-
-    iget-wide v0, p0, LlibPatcher;->_Luma:J
 
     invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
 
