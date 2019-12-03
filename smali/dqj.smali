@@ -448,6 +448,21 @@
 
     :cond_1
     :goto_0
+	const-string p3, "pref_p3color_key"		# DCI-P3 Color Space
+
+	invoke-static {p3}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result p3
+	
+	if-eqz p3, :cond_DontForceP3
+	
+	const p6, 0x2
+	
+	invoke-virtual {v0, p6}, Lcom/google/googlex/gcam/ShotParams;->setIcc_output_profile_override(I)V
+	
+	goto :goto_EndForceP3
+
+	:cond_DontForceP3
     iget-object p3, p0, Ldqj;->h:Lcin;
 
     sget-object p6, Lciu;->a:Lciq;
@@ -472,6 +487,7 @@
 
     invoke-virtual {v0, p2}, Lcom/google/googlex/gcam/ShotParams;->setIcc_output_profile_override(I)V
 
+	:goto_EndForceP3
     :cond_2
     sget-object p3, Lgrj;->a:Lgrj;
 
