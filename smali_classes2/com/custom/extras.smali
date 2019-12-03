@@ -16,6 +16,14 @@
 
 .field public static CameraMode:I
 
+.field public static VideoMode:I
+
+.field public static PanoramaMode:I
+
+.field public static SlowMotionMode:I
+
+.field public static TimeLapseMode:I
+
 .field static app_context:Landroid/content/Context;
 
 .field public static sHdr_process:I
@@ -882,6 +890,51 @@
 	
 	:cond_isPixel4	
 	sput v3, Lcom/custom/extras;->isPixel4:I
+	
+	goto :goto_0
+.end method
+
+.method public static return_one_if_NightSightMode()I
+	.locals 1
+
+	sget v0, Lcom/custom/extras;->CameraMode:I
+	
+	if-nez v0, :cond_noNS
+	
+	sget v0, Lcom/custom/extras;->PortraitMode:I
+	
+	if-nez v0, :cond_noNS
+
+	sget v0, Lcom/custom/extras;->VideoMode:I
+	
+	if-nez v0, :cond_noNS
+
+	sget v0, Lcom/custom/extras;->PanoramaMode:I
+	
+	if-nez v0, :cond_noNS
+
+	sget v0, Lcom/custom/extras;->SlowMotionMode:I
+	
+	if-nez v0, :cond_noNS
+
+	sget v0, Lcom/custom/extras;->TimeLapseMode:I
+	
+	if-nez v0, :cond_noNS
+
+	sget v0, Lcom/custom/extras;->NightSight:I
+	
+	if-nez v0, :cond_yesNS
+	
+	goto :cond_noNS
+	
+	:cond_yesNS
+	const v0, 0x1
+	
+	:goto_0
+	return v0	
+	
+	:cond_noNS
+	const v0, 0x0
 	
 	goto :goto_0
 .end method

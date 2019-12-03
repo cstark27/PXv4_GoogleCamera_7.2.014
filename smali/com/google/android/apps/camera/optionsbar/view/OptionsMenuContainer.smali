@@ -673,11 +673,9 @@
     invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->setEnabled(Z)V
 
 	# astro buttons only in Night Sight
-	sget v1, Lcom/custom/extras;->CameraMode:I
+	invoke-static {}, Lcom/custom/extras;->return_one_if_NightSightMode()I
 	
-	if-nez v1, :cond_astroNo
-	
-	sget v1, Lcom/custom/extras;->NightSight:I
+	move-result v1
 	
 	if-eqz v1, :cond_astroNo
 	

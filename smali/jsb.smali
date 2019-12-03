@@ -47,6 +47,9 @@
 
     const/4 v2, 0x1
 
+	# Value for PanoramaMode:I
+	sput v2, Lcom/custom/extras;->PanoramaMode:I
+
     invoke-interface {v0, v1, v2}, Lkaf;->a(Lklx;Z)V
 
     iget-object v0, p0, Ljsb;->a:Ljsj;
@@ -156,6 +159,9 @@
     iget-object v1, v0, Ljsj;->c:Lcom/google/android/apps/camera/ui/wirers/PreviewOverlay;
 
     const/4 v2, 0x0
+
+	# Value for PanoramaMode:I
+	sput v2, Lcom/custom/extras;->PanoramaMode:I
 
     iput-boolean v2, v1, Lcom/google/android/apps/camera/ui/wirers/PreviewOverlay;->e:Z
 

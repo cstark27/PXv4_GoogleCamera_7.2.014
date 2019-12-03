@@ -55,6 +55,9 @@
 
     const/4 v2, 0x1
 
+	# Value for TimeLapseMode:I
+	sput v2, Lcom/custom/extras;->TimeLapseMode:I
+
     iput-boolean v2, v1, Lcom/google/android/apps/camera/ui/wirers/PreviewOverlay;->e:Z
 
     invoke-virtual {v0}, Ljsj;->N()V
@@ -175,6 +178,9 @@
     iget-object v1, v0, Ljsj;->c:Lcom/google/android/apps/camera/ui/wirers/PreviewOverlay;
 
     const/4 v2, 0x0
+
+	# Value for TimeLapseMode:I
+	sput v2, Lcom/custom/extras;->TimeLapseMode:I
 
     iput-boolean v2, v1, Lcom/google/android/apps/camera/ui/wirers/PreviewOverlay;->e:Z
 

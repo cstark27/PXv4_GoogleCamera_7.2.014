@@ -61,6 +61,11 @@
 .method public final c()V
     .locals 3
 
+	# Value for VideoMode:I
+	const v0, 0x1
+
+	sput v0, Lcom/custom/extras;->VideoMode:I
+
     sget-object v0, Ljsj;->a:Ljava/lang/String;
 
     invoke-static {v0}, Lliv;->b(Ljava/lang/String;)V
@@ -123,6 +128,11 @@
 
 .method public final d()V
     .locals 1
+
+	# Value for VideoMode:I
+	const v0, 0x0
+
+	sput v0, Lcom/custom/extras;->VideoMode:I
 
     sget-object v0, Ljsj;->a:Ljava/lang/String;
 
