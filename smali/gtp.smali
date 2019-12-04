@@ -87,16 +87,7 @@
     const/4 v5, 0x1
 
     :goto_0
-	# HDR+ options for Portrait Mode
-	sget v7, Lcom/custom/extras;->isPixel4:I
-	
-	if-nez v7, :cond_endPortHdrButtons
-	
-    sget-object v7, Lklx;->h:Lklx;
 
-    if-eq v2, v7, :cond_3
-	:cond_endPortHdrButtons
-	#End HDR+ options for Portrait Mode
     sget-object v7, Lklx;->b:Lklx;
 
     if-ne v2, v7, :cond_4

@@ -6,6 +6,8 @@
 # static fields
 .field public static HDRenh:I
 
+.field public static HDRE_Portrait:I
+
 .field static final INSTANCE:Landroid/app/Application;
 
 .field public static LensFacing:I
@@ -934,6 +936,51 @@
 	return v0	
 	
 	:cond_noNS
+	const v0, 0x0
+	
+	goto :goto_0
+.end method
+
+.method public static return_one_if_PortraitMode()I
+	.locals 1
+
+	sget v0, Lcom/custom/extras;->CameraMode:I
+	
+	if-nez v0, :cond_noPM
+	
+	sget v0, Lcom/custom/extras;->NightSight:I
+	
+	if-nez v0, :cond_noPM
+
+	sget v0, Lcom/custom/extras;->VideoMode:I
+	
+	if-nez v0, :cond_noPM
+
+	sget v0, Lcom/custom/extras;->PanoramaMode:I
+	
+	if-nez v0, :cond_noPM
+
+	sget v0, Lcom/custom/extras;->SlowMotionMode:I
+	
+	if-nez v0, :cond_noPM
+
+	sget v0, Lcom/custom/extras;->TimeLapseMode:I
+	
+	if-nez v0, :cond_noPM
+
+	sget v0, Lcom/custom/extras;->PortraitMode:I
+	
+	if-nez v0, :cond_yesPM
+	
+	goto :cond_noPM
+	
+	:cond_yesPM
+	const v0, 0x1
+	
+	:goto_0
+	return v0	
+	
+	:cond_noPM
 	const v0, 0x0
 	
 	goto :goto_0

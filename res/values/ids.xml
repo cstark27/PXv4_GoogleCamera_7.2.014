@@ -569,9 +569,10 @@
     <item type="id" name="APKTOOL_DUMMY_29a" />
     <item type="id" name="APKTOOL_DUMMY_29b" />
     <item type="id" name="APKTOOL_DUMMY_29c" />
-    <item type="id" name="APKTOOL_DUMMY_29d" />
     <item type="id" name="toggle_lightpaint" />
     <item type="id" name="toggle_astro" />
 	<item type="id" name="button_astro" />
 	<item type="id" name="button_lightpaint" />
+	<item type="id" name="status_HDR+E_portrait" />
+	<item type="id" name="icon_HDR+E_portrait" />
 </resources>

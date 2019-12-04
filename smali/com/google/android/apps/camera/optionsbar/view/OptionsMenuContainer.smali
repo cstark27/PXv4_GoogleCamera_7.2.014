@@ -624,6 +624,20 @@
     return-object v0
 .end method
 
+.method public final portrait_hdre()Landroid/widget/FrameLayout;		# get HDR+E ON layout
+    .locals 1
+
+    const v0, 0x7f0b029d
+
+    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/FrameLayout;
+
+    return-object v0
+.end method
+
 .method public final h()V
     .locals 4
 
@@ -671,6 +685,31 @@
 
     :goto_1
     invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->setEnabled(Z)V
+
+	# HDR+E Portrait only in Portrait Mode
+	invoke-static {}, Lcom/custom/extras;->return_one_if_PortraitMode()I
+	
+	move-result v1
+	
+	if-eqz v1, :cond_portNo
+	
+	sget v1, Lcom/custom/extras;->HDRE_Portrait:I
+	
+	if-eqz v1, :cond_portNo
+	
+	const v1, 0x0
+	
+	goto :goto_portdone
+	
+	:cond_portNo
+	const v1, 0x8
+	
+	:goto_portdone
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->portrait_hdre()Landroid/widget/FrameLayout;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
 	# astro buttons only in Night Sight
 	invoke-static {}, Lcom/custom/extras;->return_one_if_NightSightMode()I

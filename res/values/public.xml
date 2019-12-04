@@ -4458,7 +4458,7 @@
     <public type="id" name="APKTOOL_DUMMY_29a" id="0x7f0b029a" />
     <public type="id" name="APKTOOL_DUMMY_29b" id="0x7f0b029b" />
     <public type="id" name="APKTOOL_DUMMY_29c" id="0x7f0b029c" />
-    <public type="id" name="APKTOOL_DUMMY_29d" id="0x7f0b029d" />
+    <public type="id" name="status_HDR+E_portrait" id="0x7f0b029d" />
     <public type="id" name="toggle_lightpaint" id="0x7f0b029f" />
     <public type="id" name="toggle_astro" id="0x7f0b02a0" />
     <public type="integer" name="abc_config_activityDefaultDur" id="0x7f0c0000" />

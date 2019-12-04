@@ -10,7 +10,7 @@
 		<PreferenceScreen android:icon="@drawable/hamburger" android:layout="@layout/preference_with_margin_blue" android:title="PX Mod Settings" android:key="pref_category_advanced2" android:order="5">
 			<PreferenceCategory android:title="General Settings" android:key="pref_category_advanced2_general" >	
 				<PreferenceScreen android:icon="@drawable/ic_about_24" android:layout="@layout/preference_with_margin_blue" android:title="About" android:key="pref_category_about">
-					<Preference android:icon="@drawable/ics_about" android:enabled="false" android:layout="@layout/preference_about" android:key="pref_about_info" />
+					<Preference android:icon="@drawable/ics_iconcamera_2" android:enabled="false" android:layout="@layout/preference_about" android:key="pref_about_info" />
 					<Preference android:enabled="false" android:layout="@layout/preference_about_info" android:title="PX Mod" android:key="pref_category_about_icon" android:summary="v4.2" />
 					<Preference android:layout="@layout/preference_updates" android:title="A back.rider555, cstark27, johngalt1 collaboration." android:key="pref_category_about_dev" android:summary="We would like to extend our appreciation and greetings to Marc Levoy and his team, Arnova8G2, BSG, Charles_L, eszdman, fu24, KoopahTManiac, marcello, miniuser123, namok, san1ty, savitar, scrubber, SerJo87, Tolyan009, Urnyx05, xtrme">
 						<intent android:action="android.intent.action.VIEW" android:data="https://www.celsoazevedo.com/files/android/google-camera/developers/" />
@@ -41,6 +41,7 @@
 				<ListPreference android:icon="@drawable/account_search_outline" android:entries="@array/pref_pzoom_entries" android:layout="@layout/preference_with_margin" android:title="Portrait Zoom" android:key="pref_pzoom_key" android:summary="%s" android:defaultValue="0" android:entryValues="@array/pref_pzoom_entryvalues" />
 				<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/ics_warp" android:layout="@layout/preference_with_margin" android:title="Disable Face Shape Correction" android:key="pref_disable_facewarping" android:defaultValue="false" android:summary="Disables distortion correction on faces."/>
 				<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/palette_outline" android:layout="@layout/preference_with_margin" android:title="DCI-P3 Color Space" android:key="pref_p3color_key" android:defaultValue="false" android:summary="Photos will be saved with DCI-P3 color space. If unchecked, then the default sRGB will be used."/>
+				<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/ics_port_enh" android:layout="@layout/preference_with_margin" android:title="Portrait HDR+ Enhanced" android:key="pref_enh_port" android:summary="Increase dynamic range in Portrait Mode but increases capture time." android:defaultValue="false" />
 			</PreferenceCategory>
 			<PreferenceCategory android:title="AI AWB Settings" android:key="awb_settings" >
 				<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/ics_awb_zsl" android:layout="@layout/preference_with_margin" android:title="AI AWB for ZSL" android:key="pref_awb_zsl" android:defaultValue="false" />

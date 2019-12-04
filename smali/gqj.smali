@@ -196,6 +196,20 @@
 
     invoke-direct {v11, v1, v2, v9}, Lgoo;-><init>(Lgor;IZ)V
 
+	# HDR+E for Portrait
+	const-string v1, "pref_enh_port"
+
+	invoke-static {v1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v1
+
+	sput v1, Lcom/custom/extras;->HDRE_Portrait:I
+
+	if-eqz v1, :cond_default
+
+    iget-object v11, p0, Lgqj;->hdre_port:Lgor;		# HDR+E for Portrait Mode
+
+	:cond_default
     new-instance v1, Lgoi;
 
     new-instance v9, Lgof;
@@ -206,7 +220,7 @@
 
     move-object v5, v10
 
-    iget-object v6, p0, Lgqj;->hdre_port:Lgor;		# HDR+E for Portrait Mode
+	move-object v6, v11
 
     move-object v7, v10
 
