@@ -149,13 +149,7 @@
     move-result-object p1
 
     :goto_0
-    sget-object v0, Lmiy;->b:Lmiy;
-
-    invoke-virtual {p1, v0}, Lmiy;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
+    # Removed this check to enable rounded corner animations in all aspect ratios
 
     invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->getResources()Landroid/content/res/Resources;
 

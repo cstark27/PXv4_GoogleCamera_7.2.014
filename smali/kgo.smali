@@ -232,13 +232,7 @@
 
     move-result-object p2
 
-    sget-object p3, Lmiy;->b:Lmiy;
-
-    invoke-virtual {p2, p3}, Lmiy;->equals(Ljava/lang/Object;)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_2
+    # Removed this check to enable rounded corners in all aspect ratios
 
     iget-object p2, p0, Lkgo;->c:Landroid/view/SurfaceView;
 
