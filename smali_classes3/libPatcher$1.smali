@@ -37,7 +37,7 @@
 
     #Fine values
 
-    const/4 p1, 0x1
+    const/4 p1, 0x3
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -209,7 +209,7 @@
 
     # Global Values
 
-    const/4 p1, 0x0
+    const/4 p1, 0x2
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -401,13 +401,25 @@
 
     # NOP
 
-    const/16 p1, 0x4e22
+    const/16 p1, 0x1
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
     const-string v0, "1F2003D5"
+
+    invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    # Stock NRRR
+
+    const/16 p1, 0x0
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v0, "EAA30091"
 
     invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

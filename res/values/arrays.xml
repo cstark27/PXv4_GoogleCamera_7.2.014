@@ -243,7 +243,7 @@
         <item>1.875</item>
     </string-array>
     <string-array name="lib_hex_entryvalues">
-        <item>0</item>
+        <item>1</item>
         <item>125</item>
         <item>250</item>
         <item>375</item>
@@ -315,15 +315,15 @@
         <item>3751</item>
         <item>2501</item>
         <item>1251</item>
-        <item>1</item>
+        <item>2</item>
     </string-array>
-    <string-array name="hiddenlib_hex_entries">
-        <item>NOP NRRR</item>
+    <string-array name="nrrrlib_hex_entries">
         <item>Stock Behavior</item>
+        <item>NOP NRRR</item>
     </string-array>
-    <string-array name="hiddenlib_hex_entryvalues">
-        <item>20002</item>
+    <string-array name="nrrrlib_hex_entryvalues">
         <item>20003</item>
+        <item>20002</item>
     </string-array>
     <string-array name="curve_srange_entries">
         <item>0.75</item>
