@@ -2917,7 +2917,7 @@
 
     if-nez v0, :cond_1
 
-    const-string v0, "lib_nrrr_key"
+    const-string v0, "lib_systemmodel_key"
 
     invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

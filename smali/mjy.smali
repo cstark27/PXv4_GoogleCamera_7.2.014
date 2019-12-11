@@ -218,7 +218,7 @@
 
     invoke-virtual {v1, v2}, LlibPatcher;->setDarkenSkyDenoise(Ljava/lang/Integer;)Ljava/lang/String;
 
-    const-string v2, "lib_nrrr_key"
+    const-string v2, "lib_systemmodel_key"
 
     invoke-static {v2}, Lmarcello;->MenuValue(Ljava/lang/String;)I
 
