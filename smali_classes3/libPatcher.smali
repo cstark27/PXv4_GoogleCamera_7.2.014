@@ -38,7 +38,7 @@
 
 .field private _DarkenSkyDenoise:J
 
-.field private _NRRR:J
+.field private _SystemNoiseModel:J
 
 .field private _Tone:[J
 
@@ -136,7 +136,7 @@
 
     const-wide/32 v0, 0x15E50F8
 
-    iput-wide v0, p0, LlibPatcher;->_NRRR:J
+    iput-wide v0, p0, LlibPatcher;->_SystemNoiseModel:J
 
     const-string v0, "0123456789ABCDEF"
 
@@ -1172,10 +1172,10 @@
     return-object p1
 .end method
 
-.method public setNRRR(Ljava/lang/Integer;)Ljava/lang/String;
+.method public setSystemNoiseModel(Ljava/lang/Integer;)Ljava/lang/String;
     .locals 2
 
-    iget-wide v0, p0, LlibPatcher;->_NRRR:J
+    iget-wide v0, p0, LlibPatcher;->_SystemNoiseModel:J
 
     invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
 

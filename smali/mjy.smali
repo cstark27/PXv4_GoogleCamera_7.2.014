@@ -228,7 +228,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, LlibPatcher;->setNRRR(Ljava/lang/Integer;)Ljava/lang/String;
+    invoke-virtual {v1, v2}, LlibPatcher;->setSystemNoiseModel(Ljava/lang/Integer;)Ljava/lang/String;
 
     invoke-virtual {v1}, LlibPatcher;->setToneCurve()V
 

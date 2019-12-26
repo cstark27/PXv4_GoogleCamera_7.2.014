@@ -411,7 +411,7 @@
 
     invoke-virtual {p0, p1, v0}, LlibPatcher$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    # Stock NRRR
+    # Stock System Noise Model
 
     const/16 p1, 0x0
 

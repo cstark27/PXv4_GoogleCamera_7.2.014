@@ -317,14 +317,6 @@
         <item>1251</item>
         <item>2</item>
     </string-array>
-    <string-array name="nrrrlib_hex_entries">
-        <item>Stock Behavior</item>
-        <item>NOP NRRR</item>
-    </string-array>
-    <string-array name="nrrrlib_hex_entryvalues">
-        <item>20003</item>
-        <item>20002</item>
-    </string-array>
     <string-array name="curve_srange_entries">
         <item>0.75</item>
         <item>0.66</item>
