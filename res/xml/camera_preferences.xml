@@ -63,6 +63,11 @@
 					</PreferenceCategory>
 				</PreferenceScreen>
 			</PreferenceCategory>
+			<PreferenceCategory android:title="Experimental Settings" android:key="pref_category_advanced2_astro" >	
+				<PreferenceScreen android:icon="@drawable/quantum_gm_ic_developer_mode_gm_grey_24" android:layout="@layout/preference_with_margin" android:title="Experimental Settings" android:summary="Unsupported features that you can choose to test. Options may be added/removed in the future." android:key="pref_category_devsettings" android:order="256">
+						<com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:icon="@drawable/quantum_gm_ic_developer_mode_gm_grey_24" android:layout="@layout/preference_with_margin" android:title="Up to 16MP Output" android:key="pref_enable_16mp" android:summary="Pixel 4/XL Only. Enables up to 16MP output depending on zoom level." android:defaultValue="false" />
+				</PreferenceScreen>
+			</PreferenceCategory>
          </PreferenceScreen>
         <PreferenceScreen android:icon="@drawable/quantum_gm_ic_share_black_24" android:layout="@layout/preference_with_margin" android:title="@string/pref_camera_social_share_title" android:key="pref_category_social_share" android:order="7">
             <com.google.android.apps.camera.ui.preference.ManagedSwitchPreference android:layout="@layout/preference_with_switch_button" android:key="key_social_share_opt_in" android:defaultValue="true" />

@@ -247,13 +247,33 @@
     iget-object p1, p0, Ldqj;->o:Lmjt;
 
     iget p1, p1, Lmjt;->a:I
+	
+	const-string v1, "pref_enable_16mp"
 
+	invoke-static {v1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+	move-result v1
+	
+	if-eqz v1, :cond_DefOutputSize1
+ 
+	const v2, 0x2
+	
+	mul-int/2addr p1, v2
+
+	:cond_DefOutputSize1
     invoke-virtual {v0, p1}, Lcom/google/googlex/gcam/AeShotParams;->setTarget_width(I)V
 
     iget-object p1, p0, Ldqj;->o:Lmjt;
 
     iget p1, p1, Lmjt;->b:I
+	
+	if-eqz v1, :cond_DefOutputSize2
+	
+	const v2, 0x2
+ 
+	mul-int/2addr p1, v2
 
+	:cond_DefOutputSize2
     invoke-virtual {v0, p1}, Lcom/google/googlex/gcam/AeShotParams;->setTarget_height(I)V
 
     iget-object p1, p0, Ldqj;->j:Ldrf;
