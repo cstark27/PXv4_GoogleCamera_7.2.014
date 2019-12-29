@@ -646,7 +646,7 @@
 
     move-result-object v1
 
-    const-string v2, "HDR+ "
+    const-string v2, "HDR+ PX "
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
