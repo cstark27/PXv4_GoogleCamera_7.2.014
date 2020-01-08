@@ -53,6 +53,8 @@
     invoke-interface {v1, v3}, Lcin;->d(Lcio;)Z
 
     move-result v1
+	
+	const v1, 0x0
 
     if-eqz v1, :cond_0
 

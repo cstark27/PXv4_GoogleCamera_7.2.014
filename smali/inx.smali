@@ -53,6 +53,8 @@
     move-result v1
 
     const/4 v2, 0x0
+	
+	const v1, 0x0
 
     if-eqz v1, :cond_0
 
