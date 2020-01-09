@@ -46,7 +46,7 @@
 
     check-cast v1, Lcin;
 
-    sget-object v2, Lciu;->B:Lcio;
+    sget-object v2, Lciu;->B:Lcio;	# camera.hdrnet
 
     invoke-interface {v1, v2}, Lcin;->d(Lcio;)Z
 

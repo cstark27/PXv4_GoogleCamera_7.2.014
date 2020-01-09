@@ -214,7 +214,7 @@
 
     #iget-object v0, p0, Lerw;->l:Lcin;
 
-    #sget-object v1, Lciu;->B:Lcio;
+    #sget-object v1, Lciu;->B:Lcio;	# camera.hdrnet
 
     #invoke-interface {v0, v1}, Lcin;->d(Lcio;)Z
 

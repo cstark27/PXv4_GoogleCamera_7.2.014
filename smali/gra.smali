@@ -48,7 +48,7 @@
 
     sget-object v2, Lgrk;->b:Lgrk;
 
-    sget-object v3, Lciu;->B:Lcio;
+    sget-object v3, Lciu;->B:Lcio;	# camera.hdrnet
 
     invoke-interface {v1, v3}, Lcin;->d(Lcio;)Z
 
