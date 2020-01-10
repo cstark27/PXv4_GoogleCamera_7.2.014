@@ -19,7 +19,7 @@
 						<intent android:action="android.intent.action.VIEW" android:data="https://forum.xda-developers.com/apps/google-camera-mods/gcam-google-pixel-1-2-3-t3875663" />
 					</Preference>
 					<Preference android:layout="@layout/preference_updates" android:title="Magisk Modules" android:key="pref_category_about_magisk" android:summary="Magisk modules may provide more functionality and/or more efficient processing.">
-						<intent android:action="android.intent.action.VIEW" android:data="https://forum.xda-developers.com/showpost.php?p=80974289&postcount=2" />
+						<intent android:action="android.intent.action.VIEW" android:data="https://forum.xda-developers.com/showthread.php?p=79951569#post79951569" />
 					</Preference>
 					<Preference android:layout="@layout/preference_updates" android:title="Based on Google Camera" android:key="pref_category_about_based" android:summary="7.2.014">
 						<intent android:action="android.intent.action.VIEW" android:data="https://play.google.com/store/apps/details?id=com.google.android.GoogleCamera" />
