@@ -575,4 +575,7 @@
 	<item type="id" name="button_lightpaint" />
 	<item type="id" name="status_HDR+E_portrait" />
 	<item type="id" name="icon_HDR+E_portrait" />
+	<item type="id" name="slider_focus" />
+    <item type="id" name="slider_iso" />
+    <item type="id" name="slider_exposure" />
 </resources>

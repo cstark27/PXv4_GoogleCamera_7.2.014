@@ -5325,7 +5325,7 @@
 
     :goto_0
     mul-float v0, v0, p1
-
+	
     return v0
 
     :cond_1
@@ -5392,11 +5392,50 @@
     invoke-virtual {p0, p2}, Lcom/google/googlex/gcam/hdrplus/MetadataConverter;->getPhysicalCharacteristics(Lndo;)Lmyp;
 
     move-result-object v0
-
+	
     invoke-virtual {p1}, Lcom/google/googlex/gcam/FrameRequest;->getDesired_exposure_time_ms()F
 
     move-result v1
+	
+	const-string v2, "pref_shutter_key"		# start Pro Mode exposure slider @savitar
 
+    invoke-static {v2}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+    move-result v2
+
+	if-eqz v2, :cond_DefExpTime
+	
+	#float-to-long v1, v1
+
+	#invoke-static {v1}, Lza/lol;->setShutter_AE(Ljava/lang/Long;)V	# I dont know what this does honestly, may be irrelevant with this different method
+
+    invoke-static {}, Lza/lol;->getEXPTGT()Ljava/lang/Long;
+
+    move-result-object v2
+	
+	invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v3
+	
+	long-to-float v3, v3
+	
+	#invoke-static {v3}, Lcom/log;->logFloat(F)V	# for logging
+	
+	float-to-int v4, v3	# AUTO = 0
+
+	if-eqz v4, :cond_DefExpTime
+	
+	#invoke-static {v4}, Lcom/log;->logInt(I)V	# for logging, this shouldnt show if exp slider is off or AUTO
+	
+	const v2, 0x49742400	# 1000000.0f
+	
+	move v1, v3		# move slider selection to v1 register
+	
+	div-float/2addr v1, v2
+	
+	invoke-virtual {p1, v1}, Lcom/google/googlex/gcam/FrameRequest;->setDesired_exposure_time_ms(F)V
+	
+	:cond_DefExpTime
     invoke-virtual {p1}, Lcom/google/googlex/gcam/FrameRequest;->getDesired_analog_gain()F
 
     move-result v2
@@ -5478,7 +5517,22 @@
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
+	
+	#const-string v2, "pref_iso_key"	#p3mod - iso slider @savitar
 
+    #invoke-static {v2}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+
+    #move-result v2
+
+	#if-eqz v2, :cond_DefIso
+
+    #invoke-static {v1}, Lza/lol;->setIsoAe(Ljava/lang/Integer;)V	#pro mode
+
+    #invoke-static {}, Lza/lol;->getISOTGT()Ljava/lang/Integer;
+
+    #move-result-object v1
+
+	#:cond_DefIso
     invoke-interface {p3, v4, v1}, Lcom/google/googlex/gcam/hdrplus/MetadataConverter$RequestBuilderUpdater;->setParam(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
     invoke-virtual {p1}, Lcom/google/googlex/gcam/FrameRequest;->getTry_to_lock_black_level()Z
