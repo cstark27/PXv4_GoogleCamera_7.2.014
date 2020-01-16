@@ -168,10 +168,6 @@
 
 .method public final a(FJ)V
     .locals 9
-	
-	sget v0, Lcom/custom/extras;->isCustomExposure:I
-	
-	if-nez v0, :cond_0
 
     const/4 v0, 0x0
 
@@ -227,6 +223,10 @@
     iget-object p2, p0, Lell;->a:Lely;
 
     iget-object p2, p2, Lely;->J:Landroid/os/CountDownTimer;
+	
+	sget v0, Lcom/custom/extras;->isCustomExposure:I
+	
+	if-nez v0, :cond_0
 
     invoke-virtual {p2}, Landroid/os/CountDownTimer;->start()Landroid/os/CountDownTimer;
 
