@@ -2992,18 +2992,6 @@
     return-void
 
     :cond_1
-    const-string v0, "pref_portenh_bsg"
-
-    invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const-string v0, "Enable Portrait HDR+ Enhanced in P3 Mod Settings"
-
-    invoke-static {v0}, Lcom/custom/extras;->ShowToast(Ljava/lang/String;)V
-
     goto :goto_0
 .end method
 
@@ -3053,18 +3041,6 @@
     return-void
 
     :cond_1
-    const-string v0, "pref_portenh_bsg"
-
-    invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const-string v0, "Enable Portrait HDR+ Enhanced in P3 Mod Settings"
-
-    invoke-static {v0}, Lcom/custom/extras;->ShowToast(Ljava/lang/String;)V
-
     goto :goto_0
 .end method
 
@@ -3166,18 +3142,6 @@
     return-void
 
     :cond_1
-    const-string v0, "pref_portenh_bsg"
-
-    invoke-static {v0}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const-string v0, "Enable Portrait HDR+ Enhanced in P3 Mod Settings"
-
-    invoke-static {v0}, Lcom/custom/extras;->ShowToast(Ljava/lang/String;)V
-
     goto :goto_0
 .end method
 
