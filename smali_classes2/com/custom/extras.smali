@@ -44,6 +44,8 @@
 
 .field public static sGallery:Ljava/lang/String;
 
+.field public static sliders:I
+
 .field public static MAX_EXPOSURE:I
 
 .field public static NON_ZSL_FRAMES:I
@@ -981,6 +983,51 @@
 	return v0	
 	
 	:cond_noPM
+	const v0, 0x0
+	
+	goto :goto_0
+.end method
+
+.method public static return_one_if_CameraMode()I
+	.locals 1
+
+	sget v0, Lcom/custom/extras;->CameraMode:I
+	
+	if-nez v0, :cond_yesCam
+	
+	sget v0, Lcom/custom/extras;->NightSight:I
+	
+	if-nez v0, :cond_noCam
+
+	sget v0, Lcom/custom/extras;->VideoMode:I
+	
+	if-nez v0, :cond_noCam
+
+	sget v0, Lcom/custom/extras;->PanoramaMode:I
+	
+	if-nez v0, :cond_noCam
+
+	sget v0, Lcom/custom/extras;->SlowMotionMode:I
+	
+	if-nez v0, :cond_noCam
+
+	sget v0, Lcom/custom/extras;->TimeLapseMode:I
+	
+	if-nez v0, :cond_noCam
+
+	sget v0, Lcom/custom/extras;->PortraitMode:I
+	
+	if-nez v0, :cond_noCam
+	
+	goto :cond_noCam
+	
+	:cond_yesCam
+	const v0, 0x1
+	
+	:goto_0
+	return v0	
+	
+	:cond_noCam
 	const v0, 0x0
 	
 	goto :goto_0

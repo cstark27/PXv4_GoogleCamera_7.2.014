@@ -638,6 +638,20 @@
     return-object v0
 .end method
 
+.method public final slider_exposure()Landroid/widget/FrameLayout;		# get exposure slider layout
+    .locals 1
+
+    const v0, 0x7f0b02af
+
+    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/FrameLayout;
+
+    return-object v0
+.end method
+
 .method public final h()V
     .locals 4
 
@@ -685,6 +699,31 @@
 
     :goto_1
     invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->setEnabled(Z)V
+	
+	# sliders only in Camera
+	const v2, 0x0
+	
+	sput v2, Lcom/custom/extras;->sliders:I
+	
+	invoke-static {}, Lcom/custom/extras;->return_one_if_CameraMode()I
+	
+	move-result v1
+	
+	if-eqz v1, :cond_camNo
+	
+	const v2, 0x1
+	
+	sput v2, Lcom/custom/extras;->sliders:I
+	
+	const v1, 0x0
+	
+	goto :goto_camdone
+	
+	:cond_camNo	
+	const v1, 0x8
+	
+	:goto_camdone
+	#	code here for Camera mode
 
 	# HDR+E Portrait only in Portrait Mode
 	invoke-static {}, Lcom/custom/extras;->return_one_if_PortraitMode()I
@@ -697,11 +736,15 @@
 	
 	if-eqz v1, :cond_portNo
 	
+	const v2, 0x1
+	
+	sput v2, Lcom/custom/extras;->sliders:I
+	
 	const v1, 0x0
 	
 	goto :goto_portdone
 	
-	:cond_portNo
+	:cond_portNo	
 	const v1, 0x8
 	
 	:goto_portdone
@@ -718,11 +761,15 @@
 	
 	if-eqz v1, :cond_astroNo
 	
+	const v2, 0x1
+	
+	sput v2, Lcom/custom/extras;->sliders:I
+	
 	const v1, 0x0
 	
 	goto :goto_astrodone
 	
-	:cond_astroNo
+	:cond_astroNo	
 	const v1, 0x8
 	
 	:goto_astrodone
@@ -733,6 +780,33 @@
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->toggle_lightpaint()Landroid/widget/FrameLayout;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
+	
+	# sliders only in cam/portrait/ns
+	sget v2, Lcom/custom/extras;->sliders:I
+	
+	if-eqz v2, :cond_noSlider
+	
+	const-string v1, "pref_shutter_key"
+	
+	invoke-static {v1}, Lcom/custom/extras;->MenuValue(Ljava/lang/String;)I
+	
+	move-result v1
+	
+	if-eqz v1, :cond_noSlider
+	
+	const v1, 0x0
+	
+	goto :goto_sliders
+	
+	:cond_noSlider
+	const v1, 0x8
+	
+	:goto_sliders
+	invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->slider_exposure()Landroid/widget/FrameLayout;
 
     move-result-object v0
 
