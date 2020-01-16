@@ -168,6 +168,10 @@
 
 .method public final a(FJ)V
     .locals 9
+	
+	sget v0, Lcom/custom/extras;->isCustomExposure:I
+	
+	if-nez v0, :cond_0
 
     const/4 v0, 0x0
 

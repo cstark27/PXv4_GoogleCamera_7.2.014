@@ -30,6 +30,8 @@
 
 .field public static sHdr_process:I
 
+.field public static isCustomExposure:I
+
 .field public static isGoogle:I
 
 .field public static isPixel1:I

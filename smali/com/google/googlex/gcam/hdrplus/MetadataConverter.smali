@@ -5422,6 +5422,8 @@
 	#invoke-static {v3}, Lcom/log;->logFloat(F)V	# for logging
 	
 	float-to-int v4, v3	# AUTO = 0
+	
+	sput v4, Lcom/custom/extras;->isCustomExposure:I
 
 	if-eqz v4, :cond_DefExpTime
 	
