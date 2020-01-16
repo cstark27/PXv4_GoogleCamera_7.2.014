@@ -784,7 +784,7 @@
 	const p6, 0x2	#kSabre
 	
 	:goto_setForceMerge
-	const-string p4, "Sabre merge method ON"
+	const-string p4, "Forced Sabre merge method ON"
 	
 	invoke-static {p4}, Lcom/log;->logMSG(Ljava/lang/String;)V
 	
@@ -793,7 +793,7 @@
 	goto :goto_ContAfterForceMerge
 
 	:cond_SkipForceMerge
-	const-string p4, "Sabre merge method OFF"
+	const-string p4, "Forced Sabre merge method OFF"
 	
 	invoke-static {p4}, Lcom/log;->logMSG(Ljava/lang/String;)V
 	
