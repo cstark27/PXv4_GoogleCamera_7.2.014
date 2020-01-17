@@ -195,11 +195,23 @@
 
 	# countdown fix for P1 and P2
 	long-to-float v3, v3
+
+	sget p2, Lcom/custom/extras;->isCustomExposure:I
 	
+	if-nez p2, :cond_setManual_Astro
+
 	invoke-static {v3}, Lcom/custom/extras;->setTotal_Astro(F)F
 	
 	move-result v3
 
+	goto :cond_countdown_done
+
+	:cond_setManual_Astro
+	invoke-static {}, Lcom/custom/extras;->setManual_Astro()F
+	
+	move-result v3
+
+	:cond_countdown_done
 	float-to-long v3, v3
 
     sget-object p2, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
@@ -224,9 +236,9 @@
 
     iget-object p2, p2, Lely;->J:Landroid/os/CountDownTimer;
 	
-	sget v0, Lcom/custom/extras;->isCustomExposure:I
+	#sget v0, Lcom/custom/extras;->isCustomExposure:I
 	
-	if-nez v0, :cond_0
+	#if-nez v0, :cond_0
 
     invoke-virtual {p2}, Landroid/os/CountDownTimer;->start()Landroid/os/CountDownTimer;
 

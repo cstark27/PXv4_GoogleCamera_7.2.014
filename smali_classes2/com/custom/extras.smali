@@ -614,7 +614,7 @@
 .method public static setManual_Astro()F
 	.locals 10
 	
-	sget v0, Ldeeznutz/lol;->shutterVal:I
+	sget v0, Lza/lol;->shutterVal:I
 	
 	const v1, 0x1
 	const v2, 0x2
@@ -738,9 +738,7 @@
 	:cond_59s
 	const v0, 0x47667800	# 59000.0f	
 	
-	:goto_done
-	invoke-static {v0}, Lcom/custom/extras;->TESTCAT_F(F)V
-	
+	:goto_done	
 	sget v1, Lcom/custom/extras;->NON_ZSL_FRAMES:I
 	
 	int-to-float v1, v1
