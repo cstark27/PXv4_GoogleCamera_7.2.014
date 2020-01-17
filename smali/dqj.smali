@@ -1148,6 +1148,8 @@
     move-result p1
 
     invoke-virtual {v0, p1}, Lcom/google/googlex/gcam/ShotParams;->setPsaf_frame_count(I)V
+	
+	sput p1, Lcom/custom/extras;->PSAFcount:I
 
     iget-object p1, p0, Ldqj;->h:Lcin;
 

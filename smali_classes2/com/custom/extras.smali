@@ -60,6 +60,8 @@
 
 .field public static ZoomLevel:F
 
+.field public static PSAFcount:I
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -740,6 +742,10 @@
 	
 	:goto_done	
 	sget v1, Lcom/custom/extras;->NON_ZSL_FRAMES:I
+	
+	sget v2, Lcom/custom/extras;->PSAFcount:I
+	
+	add-int v1, v1, v2
 	
 	int-to-float v1, v1
 	
