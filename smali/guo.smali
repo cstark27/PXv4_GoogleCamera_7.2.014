@@ -4352,6 +4352,10 @@
 
     invoke-virtual {v0, v1}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->b(Lguw;)V
 
+	iget-object v0, p0, Lguo;->ax:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
+
+	invoke-virtual {v0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->h()V
+
     return-void
 
     :cond_3
@@ -4364,6 +4368,10 @@
     sget-object v1, Lguw;->i:Lguw;
 
     invoke-virtual {v0, v1}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->a(Lguw;)V
+
+	iget-object v0, p0, Lguo;->ax:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
+
+	invoke-virtual {v0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->h()V
 
     return-void
 .end method

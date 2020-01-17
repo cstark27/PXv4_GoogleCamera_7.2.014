@@ -711,6 +711,10 @@
 	
 	if-eqz v1, :cond_camNo
 	
+	sget v1, Lcom/custom/extras;->HDRenh:I
+	
+	if-eqz v1, :cond_camNo
+	
 	const v2, 0x1
 	
 	sput v2, Lcom/custom/extras;->sliders:I
