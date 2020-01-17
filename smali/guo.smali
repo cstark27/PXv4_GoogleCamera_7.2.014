@@ -4337,15 +4337,15 @@
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
-
+	
+	# Value for HDR+E
+	sput v0, Lcom/custom/extras;->HDRenh:I
+	
     if-eqz v0, :cond_2
 
     goto :goto_1
 
     :cond_2
-	# Value for HDRenh:I
-	sput v0, Lcom/custom/extras;->HDRenh:I
-	
     iget-object v0, p0, Lguo;->aw:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;
 
     sget-object v1, Lguw;->i:Lguw;
@@ -4355,10 +4355,10 @@
     return-void
 
     :cond_3
-    :goto_1
-	# Value for HDRenh:I
+	# Value for HDR+E
 	sput v0, Lcom/custom/extras;->HDRenh:I
-	
+
+    :goto_1
     iget-object v0, p0, Lguo;->aw:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;
 
     sget-object v1, Lguw;->i:Lguw;
