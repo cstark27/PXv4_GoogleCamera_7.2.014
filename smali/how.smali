@@ -144,7 +144,22 @@
     invoke-virtual {v0}, Lcom/google/googlex/gcam/FrameRequest;->getDesired_exposure_time_ms()F
 
     move-result v1
+	
+	#invoke-static {v1}, Lcom/log;->logFloat(F)V	# for logging
+	
+	sget v2, Lcom/custom/extras;->isCustomExposure:I
+	
+	if-eqz v2, :cond_skip1
+	
+	int-to-float v1, v2
+	
+	const v2, 0x49742400	# 1000000.0f
 
+	div-float/2addr v1, v2
+	
+	invoke-virtual {v0, v1}, Lcom/google/googlex/gcam/FrameRequest;->setDesired_exposure_time_ms(F)V
+
+	:cond_skip1
     invoke-virtual {v0}, Lcom/google/googlex/gcam/FrameRequest;->getDesired_analog_gain()F
 
     move-result v2
@@ -185,7 +200,22 @@
     invoke-virtual {v0}, Lcom/google/googlex/gcam/FrameRequest;->getDesired_exposure_time_ms()F
 
     move-result v7
+	
+	#invoke-static {v7}, Lcom/log;->logFloat(F)V	# for logging
+	
+	sget v8, Lcom/custom/extras;->isCustomExposure:I
+	
+	if-eqz v8, :cond_skip2
+	
+	int-to-float v7, v8
+	
+	const v8, 0x49742400	# 1000000.0f
 
+	div-float/2addr v7, v8
+	
+	invoke-virtual {v0, v7}, Lcom/google/googlex/gcam/FrameRequest;->setDesired_exposure_time_ms(F)V
+
+	:cond_skip2
     invoke-virtual {v0}, Lcom/google/googlex/gcam/FrameRequest;->getDesired_analog_gain()F
 
     move-result v8
