@@ -978,21 +978,6 @@
 	
 	invoke-virtual {v4, v5}, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->setChecked(Z)V
 
-	# disable Expanded Manual Exposure if LE module is not installed
-	const-string v4, "pref_shuttermax_key"
-	
-    invoke-virtual {v0, v4}, Leru;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-	
-	move-result-object v4
-
-    check-cast v4, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;
-
-	invoke-static {}, Lcom/custom/extras;->isLE_installed()I
-	
-	move-result v5
-	
-	invoke-virtual {v4, v5}, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->setEnabled(Z)V
-
 	# Set Astro button summary
 	const-string v4, "pref_category_astro"
 	
