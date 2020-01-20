@@ -126,14 +126,6 @@
 
     iput-wide v0, p0, LlibPatcher;->_Saturation:J
 
-    const-wide/32 v0, 0x1279ac4
-
-    iput-wide v0, p0, LlibPatcher;->_DarkenSky:J
-
-    const-wide/32 v0, 0x1279808
-
-    iput-wide v0, p0, LlibPatcher;->_DarkenSkyDenoise:J
-
     const-wide/32 v0, 0x15E50F8
 
     iput-wide v0, p0, LlibPatcher;->_SystemNoiseModel:J
@@ -1140,30 +1132,6 @@
     .locals 2
 
     iget-wide v0, p0, LlibPatcher;->_Sharpness:J
-
-    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public setDarkenSky(Ljava/lang/Integer;)Ljava/lang/String;
-    .locals 2
-
-    iget-wide v0, p0, LlibPatcher;->_DarkenSky:J
-
-    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public setDarkenSkyDenoise(Ljava/lang/Integer;)Ljava/lang/String;
-    .locals 2
-
-    iget-wide v0, p0, LlibPatcher;->_DarkenSkyDenoise:J
 
     invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
 
