@@ -20,6 +20,14 @@
 
 .field private _ChromaL4:J
 
+.field private _Chroma1L1:J
+
+.field private _Chroma1L2:J
+
+.field private _Chroma1L3:J
+
+.field private _Chroma1L4:J
+
 .field private _Luma:J
 
 .field private _LumaL1:J
@@ -122,7 +130,23 @@
 
     iput-wide v0, p0, LlibPatcher;->_ChromaL4:J
 
-    const-wide/32 v0, 0x1270b78
+    const-wide/32 v0, 0x1273740
+
+    iput-wide v0, p0, LlibPatcher;->_Chroma1L1:J
+
+    const-wide/32 v0, 0x127375c
+
+    iput-wide v0, p0, LlibPatcher;->_Chroma1L2:J
+
+    const-wide/32 v0, 0x1273778
+
+    iput-wide v0, p0, LlibPatcher;->_Chroma1L3:J
+
+    const-wide/32 v0, 0x127379c
+
+    iput-wide v0, p0, LlibPatcher;->_Chroma1L4:J
+
+    const-wide/32 v0, 0x1270ac4
 
     iput-wide v0, p0, LlibPatcher;->_Saturation:J
 
@@ -156,13 +180,13 @@
 
     :array_0
     .array-data 8
-        0x963a08
-        0x963a18
-        0x963a28
-        0x963a38
-        0x963a48
-        0x963a58
-        0x963a68
+        0x963768
+        0x963778
+        0x963788
+        0x963798
+        0x9637a8
+        0x9637b8
+        0x9637c8
     .end array-data
 
     return-void
@@ -1048,6 +1072,53 @@
     .locals 2
 
     iget-wide v0, p0, LlibPatcher;->_ChromaL4:J
+
+    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setChroma1L1(Ljava/lang/Integer;)Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, LlibPatcher;->_Chroma1L1:J
+
+    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setChroma1L2(Ljava/lang/Integer;)Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, LlibPatcher;->_Chroma1L2:J
+
+    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+.method public setChroma1L3(Ljava/lang/Integer;)Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, LlibPatcher;->_Chroma1L3:J
+
+    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setChroma1L4(Ljava/lang/Integer;)Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, LlibPatcher;->_Chroma1L4:J
 
     invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
 

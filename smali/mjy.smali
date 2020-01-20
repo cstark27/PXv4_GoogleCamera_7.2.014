@@ -182,6 +182,54 @@
 
     invoke-virtual {v1, v2}, LlibPatcher;->setChromaL4(Ljava/lang/Integer;)Ljava/lang/String;
 
+    const-string v2, "lib_chroma1_l1_key"
+
+    invoke-static {v2}, Lmarcello;->MenuValue(Ljava/lang/String;)I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, LlibPatcher;->setChroma1L1(Ljava/lang/Integer;)Ljava/lang/String;
+
+    const-string v2, "lib_chroma1_l2_key"
+
+    invoke-static {v2}, Lmarcello;->MenuValue(Ljava/lang/String;)I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, LlibPatcher;->setChroma1L2(Ljava/lang/Integer;)Ljava/lang/String;
+
+    const-string v2, "lib_chroma1_l3_key"
+
+    invoke-static {v2}, Lmarcello;->MenuValue(Ljava/lang/String;)I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, LlibPatcher;->setChroma1L3(Ljava/lang/Integer;)Ljava/lang/String;
+
+    const-string v2, "lib_chroma1_l4_key"
+
+    invoke-static {v2}, Lmarcello;->MenuValue(Ljava/lang/String;)I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, LlibPatcher;->setChroma1L4(Ljava/lang/Integer;)Ljava/lang/String;
+
     const-string v2, "lib_saturation_key"
 
     invoke-static {v2}, Lmarcello;->MenuValue(Ljava/lang/String;)I
