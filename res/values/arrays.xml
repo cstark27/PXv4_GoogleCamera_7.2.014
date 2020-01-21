@@ -241,6 +241,7 @@
         <item>1.625</item>
         <item>1.75</item>
         <item>1.875</item>
+        <item>2.0</item>
     </string-array>
     <string-array name="lib_hex_entryvalues">
         <item>1</item>
@@ -259,6 +260,7 @@
         <item>1625</item>
         <item>1750</item>
         <item>1875</item>
+        <item>2000</item>
     </string-array>
     <string-array name="finelib_hex_entries">
         <item>0</item>
