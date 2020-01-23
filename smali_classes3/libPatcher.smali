@@ -48,6 +48,8 @@
 
 .field private _SystemNoiseModel:J
 
+.field private _Dehaze:J
+
 .field private _Tone:[J
 
 .field hashMap:Ljava/util/HashMap;
@@ -150,9 +152,13 @@
 
     iput-wide v0, p0, LlibPatcher;->_Saturation:J
 
-    const-wide/32 v0, 0x15E50F8
+    const-wide/32 v0, 0x15e50f8
 
     iput-wide v0, p0, LlibPatcher;->_SystemNoiseModel:J
+
+    const-wide/32 v0, 0x1282ed4
+
+    iput-wide v0, p0, LlibPatcher;->_Dehaze:J
 
     const-string v0, "0123456789ABCDEF"
 
@@ -1215,6 +1221,18 @@
     .locals 2
 
     iget-wide v0, p0, LlibPatcher;->_SystemNoiseModel:J
+
+    invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setDehaze(Ljava/lang/Integer;)Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, LlibPatcher;->_Dehaze:J
 
     invoke-virtual {p0, v0, v1, p1}, LlibPatcher;->setValue(JLjava/lang/Integer;)Ljava/lang/String;
 

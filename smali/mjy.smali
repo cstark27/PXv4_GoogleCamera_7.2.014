@@ -242,6 +242,18 @@
 
     invoke-virtual {v1, v2}, LlibPatcher;->setSaturation(Ljava/lang/Integer;)Ljava/lang/String;
 
+    const-string v2, "lib_dehaze_key"
+
+    invoke-static {v2}, Lmarcello;->MenuValue(Ljava/lang/String;)I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, LlibPatcher;->setDehaze(Ljava/lang/Integer;)Ljava/lang/String;
+
     const-string v2, "lib_systemmodel_key"
 
     invoke-static {v2}, Lmarcello;->MenuValue(Ljava/lang/String;)I
