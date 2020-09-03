@@ -48,6 +48,8 @@
     move-result-object p1
 
     invoke-direct {v0, p1}, Lmxu;-><init>(Landroid/hardware/camera2/CaptureRequest$Builder;)V
+	
+	#invoke-static {v0}, Lcom/custom/APIKeys;->getCameraAPI2(Lmxu;)V
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_2
     .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_0 .. :try_end_0} :catch_1
