@@ -44,6 +44,8 @@
 
 .field public static isPixel4:I
 
+.field public static isPixel4a:I
+
 .field public static sGallery:Ljava/lang/String;
 
 .field public static sliders:I
@@ -564,6 +566,10 @@
 	sget v1, Lcom/custom/extras;->isPixel3:I
 	
 	if-nez v1, :cond_P3
+	
+	sget v1, Lcom/custom/extras;->isPixel4a:I
+	
+	if-nez v1, :cond_P4
 
 	sget v1, Lcom/custom/extras;->isPixel3a:I
 	
@@ -872,6 +878,14 @@
 	move-result v2
 	
 	if-nez v2, :cond_isPixel4
+	
+	const-string v1, "sunfish"
+	
+	invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+	
+	move-result v2
+	
+	if-nez v2, :cond_isPixel4a
 
 	if-eqz v2, :cond_isPixel1	# isPixel1 for non-Pixel device
 
@@ -900,6 +914,13 @@
 	
 	:cond_isPixel4	
 	sput v3, Lcom/custom/extras;->isPixel4:I
+	
+	goto :goto_0
+	
+	:cond_isPixel4a	
+	sput v3, Lcom/custom/extras;->isPixel3a:I
+	
+	sput v3, Lcom/custom/extras;->isPixel4a:I
 	
 	goto :goto_0
 .end method

@@ -600,7 +600,14 @@
     invoke-virtual {v0, v1}, Lcom/google/googlex/gcam/StaticMetadata;->setModel(Ljava/lang/String;)V
 
     sget-object v1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
+	
+	sget v3, Lcom/custom/extras;->isPixel4a:I
+	
+	if-eqz v3, :skip_Pixel4aForce
+	
+	const-string v1, "bonito"
 
+	:skip_Pixel4aForce
     invoke-virtual {v0, v1}, Lcom/google/googlex/gcam/StaticMetadata;->setDevice(Ljava/lang/String;)V
 
 	goto :goto_continue

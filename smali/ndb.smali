@@ -334,6 +334,15 @@
 	goto :goto_skipDeviceGet
 
 	:cond_NotForcePixel1
+	sget v1, Lcom/custom/extras;->isPixel4a:I
+	
+	if-eqz v1, :cond_SkipPixel4aForce
+	
+	const-string v1, "bonito"	# force Pixel 3a for Pixel 4a for basic support
+	
+	goto :goto_skipDeviceGet
+	
+	:cond_SkipPixel4aForce
     sget-object v1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
 	:goto_skipDeviceGet
